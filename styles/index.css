@@ -1,9 +1,37 @@
-/* @font-face {
+@font-face {
     font-family: 'Inter';
-    src: url('../fonts/Inter-Bold.ttf');
-    src: url('../fonts/Inter-Medium.ttf');
-    src: url('../fonts/Inter-Light.ttf');
-} */
+    font-weight: 800;
+    src:url('../fonts/Inter-Bold.woff2') format(woff2),
+        url('../fonts/Inter-Bold.woff') format(woff),
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 600;
+    src:url('../fonts/Inter-SemiBold.woff2') format(woff2),
+        url('../fonts/Inter-SemiBold.woff') format(woff),
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 500;
+    src:url('../fonts/Inter-Medium.woff2') format(woff2),
+        url('../fonts/Inter-Medium.woff') format(woff),
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 400;
+    src:url('../fonts/Inter-Regular.woff2') format(woff2),
+        url('../fonts/Inter-Regular.woff') format(woff),
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 300;
+    src:url('../fonts/Inter-Light.woff2') format(woff2),
+        url('../fonts/Inter-Light.woff') format(woff),
+}
 
 .sup-plus {
     height: 13px;
@@ -12,3 +40,25 @@
     margin-left: -3px;
     vertical-align: sub;
 }
+
+/* #rod {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 150px;
+    width: 2px;
+    height: 150px;
+    border-radius: 5px;
+    transform-origin: 50% 0%;
+    transform: rotate(60deg);
+    background-color: transparent;
+  }
+  
+  #ball {
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: orange;
+  } */
