@@ -544,6 +544,45 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.m-\[-10px\] {
+  margin: -10px;
+}
+
+.m-\[70px\] {
+  margin: 70px;
+}
+
+.m-\[-10rem\] {
+  margin: -10rem;
+}
+
+.m-\[-5rem\] {
+  margin: -5rem;
+}
+
+.m-\[-1rem\] {
+  margin: -1rem;
+}
+
+.m-\[-50px\] {
+  margin: -50px;
+}
+
+.mx-\[10rem\] {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.mx-\[1rem\] {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mx-\[4rem\] {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -560,8 +599,20 @@ video {
   display: flex;
 }
 
+.h-\[1\.2px\] {
+  height: 1.2px;
+}
+
+.h-\[1px\] {
+  height: 1px;
+}
+
 .w-\[100vw\] {
   width: 100vw;
+}
+
+.w-\[28\%\] {
+  width: 28%;
 }
 
 .flex-row {
@@ -580,6 +631,10 @@ video {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .justify-around {
   justify-content: space-around;
 }
@@ -588,12 +643,20 @@ video {
   gap: 0.5rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .rounded-3xl {
   border-radius: 1.5rem;
 }
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .border-2 {
@@ -609,9 +672,19 @@ video {
   border-color: rgb(29 78 216 / var(--tw-border-opacity));
 }
 
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .bg-blue-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
@@ -633,6 +706,10 @@ video {
           background-clip: text;
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
@@ -651,6 +728,11 @@ video {
   padding-right: 1.5rem;
 }
 
+.px-\[100px\] {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -658,6 +740,16 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-4xl {
@@ -679,6 +771,14 @@ video {
   font-weight: 700;
 }
 
+.font-light {
+  font-weight: 300;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -695,6 +795,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.drop-shadow-xl {
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .hover\:bg-\[\#1723FF\]:hover {
