@@ -544,6 +544,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
@@ -552,12 +556,64 @@ video {
   right: -200px;
 }
 
+.right-\[-39\%\] {
+  right: -39%;
+}
+
+.right-\[-42\%\] {
+  right: -42%;
+}
+
+.right-\[5\%\] {
+  right: 5%;
+}
+
+.right-\[6\%\] {
+  right: 6%;
+}
+
+.top-\[16\.6\%\] {
+  top: 16.6%;
+}
+
+.top-\[3\%\] {
+  top: 3%;
+}
+
+.top-\[30\.3\%\] {
+  top: 30.3%;
+}
+
+.top-\[43\.8\%\] {
+  top: 43.8%;
+}
+
+.top-\[57\.4\%\] {
+  top: 57.4%;
+}
+
+.top-\[71\%\] {
+  top: 71%;
+}
+
+.top-\[84\.6\%\] {
+  top: 84.6%;
+}
+
 .m-10 {
   margin: 2.5rem;
 }
 
 .m-\[70px\] {
   margin: 70px;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.m-5 {
+  margin: 1.25rem;
 }
 
 .mx-\[10rem\] {
@@ -666,6 +722,22 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[54\%\] {
+  width: 54%;
+}
+
+.w-\[60\%\] {
+  width: 60%;
+}
+
+.w-\[65\%\] {
+  width: 65%;
+}
+
+.w-\[70\%\] {
+  width: 70%;
 }
 
 .grid-cols-2 {
@@ -781,6 +853,11 @@ video {
 .bg-secondary {
   --tw-bg-opacity: 1;
   background-color: rgb(48 227 94 / var(--tw-bg-opacity));
+}
+
+.bg-slate-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -934,6 +1011,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-end {
+  text-align: end;
 }
 
 .font-inter {
