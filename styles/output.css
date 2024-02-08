@@ -656,6 +656,10 @@ video {
   width: 38px;
 }
 
+.w-\[50\%\] {
+  width: 50%;
+}
+
 .w-auto {
   width: auto;
 }
@@ -816,6 +820,10 @@ video {
   --tw-gradient-from-position: 0%;
 }
 
+.from-15\% {
+  --tw-gradient-from-position: 15%;
+}
+
 .from-35\% {
   --tw-gradient-from-position: 35%;
 }
@@ -858,6 +866,10 @@ video {
 
 .to-80\% {
   --tw-gradient-to-position: 80%;
+}
+
+.to-85\% {
+  --tw-gradient-to-position: 85%;
 }
 
 .to-85\% {
@@ -929,6 +941,16 @@ video {
 .px-\[100px\] {
   padding-left: 100px;
   padding-right: 100px;
+}
+
+.px-\[10px\] {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.px-\[60px\] {
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .py-1 {
@@ -1036,6 +1058,10 @@ video {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.leading-8 {
+  line-height: 2rem;
 }
 
 .leading-\[0\] {
