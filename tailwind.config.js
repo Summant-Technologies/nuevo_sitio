@@ -10,6 +10,9 @@ module.exports = {
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],
       },
+      dropShadow: {
+        'services': '2px 2px 5px rgb(0, 0, 0, 0.1)'
+      }
     },
   },
   plugins: [],
