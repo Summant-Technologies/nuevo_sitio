@@ -62,3 +62,162 @@
     border-radius: 50%;
     background-color: orange;
   } */
+
+/* Inicio estilos para el slider de resenas */
+
+.btn {
+    border: none;
+    cursor: pointer;
+    color: white;
+    background: none;
+    transition: all .3s ease-in-out;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.carousel-view {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 44px 0;
+    transition: all 0.25s ease-in;
+}
+
+.carousel-view .item-list {
+    max-width: 950px;
+    width: 70vw;
+    padding: 50px 10px;
+    display: flex;
+    gap: 48px;
+   scroll-behavior: smooth; /* this do in css */
+    transition: all 0.25s ease-in;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.item-list::-webkit-scrollbar {
+    display: none;
+}
+
+.prev-btn {
+    background: none;
+    cursor: pointer;
+}
+
+.next-btn {
+    cursor: pointer;
+}
+
+.card {
+    scroll-snap-align: center;
+    min-width: 260px;
+    min-height: 280px;
+    border-radius: 8px;
+    padding-bottom: 16px;
+}
+
+.estrellas {
+    margin-top: 16px;
+    color: green;
+    text-align: center;
+}
+
+.container-exp {
+    padding: 0 24px;
+}
+
+.experiencias {
+    text-align: center;
+    font-size: 20px;
+}
+
+.border-sep {
+    margin: 0 auto;
+    width: 50%;
+    border-top: 2px solid green;
+}
+
+.container-tra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+
+
+.trabajadores {
+    font-size: 18px;
+}
+
+/* Fin estilos para resenas */
+
+/* Inicio estilos para slider de clientes */
+
+.scroller {
+    max-width: 80%;
+  }
+  
+  .scroller__inner {
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+  
+  .scroller[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(
+      90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent
+    );
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  }
+  
+  .scroller[data-animated="true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s)
+      var(--_animation-direction, forwards) linear infinite;
+  }
+  
+  .scroller[data-direction="right"] {
+    --_animation-direction: reverse;
+  }
+  
+  .scroller[data-direction="left"] {
+    --_animation-direction: forwards;
+  }
+  
+  .scroller[data-speed="fast"] {
+    --_animation-duration: 20s;
+  }
+  
+  .scroller[data-speed="slow"] {
+    --_animation-duration: 60s;
+  }
+  
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+  
+
+/* Fin estilos para slider de clientes */
