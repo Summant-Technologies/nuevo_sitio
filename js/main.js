@@ -52,3 +52,14 @@ function addAnimation() {
     });
   });
 }
+
+/* Experiencia */
+const items = document.querySelectorAll(".acordeon");
+
+items.forEach(item => {
+  item.addEventListener('click', () => {
+    const desplegable = item.querySelector('.desplegable');
+
+    desplegable.classList.toggle('hidden');
+  })
+})
