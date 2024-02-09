@@ -71,6 +71,7 @@
     color: white;
     background: none;
     transition: all .3s ease-in-out;
+    fill: #1723FF;
 }
 
 .container {
@@ -116,10 +117,12 @@
 .prev-btn {
     background: none;
     cursor: pointer;
+    margin-left: 40px;
 }
 
 .next-btn {
     cursor: pointer;
+    margin-right: 40px;
 }
 
 .card {
@@ -133,9 +136,10 @@
 }
 
 .estrellas {
-    margin-top: 16px;
+    margin: 16px 0;
     color: #30E35E;
     text-align: center;
+
 }
 
 .container-exp {
