@@ -63,6 +63,15 @@
     background-color: orange;
   } */
 
+
+/* Inicio estilos para porque summant*/
+
+.card-porque {
+    box-shadow: 2px 2px 5px rgba(0 , 0, 0, 0.1);
+}
+
+/* Fin estilos para resenas */
+
 /* Inicio estilos para el slider de resenas */
 
 .btn {
