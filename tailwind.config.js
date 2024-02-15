@@ -20,6 +20,7 @@ module.exports = {
         'cegid-capacitacion': '1px 1px 5px rgba(39, 157, 152, .5)',
         'cegid-talento': '1px 1px 5px rgba(42, 185, 129, .5)',
         'cegid-desarrollo': '1px 1px 5px rgba(45, 207, 110, .5)',
+        'servicios-desktop': '0px 25px 20px -20px rgba(45, 207, 110, .5)'
       },
       backgroundImage: {
         'hexagon-right': "url('./images/PARTNERS/PNG/Right.png')",
