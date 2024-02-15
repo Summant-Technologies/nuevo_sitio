@@ -16,40 +16,40 @@
 <body class="font-inter">
     <!-- INICIO DE HEADER (Agus) -->
     <header class="w-[100%]">
-        <nav class="flex justify-start items-center m-10">
+        <nav class="flex justify-around items-center m-10">
             <a href="">
                 <img src="./images/LOGO_SUMMANT/SUMMANT LOGO.svg" width="150px" height="100px" alt="logo-summant-nav"
                     title="Summant">
             </a>
-            <div class="flex flex-col gap-3 relative right-[-200px]">
+            <ul class="flex flex-row gap-2 text-lg">
+                <li class="transition ease-in-out delay-70 duration-300 hover:bg-secondary hover:text-white rounded-xl">
+                    <a href="" class="p-6">INICIO</a>
+                </li>
+                <li class="transition ease-in-out delay-70 duration-300 hover:bg-secondary hover:text-white rounded-xl">
+                    <a href="" class="p-3">NOSOTROS</a>
+                </li>
+                <li class="transition ease-in-out delay-70 duration-300 hover:bg-secondary hover:text-white rounded-xl">
+                    <a href="" class="p-3">SERVICIOS</a>
+                </li>
+                <li class="transition ease-in-out delay-70 duration-300 hover:bg-secondary hover:text-white rounded-xl">
+                    <a href="" class="p-3">EXPERIENCIA</a>
+                </li>
+                <li class="transition ease-in-out delay-70 duration-300 hover:bg-secondary hover:text-white rounded-xl">
+                    <a href="" class="p-3">CLIENTES</a>
+                </li>
+                <li class="transition ease-in-out delay-70 duration-300 hover:bg-secondary hover:text-white rounded-xl">
+                    <a href="" class="p-3">CONTACTO</a>
+                </li>
+                <li >
+                    <button><a class="p-3">SP</a></button>
+                    <button><a class="p-3 text-primary">EN</a></button>
+                </li>
+            </ul>
+            <div class="flex flex-col gap-3 relative right-[-200px] xl:hidden">
                 <span class="w-[38px] h-[4px] bg-gradient-to-r from-primary to-secondary rounded"></span>
                 <span class="w-[38px] h-[4px] bg-gradient-to-r from-primary to-secondary rounded"></span>
                 <span class="w-[38px] h-[4px] bg-gradient-to-r from-primary to-secondary rounded"></span>
             </div>
-            <!-- <ul class="flex flex-row gap-2 text-lg">
-                    <li class="hover:bg-primary hover:text-white rounded-xl">
-                        <a href="" class="p-5">Inicio</a>
-                    </li>
-                    <li class="hover:bg-primary hover:text-white rounded-xl">
-                        <a href="" class="p-3">Nosotros</a>
-                    </li>
-                    <li class="hover:bg-primary hover:text-white rounded-xl">
-                        <a href="" class="p-3">Servicios</a>
-                    </li>
-                    <li class="hover:bg-primary hover:text-white rounded-xl">
-                        <a href="" class="p-3">Experiencia</a>
-                    </li>
-                    <li class="hover:bg-primary hover:text-white rounded-xl">
-                        <a href="" class="p-3">Clientes</a>
-                    </li>
-                    <li class="hover:bg-primary hover:text-white rounded-xl">
-                        <a href="" class="p-3">Contacto</a>
-                    </li>
-                    <li>
-                        <a class="p-3">SP</a>
-                        <a class="p-3 text-primary">EN</a>
-                    </li>
-                </ul> -->
         </nav>
     </header>
     <!-- FIN DE HEADER (Agus)-->
@@ -189,7 +189,8 @@
                             class="text-transparent bg-clip-text bg-gradient-to-tr from-primary from-35% to-secondary to-55% font-extrabold sup-plus">+</sup></span>
                 </div>
             </h3>
-            <p class="text-xl lg:px-[250px] lg:m-10">Summant Technologies está en condiciones de ofrecer a sus clientes toda su experiencia y
+            <p class="text-xl lg:px-[250px] lg:m-10">Summant Technologies está en condiciones de ofrecer a sus clientes
+                toda su experiencia y
                 conocimientos para la <span class="font-bold">solucion de necesidades específicas, utilizando para ello
                     metodologías y herramientas de vanguardia.</span></p>
         </div>
@@ -203,7 +204,8 @@
                 </div>
                 <h5 class="mx-[10rem] text-2xl text-center font-semibold">Equipos dedicados</h5>
                 <div class="w-[28%] h-[2px] bg-gradient-to-r from-blue-700 to-green-500"></div>
-                <p class="mx-[1rem] text-xl text-center font-light lg:px-[5px]">Contamos con equipos multidisciplinarios, adaptables
+                <p class="mx-[1rem] text-xl text-center font-light lg:px-[5px]">Contamos con equipos
+                    multidisciplinarios, adaptables
                     a las necesidades de tu empresa.</p>
             </div>
 
@@ -222,21 +224,21 @@
             <div
                 class="flex flex-col justify-center items-center gap-5 p-10 m-[70px] bg-white border-2 border-white rounded-3xl drop-shadow-services lg:transition lg:ease-in-out lg:delay-70 lg:duration-300 lg:hover:-translate-y-6 lg:w-[80%] lg:m-[40px]">
                 <div class="w-auto h-auto">
-                    <img src="./images/ICONOS/SERVICIOS/PROVISION PERF ICON.svg" width="50" heigth="50" alt="logo-perfiles"
-                    title="Perfiles IT." class="mt-[-70px] lg:mt-[-40px]" />
+                    <img src="./images/ICONOS/SERVICIOS/PROVISION PERF ICON.svg" width="50" heigth="50"
+                        alt="logo-perfiles" title="Perfiles IT." class="mt-[-70px] lg:mt-[-40px]" />
                 </div>
                 <h5 class="mx-[4rem] text-2xl text-center font-semibold w-[90%]">Provisión de perfiles IT</h5>
                 <div class="w-[28%] h-[1.2px] bg-gradient-to-r from-blue-700 to-green-500"></div>
                 <p class="text-xl text-center font-light">Proveemos a nuestros clientes perfiles de IT altamente
                     especializados, tanto técnicos como funcionales.</p>
-                    <div class=""></div>
+                <div class=""></div>
             </div>
 
             <div
                 class="flex flex-col justify-center items-center gap-5 p-10 m-[70px] bg-white border-2 border-white rounded-3xl drop-shadow-services lg:transition lg:ease-in-out lg:delay-70 lg:duration-300 lg:hover:-translate-y-6 lg:w-[80%] lg:m-[40px]">
                 <div class="w-auto h-auto">
-                    <img src="./images/ICONOS/SERVICIOS/DESARROLLO ICON.svg" width="50" heigth="50" alt="logo-desarrollo"
-                        title="Desarrollo proyectos." class="mt-[-64px] lg:mt-[-45px]" />
+                    <img src="./images/ICONOS/SERVICIOS/DESARROLLO ICON.svg" width="50" heigth="50"
+                        alt="logo-desarrollo" title="Desarrollo proyectos." class="mt-[-64px] lg:mt-[-45px]" />
                 </div>
                 <h5 class="mx-[2rem] text-2xl text-center font-semibold">Desarrollo de proyectos</h5>
                 <div class="w-[28%] h-[1.2px] bg-gradient-to-r from-blue-700 to-green-500"></div>
@@ -263,7 +265,8 @@
                     <span class="w-[100%] text-3xl font-semibold">Cegid - PEOPLENET</span>
                 </div>
             </h3>
-            <p class="text-xl font-light leading-8 px-[30px] mb-10 xl:px-[380px]">Nuestra condición de <span class="font-bold">partner
+            <p class="text-xl font-light leading-8 px-[30px] mb-10 xl:px-[380px]">Nuestra condición de <span
+                    class="font-bold">partner
                     certificado implica el aval de Cegid en los conocimientos y prácticas de nuestros
                     profesionales.<br></span>Implementamos y evolucionamos éxito funcionalidades que permiten a recursos
                 humanos contar con una herramienta integral que responda a las necesidades actuales.</p>
@@ -306,8 +309,8 @@
                     class="absolute left-[74.3%] top-[10%] transition ease-in-out delay-70 duration-300 hover:scale-[1.1] hover:drop-shadow-cegid-talento">
                 <img src="./images/PARTNERS/SVG/Desarrollo-Desktop.svg" alt=""
                     class="absolute left-[89.7%] top-[-53%] transition ease-in-out delay-70 duration-300 hover:scale-[1.1] hover:drop-shadow-cegid-desarrollo" />
-                <img src="./images/PARTNERS/SVG/Route-Desktop.svg" alt="Ruta de gestion organizacional" width="1000" height="200"
-                    class="m-auto" />
+                <img src="./images/PARTNERS/SVG/Route-Desktop.svg" alt="Ruta de gestion organizacional" width="1000"
+                    height="200" class="m-auto" />
             </div>
         </div>
     </section>
