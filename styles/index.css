@@ -245,6 +245,10 @@
     flex-wrap: wrap;
     gap: 4rem;
   }
+
+  .scroller__inner > img {
+    height: 2rem;
+  }
   
   .scroller[data-animated="true"] {
     overflow: hidden;
