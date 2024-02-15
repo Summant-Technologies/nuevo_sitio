@@ -33,6 +33,25 @@
         url('../fonts/Inter-Light.woff') format(woff),
 }
 
+
+/* SCROLL */
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: #F5F5F5;
+}
+::-webkit-scrollbar-track{
+  /* -webkit-box-shadow: inset 0 0 6px rgb(246, 242, 242); */
+  border-radius: 10px;
+  background-color: #7e7e7e65;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #ffffff;
+  /* background-image: -webkit-linear-gradient(90deg, rgba(23, 35, 255, 1) 32%, rgba(48, 227, 94, 1) 65%); */
+  background-image: -webkit-linear-gradient(top, rgba(23, 35, 255, 1) 30%, rgba(48, 227, 94, 1) 80%);
+  border-radius: 10px;
+}
+/* SCROLL */
+
 .sup-plus {
     height: 13px;
     width: 13px;
