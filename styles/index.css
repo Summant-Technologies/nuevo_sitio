@@ -101,36 +101,61 @@
       object-fit: cover;
       object-position: -26rem;
   }
+
+  .home-card {
+    width: 18rem;
+    z-index: 5;
+    margin-bottom: -50px;
+  }
+
+  .home-card h2 {
+    text-align: center;
+  }
 }
 
 
-@media only screen and (min-width: 600px) {
-
+@media (min-width: 768px) {
 
   .home-container {
-      position: relative;
-      height: 600px;
+    position: relative;
+    height: 100vh;
+    background: url(../images/EXPORTS/SUMMANT_header\ web\ illus_1.png) center/cover;
+    overflow: hidden;
   }
 
-  .home-card,
-  .home-img {
-      position: absolute;
-  }
-
-  .home-img {
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, rgba(23, 35, 255, 1) 32%, rgba(48, 227, 94, 1) 65%);
+  .overlay {
+    background: linear-gradient(150deg, rgba(23, 35, 255, 1) 2%, rgba(48, 227, 94, 1) 98%);
+    z-index: -10;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
 
   .home-card {
-      width: 35%;
-      z-index: 1;
-      top: 20px;
-      left: 40px;
+    position: absolute;
+    top: 0%;
+    left: -1%;
+    transform: translate(50%, 50%);
+    z-index: 1;
+    width: 19rem;
   }
 }
 
+@media (min-width: 1024px) {
+  .home-card {
+    top: -10px;
+    left: -10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home-card {
+    top: -10px;
+    left: -95px;
+  }
+}
 /* Fin estilos para resenas */
 
 /* Inicio estilos para porque summant*/
