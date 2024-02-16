@@ -63,3 +63,11 @@ items.forEach(item => {
     desplegable.classList.toggle('hidden');
   })
 })
+
+/* Navbar */
+const NavbarToggle = document.querySelector('.navbar-toggle')
+
+function onToggleMenu(e) {
+  e.name = e.name === 'menu' ? "close" : "menu";
+  NavbarToggle.classList.toggle('top-[-30%]')
+}
