@@ -339,33 +339,62 @@
 
 /* Fin estilos para slider de clientes */
 
-/* Comienzo Navbar */
-@media (max-width: 768px) {
-  #menuItems {
+/* Comienzo Query's Navbar */
+@media (min-width: 768px) {
+  #menuNav {
     width: 100%;
-    height: 80%;
-    position: absolute;
-    margin-top: 40rem;
-    font-size: 25px;
-    z-index: 10000;
-    background-color: white;
-    left: 0;
-    gap: 30px;
-    font-weight: 500;
-    border-radius: 0px 0px 20px 20px;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    gap: 3rem;
+    padding: 1rem;
+  }
+  #menuToggle {
+    display: none;
+  }
+  #menuItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: static;
+    font-size: 12px;
   }
   #menuItems li {
-    margin: 0 50px;
+    margin: 0;
+    gap: 1px;
+    font-weight: 600;
   }
-
-  #menuItems li a:hover {
-    background: -webkit-linear-gradient(45deg,#1D53D2 50%, #2AB981 75%, #2DCF6E 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  #menuItems li a{
+    padding: 0;
   }
-
-  #menuItems li:first-child {
-    margin-top: 20px;
+  #navDivider {
+    display: none;
+  }
+  #spanglish {
+    width: 20%;
+    height: 30px;
   }
 }
-/* Fin Navbar */
+
+@media (min-width: 1024px) {
+  #menuNav {
+    padding: 1% 2%;
+  }
+   #menuItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    position: static;
+    gap: 3rem;
+  }
+  #spanglish {
+    width: 10%;
+    height: 30px;
+  }
+  #spanglish a {
+    width: 80px;
+  }
+}
+/* Fin Query's Navbar */
