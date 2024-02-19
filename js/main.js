@@ -63,3 +63,4 @@ items.forEach(item => {
     desplegable.classList.toggle('hidden');
   })
 })
+/* Experiencia */
