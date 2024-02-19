@@ -10,45 +10,46 @@
     <link href="./styles/output.css" rel="stylesheet">
     <!-- JavaScript -->
     <script src="./js/main.js" defer></script>
+    <!-- Ionic Icons -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <title>Summant Technologies</title>
 </head>
 
-<body class="font-inter">
+<body class="font-inter h-screen">
     <!-- INICIO DE HEADER (Agus) -->
-    <header class="w-[100%]">
-        <nav class="flex justify-around items-center m-10">
-            <a href="">
-                <img src="./images/LOGO_SUMMANT/SUMMANT LOGO.svg" width="150px" height="100px" alt="logo-summant-nav"
-                    title="Summant">
+    <header class="w-full">
+        <nav class="flex justify-between items-center m-10 lg:mx-auto">
+            <a href="" class="linksUl">
+                <img src="./images/LOGO_SUMMANT/SUMMANT LOGO.svg" width="150px" height="100px" alt="logo-summant-nav" title="Summant">
             </a>
-            <ul class="flex flex-row gap-2 text-lg">
-                <li class="transition ease-in-out delay-70 duration-300 hover:bg-secondary hover:text-white rounded-xl">
-                    <a href="" class="p-6">INICIO</a>
+            <ul id="menuItems" class="hidden flex flex-col lg:flex lg:flex-row lg:gap-2 lg:text-lg">
+                <li class="lg:hover:bg-secondary lg:hover:text-white rounded-xl transition ease-in-out delay-70 duration-300">
+                    <a href="#" class="p-3">Inicio</a>
                 </li>
-                <li class="transition ease-in-out delay-70 duration-300 hover:bg-secondary hover:text-white rounded-xl">
-                    <a href="" class="p-3">NOSOTROS</a>
+                <li class="lg:hover:bg-secondary lg:hover:text-white rounded-xl transition ease-in-out delay-70 duration-300">
+                    <a href="#" class="p-3">Nosotros</a>
                 </li>
-                <li class="transition ease-in-out delay-70 duration-300 hover:bg-secondary hover:text-white rounded-xl">
-                    <a href="" class="p-3">SERVICIOS</a>
+                <li class="lg:hover:bg-secondary lg:hover:text-white rounded-xl transition ease-in-out delay-70 duration-300">
+                    <a href="#" class="p-3">Servicios</a>
                 </li>
-                <li class="transition ease-in-out delay-70 duration-300 hover:bg-secondary hover:text-white rounded-xl">
-                    <a href="" class="p-3">EXPERIENCIA</a>
+                <li class="lg:hover:bg-secondary lg:hover:text-white rounded-xl transition ease-in-out delay-70 duration-300">
+                    <a href="#" class="p-3">Experiencia</a>
                 </li>
-                <li class="transition ease-in-out delay-70 duration-300 hover:bg-secondary hover:text-white rounded-xl">
-                    <a href="" class="p-3">CLIENTES</a>
+                <li class="lg:hover:bg-secondary lg:hover:text-white rounded-xl transition ease-in-out delay-70 duration-300">
+                    <a href="#" class="p-3">Clientes</a>
                 </li>
-                <li class="transition ease-in-out delay-70 duration-300 hover:bg-secondary hover:text-white rounded-xl">
-                    <a href="" class="p-3">CONTACTO</a>
+                <li class="lg:hover:bg-secondary lg:hover:text-white rounded-xl transition ease-in-out delay-70 duration-300">
+                    <a href="#" class="p-3">Contacto</a>
                 </li>
+                <div class="lg:hidden w-[100%] h-[2px] bg-gradient-to-r from-blue-700 to-green-500 xl:w-[30%]"></div>
                 <li>
-                    <button><a class="p-3">SP</a></button>
-                    <button><a class="p-3 text-primary">EN</a></button>
+                    <a href="#" class="p-3">SP</a>
+                    <a href="#" class="p-3 text-primary">EN</a>
                 </li>
             </ul>
-            <div class="flex flex-col gap-3 relative right-[-200px] xl:hidden">
-                <span class="w-[38px] h-[4px] bg-gradient-to-r from-primary to-secondary rounded"></span>
-                <span class="w-[38px] h-[4px] bg-gradient-to-r from-primary to-secondary rounded"></span>
-                <span class="w-[38px] h-[4px] bg-gradient-to-r from-primary to-secondary rounded"></span>
+            <div class="lg:hidden ml-2">
+                <img src="./images/PARTNERS/SVG/Menu Nav.svg" onclick="toggleMenu()" id="menuIconOpen" name="menu" class="text-4xl cursor-pointer bg-clip-text bg-gradient-to-r from-primary to-secondary" width="40" height="40"/>
+                <img src="./images/PARTNERS/SVG/Close Nav.svg" onclick="toggleMenu()" id="menuIconClose" name="close" class="text-4xl cursor-pointer hidden bg-clip-text bg-gradient-to-r from-primary to-secondary" width="30" height="30"/>
             </div>
         </nav>
     </header>
