@@ -18,36 +18,36 @@
 <body class="font-inter h-screen">
     <!-- INICIO DE HEADER (Agus) -->
     <header class="w-full">
-        <nav class="flex justify-between items-center m-10 lg:mx-auto">
-            <a href="" class="linksUl">
-                <img src="./images/LOGO_SUMMANT/SUMMANT LOGO.svg" width="150px" height="100px" alt="logo-summant-nav" title="Summant">
+        <nav class="flex justify-between items-center m-10" id="menuNav">
+            <a href="">
+                <img src="./images/LOGO_SUMMANT/SUMMANT LOGO.svg" width="150px" height="100px" alt="logo-summant-nav" title="Summant" id="logoSummant">
             </a>
-            <ul id="menuItems" class="hidden flex flex-col lg:flex lg:flex-row lg:gap-2 lg:text-lg">
-                <li class="lg:hover:bg-secondary lg:hover:text-white rounded-xl transition ease-in-out delay-70 duration-300">
-                    <a href="#" class="p-3">Inicio</a>
+            <ul id="menuItems" class="w-[100%] hidden absolute flex flex-col top-[15%] text-2xl bg-white gap-6 left-0 z-40">
+                <li class="mx-[50px]">
+                    <a href="#" class="p-3 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary transition ease-in-out">INICIO</a>
                 </li>
-                <li class="lg:hover:bg-secondary lg:hover:text-white rounded-xl transition ease-in-out delay-70 duration-300">
-                    <a href="#" class="p-3">Nosotros</a>
+                <li class="mx-[50px]">
+                    <a href="#" class="p-3 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary transition ease-in-out">NOSOTROS</a>
                 </li>
-                <li class="lg:hover:bg-secondary lg:hover:text-white rounded-xl transition ease-in-out delay-70 duration-300">
-                    <a href="#" class="p-3">Servicios</a>
+                <li class="mx-[50px]">
+                    <a href="#" class="p-3 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary transition ease-in-out">SERVICIOS</a>
                 </li>
-                <li class="lg:hover:bg-secondary lg:hover:text-white rounded-xl transition ease-in-out delay-70 duration-300">
-                    <a href="#" class="p-3">Experiencia</a>
+                <li class="mx-[50px]">
+                    <a href="#" class="p-3 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary transition ease-in-out">EXPERIENCIA</a>
                 </li>
-                <li class="lg:hover:bg-secondary lg:hover:text-white rounded-xl transition ease-in-out delay-70 duration-300">
-                    <a href="#" class="p-3">Clientes</a>
+                <li class="mx-[50px]">
+                    <a href="#" class="p-3 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary transition ease-in-out">CLIENTES</a>
                 </li>
-                <li class="lg:hover:bg-secondary lg:hover:text-white rounded-xl transition ease-in-out delay-70 duration-300">
-                    <a href="#" class="p-3">Contacto</a>
+                <li class="mx-[50px]">
+                    <a href="#" class="p-3 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary transition ease-in-out">CONTACTO</a>
                 </li>
-                <div class="lg:hidden w-[100%] h-[2px] bg-gradient-to-r from-blue-700 to-green-500 xl:w-[30%]"></div>
-                <li>
-                    <a href="#" class="p-3">SP</a>
-                    <a href="#" class="p-3 text-primary">EN</a>
+                <div class="w-[100%] h-[2px] bg-gradient-to-r from-blue-700 to-green-500" id="navDivider"></div>
+                <li id="spanglish" class="w-[30%] h-[50px] flex items-center justify-center rounded-full mx-[50px] border-2 border-primary mb-[20px]">
+                    <a href="#" class="w-[50%] h-[100%] flex items-center justify-center bg-primary rounded-full rounded-tr-lg text-white"><p class="font-medium">SP</p></a>
+                    <a href="#" class="w-[50%] h-[100%] flex items-center justify-center text-primary"><p class="font-medium">EN</p></a>
                 </li>
             </ul>
-            <div class="lg:hidden ml-2">
+            <div class="ml-2" id="menuToggle">
                 <img src="./images/PARTNERS/SVG/Menu Nav.svg" onclick="toggleMenu()" id="menuIconOpen" name="menu" class="text-4xl cursor-pointer bg-clip-text bg-gradient-to-r from-primary to-secondary" width="40" height="40"/>
                 <img src="./images/PARTNERS/SVG/Close Nav.svg" onclick="toggleMenu()" id="menuIconClose" name="close" class="text-4xl cursor-pointer hidden bg-clip-text bg-gradient-to-r from-primary to-secondary" width="30" height="30"/>
             </div>
