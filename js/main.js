@@ -64,3 +64,16 @@ items.forEach(item => {
   })
 })
 /* Experiencia */
+
+/* Navbar */
+function toggleMenu() {
+  let menuItems = document.getElementById("menuItems");
+  let menuIconOpen = document.getElementById("menuIconOpen");
+  let menuIconClose = document.getElementById("menuIconClose");
+  
+  menuItems.classList.toggle("hidden");
+  menuIconOpen.classList.toggle("hidden");
+  menuIconClose.classList.toggle("hidden");
+}
+/* Navbar */
+
