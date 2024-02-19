@@ -7,7 +7,6 @@ module.exports = {
         'primary': '#1723FF',
         'secondary': '#30E35E',
         'info': '#717171',
-        'dark-grey': '#F8F8F8'
       },
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],
@@ -21,7 +20,6 @@ module.exports = {
         'cegid-capacitacion': '1px 1px 5px rgba(39, 157, 152, .5)',
         'cegid-talento': '1px 1px 5px rgba(42, 185, 129, .5)',
         'cegid-desarrollo': '1px 1px 5px rgba(45, 207, 110, .5)',
-        'servicios-desktop': '0px 25px 20px -20px rgba(45, 207, 110, .5)'
       },
       backgroundImage: {
         'hexagon-right': "url('./images/PARTNERS/PNG/Right.png')",
