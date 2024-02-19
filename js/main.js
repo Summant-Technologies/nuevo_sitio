@@ -76,3 +76,4 @@ function toggleMenu() {
   menuIconClose.classList.toggle("hidden");
 }
 /* Navbar */
+
