@@ -67,9 +67,9 @@ items.forEach(item => {
 
 /* Navbar */
 function toggleMenu() {
-  var menuItems = document.getElementById("menuItems");
-  var menuIconOpen = document.getElementById("menuIconOpen");
-  var menuIconClose = document.getElementById("menuIconClose");
+  let menuItems = document.getElementById("menuItems");
+  let menuIconOpen = document.getElementById("menuIconOpen");
+  let menuIconClose = document.getElementById("menuIconClose");
   
   menuItems.classList.toggle("hidden");
   menuIconOpen.classList.toggle("hidden");
