@@ -63,11 +63,16 @@ items.forEach(item => {
     desplegable.classList.toggle('hidden');
   })
 })
+/* Experiencia */
 
 /* Navbar */
-const NavbarToggle = document.querySelector('.navbar-toggle')
-
-function onToggleMenu(e) {
-  e.name = e.name === 'menu' ? "close" : "menu";
-  NavbarToggle.classList.toggle('top-[-30%]')
+function toggleMenu() {
+  var menuItems = document.getElementById("menuItems");
+  var menuIconOpen = document.getElementById("menuIconOpen");
+  var menuIconClose = document.getElementById("menuIconClose");
+  
+  menuItems.classList.toggle("hidden");
+  menuIconOpen.classList.toggle("hidden");
+  menuIconClose.classList.toggle("hidden");
 }
+/* Navbar */

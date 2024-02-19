@@ -17,48 +17,42 @@
 
 <body class="font-inter h-screen">
     <!-- INICIO DE HEADER (Agus) -->
-    <header class="w-[100%] flex justify-around items-center">
-        <nav class="flex items-center h-[15vh] w-[92%] mx-auto">
-            <div>
-                <a href=""><img src="./images/LOGO_SUMMANT/SUMMANT LOGO.svg" width="150px" height="100px"
-                        alt="logo-summant-nav" title="Summant"></a>
-            </div>
-            <div class="navbar-toggle absolute left-0 top-[-50%] w-full flex items-center px-5 xl:items-center xl:static">
-                <ul class="flex flex-col items-center gap-8 xl:flex-row">
-                    <li
-                        class="transition ease-in-out delay-70 duration-300 hover:bg-secondary hover:text-white rounded-xl">
-                        <a href="" class="p-6">INICIO</a>
+    <header class="w-full">
+        <nav class="flex justify-between items-center mx-10 lg:mx-auto">
+            <a href="">
+                <img src="./images/LOGO_SUMMANT/SUMMANT LOGO.svg" width="150px" height="100px" alt="logo-summant-nav" title="Summant">
+            </a>
+            <div class="flex items-center justify-around">
+                <ul id="menuItems" class="hidden lg:flex lg:flex-row lg:gap-2 lg:text-lg">
+                    <li class="hover:bg-primary hover:text-white rounded-xl">
+                        <a href="#" class="p-5">Inicio</a>
                     </li>
-                    <li
-                        class="transition ease-in-out delay-70 duration-300 hover:bg-secondary hover:text-white rounded-xl">
-                        <a href="" class="p-3">NOSOTROS</a>
+                    <li class="hover:bg-primary hover:text-white rounded-xl">
+                        <a href="#" class="p-3">Nosotros</a>
                     </li>
-                    <li
-                        class="transition ease-in-out delay-70 duration-300 hover:bg-secondary hover:text-white rounded-xl">
-                        <a href="" class="p-3">SERVICIOS</a>
+                    <li class="hover:bg-primary hover:text-white rounded-xl">
+                        <a href="#" class="p-3">Servicios</a>
                     </li>
-                    <li
-                        class="transition ease-in-out delay-70 duration-300 hover:bg-secondary hover:text-white rounded-xl">
-                        <a href="" class="p-3">EXPERIENCIA</a>
+                    <li class="hover:bg-primary hover:text-white rounded-xl">
+                        <a href="#" class="p-3">Experiencia</a>
                     </li>
-                    <li
-                        class="transition ease-in-out delay-70 duration-300 hover:bg-secondary hover:text-white rounded-xl">
-                        <a href="" class="p-3">CLIENTES</a>
+                    <li class="hover:bg-primary hover:text-white rounded-xl">
+                        <a href="#" class="p-3">Clientes</a>
                     </li>
-                    <li
-                        class="transition ease-in-out delay-70 duration-300 hover:bg-secondary hover:text-white rounded-xl">
-                        <a href="" class="p-3">CONTACTO</a>
+                    <li class="hover:bg-primary hover:text-white rounded-xl">
+                        <a href="#" class="p-3">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="#" class="p-3">SP</a>
+                        <a href="#" class="p-3 text-primary">EN</a>
                     </li>
                 </ul>
-                <div>
-                    <button><a class="p-3">SP</a></button>
-                    <button><a class="p-3 text-primary">EN</a></button>
-
+                <div class="flex lg:hidden">
+                    <img src="./images/PARTNERS/SVG/Menu Nav.svg" onclick="toggleMenu()" id="menuIconOpen" name="menu" class="text-4xl cursor-pointer bg-clip-text bg-gradient-to-r from-primary to-secondary"></ion-icon>
+                    <img src="./images/PARTNERS/SVG/Close Nav.svg" onclick="toggleMenu()" id="menuIconClose" name="close" class="text-4xl cursor-pointer hidden bg-clip-text bg-gradient-to-r from-primary to-secondary"></ion-icon>
                 </div>
             </div>
-
         </nav>
-        <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-4xl cursor-pointer"></ion-icon>
     </header>
     <!-- FIN DE HEADER (Agus)-->
 
