@@ -398,3 +398,29 @@
   }
 }
 /* Fin Query's Navbar */
+
+/* Comienzo Query's Nuestros Servicios */
+@media (min-width: 768px) {
+  #servicios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  #servicios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+  }
+  .cardServices h5 {
+    width: 60%;
+  }
+  .cardServices p{
+    width: 95%;
+    padding: 20px;
+  }
+}
+/* Fin Query's Nuestros Servicios */
