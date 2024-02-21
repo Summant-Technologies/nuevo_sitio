@@ -424,3 +424,32 @@
   }
 }
 /* Fin Query's Nuestros Servicios */
+
+/* Comienzo Query's Cegid - PeopleNet */
+@media (min-width: 768px) {
+  .titleCegid {
+    display: flex;
+    flex-direction: row;
+  }
+  .paragraphCegid {
+    padding: 0;
+    width: 100%;
+  }
+  #cegidMobile {
+    display: none;
+  }
+  #cegidDesktop {
+    display: flex;
+  }
+  .hexagon {
+    width: 16%;
+    height: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .hexagon {
+    min-width: 15%;
+    height: auto;
+  }
+}
+/* Fin Query's Cegid - PeopleNet */
