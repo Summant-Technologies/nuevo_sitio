@@ -79,3 +79,22 @@ const glideResenas = new Glide("#glide-resenas", {
 });
 
 glideResenas.mount();
+
+const glideTech = new Glide("#glide-tech", {
+  type: 'carousel',
+  perView: 4,
+  autoplay: 3000,
+  hoverpause: true,
+  gap: 80,
+  focusAt: 1,
+  breakpoints: {
+    1200: {
+      perView: 3
+    },
+    768: {
+      perView: 2
+    },
+  }
+});
+
+glideTech.mount();
