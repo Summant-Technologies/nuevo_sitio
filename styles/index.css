@@ -376,7 +376,6 @@
     height: 30px;
   }
 }
-
 @media (min-width: 1024px) {
   #menuNav {
     padding: 1% 2%;
@@ -453,3 +452,38 @@
   }
 }
 /* Fin Query's Cegid - PeopleNet */
+
+/* Comienzo Query's Nuestra Experiencia */
+@media (min-width: 768px) {
+  #experienceCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+  }
+  #contain {
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  #bullet {
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 90%;
+  }
+
+}
+@media (min-width: 1024px) {
+  #experienceCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+  #contain {
+    height: 100%;
+  }
+}
+/* Fin Query's Nuestra Experiencia */
