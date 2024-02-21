@@ -56,7 +56,7 @@ function toggleMenu() {
   let menuItems = document.getElementById("menuItems");
   let menuIconOpen = document.getElementById("menuIconOpen");
   let menuIconClose = document.getElementById("menuIconClose");
-  
+
   menuItems.classList.toggle("hidden");
   menuIconOpen.classList.toggle("hidden");
   menuIconClose.classList.toggle("hidden");
@@ -65,3 +65,17 @@ function toggleMenu() {
 
 // Glide.js
 
+const glideResenas = new Glide("#glide-resenas", {
+  type: 'carousel',
+  perView: 3,
+  gap: 40,
+  focusAt: "center",
+  width: 300,
+  breakpoints: {
+    768: {
+      perView: 1
+    },
+  }
+});
+
+glideResenas.mount();

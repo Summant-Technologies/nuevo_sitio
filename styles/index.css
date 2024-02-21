@@ -323,7 +323,7 @@
 }
 
 .scroller[data-speed="fast"] {
-  --_animation-duration: 78s;
+  --_animation-duration: 40s;
 }
 
 .scroller[data-speed="slow"] {
