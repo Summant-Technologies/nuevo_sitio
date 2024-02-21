@@ -4,6 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Glide.js-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css"
+        integrity="sha512-tYKqO78H3mRRCHa75fms1gBvGlANz0JxjN6fVrMBvWL+vOOy200npwJ69OBl9XEsTu3yVUvZNrdWFIIrIf8FLg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.theme.css"
+        integrity="sha512-rF+FkLhdJu8p6NNoi0y30W5xPessa8yC8/3u3p5/biTeDpsxik1XfrgfqZG/mUmJ/2cA73nArDuWnX2JQLvlmw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.min.js"
+        integrity="sha512-2sI5N95oT62ughlApCe/8zL9bQAXKsPPtZZI2KE3dznuZ8HpE2gTMHYzyVN7OoSPJCM1k9ZkhcCo3FvOirIr2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="./styles/index.css">
     <!-- Tailwind -->
@@ -722,72 +732,101 @@
             </div>
         </h3>
         <div class="container-resenas">
-            <div class="carousel-view">
-                <button id="prev-btn" class="prev-btn btn">
-                    <svg viewBox="0 0 512 512" width="20" title="chevron-circle-left">
-                        <path
-                            d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
-                    </svg>
-                </button>
-                <div id="item-list" class="item-list">
-                    <div class="card">
-                        <div class="estrellas">
-                            &#9733; &#9733; &#9733; &#9733; &#9733;
-                        </div>
-                        <div class="container-exp">
-                            <p class="experiencias">
-                                "Excelente nivel de servicios, seniority, responsabilidad y compromiso, ¡Realmente un
-                                placer
-                                trabajar con Summant!"
-                            </p>
-                        </div>
-                        <div class="border-sep h-[2px] bg-gradient-to-r from-blue-700 to-green-500">
-                        </div>
-                        <div class="container-tra">
-                            <p class="trabajadores">Directora de RR.HH</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="estrellas">
-                            &#9733; &#9733; &#9733; &#9733; &#9733;
-                        </div>
-                        <div class="container-exp">
-                            <p class="experiencias">
-                                “Como desde el día uno super contentos con el equipo de trabajo que tenemos.”
-                            </p>
-                        </div>
-                        <div class="border-sep h-[2px] bg-gradient-to-r from-blue-700 to-green-500">
-                        </div>
-                        <div class="container-tra">
-                            <p class="trabajadores">Payroll Specialist</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="estrellas">
-                            &#9733; &#9733; &#9733; &#9733; &#9733;
-                        </div>
-                        <div class="container-exp">
-                            <p class="experiencias">
-                                “Brindaron un excelente servicio en cada proyecto que hemos trabajado, siempre con
-                                actitud proactiva.”
-                            </p>
-                        </div>
-                        <div class="border-sep h-[2px] bg-gradient-to-r from-blue-700 to-green-500">
-                        </div>
-                        <div class="container-tra">
-                            <p class="trabajadores">Gerente de administración
-                                y payroll</p>
-                        </div>
-                    </div>
+            <div class="glide" id="glide-resenas">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide glide__slide--resenas">
+                            <div class="card">
+                                <div class="estrellas">
+                                    &#9733; &#9733; &#9733; &#9733; &#9733;
+                                </div>
+                                <div class="container-exp">
+                                    <p class="experiencias">
+                                        "Excelente nivel de servicios, seniority, responsabilidad y compromiso,
+                                        ¡Realmente un
+                                        placer
+                                        trabajar con Summant!"
+                                    </p>
+                                </div>
+                                <div class="border-sep h-[2px] bg-gradient-to-r from-blue-700 to-green-500">
+                                </div>
+                                <div class="container-tra">
+                                    <p class="trabajadores">Directora de RR.HH</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="glide__slide glide__slide--resenas">
+                            <div class="card">
+                                <div class="estrellas">
+                                    &#9733; &#9733; &#9733; &#9733; &#9733;
+                                </div>
+                                <div class="container-exp">
+                                    <p class="experiencias">
+                                        “Como desde el día uno super contentos con el equipo de trabajo que tenemos.”
+                                    </p>
+                                </div>
+                                <div class="border-sep h-[2px] bg-gradient-to-r from-blue-700 to-green-500">
+                                </div>
+                                <div class="container-tra">
+                                    <p class="trabajadores">Payroll Specialist</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="glide__slide glide__slide--resenas">
+                            <div class="card">
+                                <div class="estrellas">
+                                    &#9733; &#9733; &#9733; &#9733; &#9733;
+                                </div>
+                                <div class="container-exp">
+                                    <p class="experiencias">
+                                        “Brindaron un excelente servicio en cada proyecto que hemos trabajado, siempre
+                                        con
+                                        actitud proactiva.”
+                                    </p>
+                                </div>
+                                <div class="border-sep h-[2px] bg-gradient-to-r from-blue-700 to-green-500">
+                                </div>
+                                <div class="container-tra">
+                                    <p class="trabajadores">Gerente de administración
+                                        y payroll</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <button id="next-btn" class="next-btn btn">
-                    <svg viewBox="0 0 512 512" width="20" title="chevron-circle-right">
-                        <path
-                            d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z" />
-                    </svg>
-                </button>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                        <img src="images/ICONOS/SLIDERS/FLECHA-IZQUIERDA.svg" alt="">
+                    </button>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                        <img src="images/ICONOS/SLIDERS/FLECHA-DERECHA.svg" alt="">
+                    </button>
+                </div>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                </div>
             </div>
         </div>
+
+        <script>
+            new Glide("#glide-resenas", {
+                type: 'carousel',
+                perView: 3,
+                gap: 40,
+                focusAt: "center",
+                width: 300,
+                breakpoints: {
+                    768: {
+                        perView: 1
+                    },
+                }
+            }).mount();
+        </script>
+
         <div class="bg-gradient-to-r from-blue-700 to-green-500">
             <img src="images/EXPORTS/SUMMANT WEB DESKTOP EXPORT 3.png" alt="" class="my-9">
         </div>
