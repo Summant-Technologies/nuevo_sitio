@@ -376,7 +376,6 @@
     height: 30px;
   }
 }
-
 @media (min-width: 1024px) {
   #menuNav {
     padding: 1% 2%;
@@ -453,3 +452,10 @@
   }
 }
 /* Fin Query's Cegid - PeopleNet */
+
+/* Comienzo Query's Nuestra Experiencia */
+@media (min-width: 768px) { 
+}
+@media (min-width: 1024px) { 
+}
+/* Fin Query's Nuestra Experiencia */
