@@ -70,7 +70,7 @@ function toggleMenu() {
   let menuItems = document.getElementById("menuItems");
   let menuIconOpen = document.getElementById("menuIconOpen");
   let menuIconClose = document.getElementById("menuIconClose");
-  
+
   menuItems.classList.toggle("hidden");
   menuIconOpen.classList.toggle("hidden");
   menuIconClose.classList.toggle("hidden");
@@ -79,3 +79,36 @@ function toggleMenu() {
 
 // Glide.js
 
+const glideResenas = new Glide("#glide-resenas", {
+  type: 'carousel',
+  perView: 3,
+  gap: 40,
+  focusAt: "center",
+  width: 300,
+  breakpoints: {
+    768: {
+      perView: 1
+    },
+  }
+});
+
+glideResenas.mount();
+
+const glideTech = new Glide("#glide-tech", {
+  type: 'carousel',
+  perView: 4,
+  autoplay: 3000,
+  hoverpause: true,
+  gap: 80,
+  focusAt: 1,
+  breakpoints: {
+    1200: {
+      perView: 3
+    },
+    768: {
+      perView: 2
+    },
+  }
+});
+
+glideTech.mount();

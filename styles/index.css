@@ -323,7 +323,7 @@
 }
 
 .scroller[data-speed="fast"] {
-  --_animation-duration: 78s;
+  --_animation-duration: 40s;
 }
 
 .scroller[data-speed="slow"] {
@@ -552,3 +552,36 @@
   }
 }
 /* Fin Query's Nuestra Experiencia */
+
+
+/* Inicio slider tech */
+
+.tech-img {
+  width: 120px;
+  height: 60px;
+}
+
+.container-tech {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 120px;
+}
+
+#glide-tech {
+  width: 70%;
+}
+
+#arrow-tech--right {
+  position: absolute;
+  top: 30px;
+  right: -50px;
+}
+
+#arrow-tech--left {
+  position: absolute;
+  top: 30px;
+  left: -75px;
+}
+
+/* Fin slider tech */
