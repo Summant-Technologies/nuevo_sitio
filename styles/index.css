@@ -484,6 +484,18 @@
 /* Fin Query's Cegid - PeopleNet */
 
 /* Comienzo Query's Nuestra Experiencia */
+@media (max-width: 768px) {
+  .description {
+    display: none;
+  }
+  #bulletImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
 @media (min-width: 768px) {
   #experienceCards {
     display: grid;
@@ -505,9 +517,46 @@
     width: 80%;
     height: 90%;
   }
-
+  #bullet:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../images/FOTOS_EXPERIENCIA/CEGID.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    transition: all .5s ease-in-out;
+  }
+  #bullet:hover #svgColors {
+    display: none;
+  }
+  #bullet:hover #svgWhite {
+    display: flex;
+    width: 35px;
+  }
+  #bulletContain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 10px;
+  }
+  #bulletImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+  }
+  .arrow {
+    display: none;
+  }
+  #cardDesktop {
+    display: flex;
+    flex-direction: row;
+  }
 }
-
 @media (min-width: 1024px) {
   #experienceCards {
     display: grid;
