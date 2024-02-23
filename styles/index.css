@@ -172,9 +172,61 @@
 /* Inicio estilos para porque summant*/
 
 .card-porque {
+  width: 16rem;
+  height: 16rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5rem;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.card-mod {
+  position: relative;
+  overflow: hidden;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.card__title {
+  z-index: 10;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  padding: 18px 18px 0 18px;
+  font-size: 18px;
+}
+
+.card__title-img {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg) brightness(102%) contrast(102%);
+}
+
+.card-content {
+  z-index: 10;
+  font-size: 14px;
+  padding: 18px;
+}
+
+.card-separator {
+  z-index: 10;
+  height: 2px;
+  width: 80%;
+  background-color: #FFF;
+  margin-top: 6px;
+}
+
+.card-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  filter: brightness(0.6);
+  object-fit: cover;
+}
 
 /* Inicio estilos para el slider de resenas */
 
