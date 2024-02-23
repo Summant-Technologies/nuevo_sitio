@@ -40,29 +40,30 @@ function addAnimation() {
 }
 
 /* Experiencia */
-    // const acordeones = document.querySelectorAll('.acordeon');
 
-    // acordeones.forEach(acordeon => {
-    //     const bullet = acordeon.querySelector('#bullet');
-    //     const desplegable = acordeon.querySelector('.desplegable');
+if (window.innerWidth < 769) {
+  const acordeones = document.querySelectorAll('.acordeon');
+  acordeones.forEach(acordeon => {
+    const bullet = acordeon.querySelector('#bullet');
+    const desplegable = acordeon.querySelector('.desplegable');
 
-    //     bullet.addEventListener('click', () => {
-    //         const isVisible = !desplegable.classList.contains('hidden');
+    bullet.addEventListener('click', () => {
+      const isVisible = !desplegable.classList.contains('hidden');
+      acordeones.forEach(container => {
+        container.querySelector('.desplegable').classList.add('hidden');
+        container.querySelector('#bullet').style.display = 'flex';
+      });
+      bullet.style.display = isVisible ? 'flex' : 'none';
+      desplegable.classList.toggle('hidden', isVisible);
+    });
 
-    //         acordeones.forEach(container => {
-    //             container.querySelector('.desplegable').classList.add('hidden');
-    //             container.querySelector('#bullet').style.display = 'flex';
-    //         });
+    desplegable.addEventListener('click', () => {
+      desplegable.classList.add('hidden');
+      bullet.style.display = 'flex';
+    });
+  });
+}
 
-    //         bullet.style.display = isVisible ? 'flex' : 'none';
-    //         desplegable.classList.toggle('hidden', isVisible);
-    //     });
-
-    //     desplegable.addEventListener('click', () => {
-    //         desplegable.classList.add('hidden');
-    //         bullet.style.display = 'flex';
-    //     });
-    // });
 /* Experiencia */
 
 /* Navbar */

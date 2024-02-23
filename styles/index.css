@@ -323,7 +323,7 @@
 }
 
 .scroller[data-speed="fast"] {
-  --_animation-duration: 40s;
+  --_animation-duration: 78s;
 }
 
 .scroller[data-speed="slow"] {
@@ -453,18 +453,17 @@
 }
 /* Fin Query's Cegid - PeopleNet */
 
-.imgHover {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-
 /* Comienzo Query's Nuestra Experiencia */
 @media (max-width: 768px) {
   .description {
     display: none;
+  }
+  #bulletImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
 }
 @media (min-width: 768px) {
@@ -480,64 +479,51 @@
     width: 100%;
     height: 100%;
   }
-  #bulletCegid {
+  #bullet {
     justify-content: space-around;
     align-items: center;
     width: 80%;
     height: 90%;
     cursor: auto;
   }
-  #bulletWeb {
-    justify-content: space-around;
-    align-items: center;
-    width: 80%;
-    height: 90%;
-    cursor: auto;
+  #bullet:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../images/FOTOS_EXPERIENCIA/CEGID.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    transition: all .5s ease-in-out;
   }
-  #bulletMobile {
-    justify-content: space-around;
-    align-items: center;
-    width: 80%;
-    height: 90%;
-    cursor: auto;
+  #bullet:hover #svgColors {
+    display: none;
   }
-  #bulletCapa {
-    justify-content: space-around;
-    align-items: center;
-    width: 80%;
-    height: 90%;
-    cursor: auto;
-  }
-  #bulletInd {
-    justify-content: space-around;
-    align-items: center;
-    width: 80%;
-    height: 90%;
-    cursor: auto;
-  }
-  #bulletGestion {
-    justify-content: space-around;
-    align-items: center;
-    width: 80%;
-    height: 90%;
-    cursor: auto;
-  }
-  #cardDesktop {
+  #bullet:hover #svgWhite {
     display: flex;
-    flex-direction: row;
+    width: 35px;
+  }
+  #bulletContain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 10px;
+  }
+  #bulletImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
   .description {
     display: flex;
     flex-direction: column;
   }
-  .bullet div {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 10px;
-  }
   .arrow {
     display: none;
+  }
+  #cardDesktop {
+    display: flex;
+    flex-direction: row;
   }
 }
 @media (min-width: 1024px) {
@@ -552,36 +538,3 @@
   }
 }
 /* Fin Query's Nuestra Experiencia */
-
-
-/* Inicio slider tech */
-
-.tech-img {
-  width: 120px;
-  height: 60px;
-}
-
-.container-tech {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  height: 120px;
-}
-
-#glide-tech {
-  width: 70%;
-}
-
-#arrow-tech--right {
-  position: absolute;
-  top: 30px;
-  right: -50px;
-}
-
-#arrow-tech--left {
-  position: absolute;
-  top: 30px;
-  left: -75px;
-}
-
-/* Fin slider tech */
