@@ -109,15 +109,30 @@ function addAnimation() {
 }
 
 /* Experiencia */
-const items = document.querySelectorAll(".acordeon");
 
-items.forEach(item => {
-  item.addEventListener('click', () => {
-    const desplegable = item.querySelector('.desplegable');
+if (window.innerWidth < 769) {
+  const acordeones = document.querySelectorAll('.acordeon');
+  acordeones.forEach(acordeon => {
+    const bullet = acordeon.querySelector('#bullet');
+    const desplegable = acordeon.querySelector('.desplegable');
 
-    desplegable.classList.toggle('hidden');
-  })
-})
+    bullet.addEventListener('click', () => {
+      const isVisible = !desplegable.classList.contains('hidden');
+      acordeones.forEach(container => {
+        container.querySelector('.desplegable').classList.add('hidden');
+        container.querySelector('#bullet').style.display = 'flex';
+      });
+      bullet.style.display = isVisible ? 'flex' : 'none';
+      desplegable.classList.toggle('hidden', isVisible);
+    });
+
+    desplegable.addEventListener('click', () => {
+      desplegable.classList.add('hidden');
+      bullet.style.display = 'flex';
+    });
+  });
+}
+
 /* Experiencia */
 
 /* Navbar */
