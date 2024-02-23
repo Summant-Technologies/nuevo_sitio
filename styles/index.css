@@ -128,12 +128,19 @@
 
   .overlay {
     background: linear-gradient(150deg, rgba(23, 35, 255, 1) 2%, rgba(48, 227, 94, 1) 98%);
+    background-size: 300%;
     z-index: -10;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    animation: bg-animation 10s infinite alternate;
+  }
+
+  @keyframes bg-animation {
+    0% {background-position: left;}
+    100% {background-position: right;}
   }
 
   .home-card {
