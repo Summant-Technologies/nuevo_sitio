@@ -251,6 +251,7 @@
   outline: none;
   background: transparent;
   box-shadow: none;
+  top: 8em;
 }
 
 .glide__bullets {
@@ -672,7 +673,7 @@
 @media (min-width: 768px) {
   #contactanos-img {
     position: relative;
-    left: -230%;
+    left: 0%;
     bottom: 86px;
   }
 }

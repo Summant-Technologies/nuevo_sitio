@@ -775,7 +775,7 @@
     <!-- ////// -->
 
     <!-- COMIENZO RESEÑAS -->
-    <section>
+    <section class="mb-28 md:mb-0">
         <img src="images/ICONOS/DETALLES/CIRCULO.svg" alt="" class="relative top-[120px] left-[-80px]">
         <h3 class="mb-12 flex flex-col justify-center items-center text-xl font-bold"><span
                 class="text-center text-2xl text-transparent bg-clip-text bg-gradient-to-r from-primary from-0% to-secondary to-100%">Resultados
@@ -866,24 +866,8 @@
                 </div>
             </div>
         </div>
-
-        <script>
-            new Glide("#glide-resenas", {
-                type: 'carousel',
-                perView: 3,
-                gap: 40,
-                focusAt: "center",
-                width: 300,
-                breakpoints: {
-                    768: {
-                        perView: 1
-                    },
-                }
-            }).mount();
-        </script>
-
         <div class="bg-gradient-to-r from-blue-700 to-green-500">
-            <img src="images/EXPORTS/SUMMANT WEB DESKTOP EXPORT 3.png" alt="" class="mt-9">
+            <img src="images/EXPORTS/SUMMANT WEB DESKTOP EXPORT 3.png" alt="" class="mt-9 hidden md:block">
         </div>
     </section>
     <!-- FIN DE RESEÑAS -->
@@ -894,7 +878,7 @@
     <section class="bg-[#F4F4F4]">
 
         <div class="flex flex-col md:flex-row md:justify-end md:relative">
-            <div class="flex justify-center relative md:absolute">
+            <div class="flex justify-center relative md:absolute left-0 bg-white md:bg-transparent">
                 <img src="images/EXPORTS/SUMMANT img footer.png" alt="" class="w-[21rem] h-[27rem]"
                     id="contactanos-img">
                 <img src="images/EXPORTS/BORDERS/BORDER-VERDE-CONTACTANOS.png" alt=""
@@ -903,7 +887,7 @@
                     class="absolute w-full h-[300px] top-[150px] md:hidden">
             </div>
             <div class="m-8 md:mr-[3rem] xl:mr-[8.5rem] md:w-[65%] ">
-                <h2 class="text-primary text-2xl font-bold font-inter mb-10">
+                <h2 class="text-primary text-center text-2xl font-bold font-inter mb-10 md:text-start">
                     Contactanos
                 </h2>
                 <form action="" class="grid md:grid-cols-2 md:gap-8">
