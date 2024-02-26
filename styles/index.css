@@ -345,6 +345,15 @@
   .glide__bullets {
     bottom: -2em;
   }
+
+  #glide__track--resenas {
+    width: 90%;
+  }
+
+  #glide-resenas {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* Fin estilos para resenas */

@@ -211,6 +211,9 @@ const glideResenas = new Glide("#glide-resenas", {
     768: {
       perView: 1
     },
+    1200: {
+      focusAt: 1
+    }
   }
 });
 
