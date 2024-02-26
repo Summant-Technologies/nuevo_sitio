@@ -435,17 +435,7 @@
     flex-wrap: nowrap;
     margin-top: 50px;
   }
-
-  .cardServices h5 {
-    width: 60%;
-  }
-
-  .cardServices p {
-    width: 95%;
-    padding: 20px;
-  }
 }
-
 /* Fin Query's Nuestros Servicios */
 
 /* Comienzo Query's Cegid - PeopleNet */
@@ -480,7 +470,6 @@
     height: auto;
   }
 }
-
 /* Fin Query's Cegid - PeopleNet */
 
 /* Comienzo Query's Nuestra Experiencia */
@@ -495,44 +484,63 @@
     align-items: center;
     gap: 10px;
   }
+  .containToggle {
+    background-image: url(../images/FOTOS_EXPERIENCIA/CEGID2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  .textToggle {
+    filter: brightness(1) !important;
+  }
 }
 @media (min-width: 768px) {
   #experienceCards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 30px;
   }
-
-  #contain {
-    justify-content: start;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+  .bullet {
+    max-width: 80%;
+    /* min-height: 20rem; */
   }
-
-  #bullet {
-    justify-content: space-around;
-    align-items: center;
-    width: 80%;
-    height: 90%;
-  }
-  #bullet:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../images/FOTOS_EXPERIENCIA/CEGID.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #ffffff;
-    transition: all .5s ease-in-out;
-  }
-  #bullet:hover #svgColors {
-    display: none;
-  }
-  #bullet:hover #svgWhite {
+  #bulletCegid {
     display: flex;
-    width: 35px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 10px;
   }
-  #bulletContain {
+  #bulletWeb {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 10px;
+  }
+  #bulletMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 10px;
+  }
+  #bulletIndicador {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 10px;
+  }
+  #bulletGestion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 10px;
+  }
+  #bulletCapacitacion {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -546,10 +554,6 @@
     gap: 10px;
   }
   .description {
-    display: flex;
-    flex-direction: column;
-  }
-  .arrow {
     display: none;
   }
   #cardDesktop {
@@ -564,12 +568,131 @@
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
   }
+  /* .bullet {
+    max-width: 80%;
+    max-height: 15rem;
+  } */
+  #bulletC {
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+    max-height: 20%;
+  }
+  #bulletW {
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+    height: 90%;
+  }
+  #bulletM {
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+    height: 90%;
+  }
+  #bulletI {
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+    height: 90%;
+  }
+  #bulletG {
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+    height: 90%;
+  }
+  #bulletCap {
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+    height: 90%;
+  }
+  #bulletC:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../images/FOTOS_EXPERIENCIA/CEGID.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    transition: all .5s ease-in-out;
+  }
+  #bulletW:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../images/FOTOS_EXPERIENCIA/DESARROLLO\ WEB.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    color: #ffffff;
+    transition: all .5s ease-in-out;
+  }
+  #bulletM:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../images/FOTOS_EXPERIENCIA/DESARROLLO\ MOBILE.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    color: #ffffff;
+    transition: all .5s ease-in-out;
+  }
+  #bulletI:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../images/FOTOS_EXPERIENCIA/INDICADORES.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    color: #ffffff;
+    transition: all .5s ease;
+  }
+  #bulletG:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../images/FOTOS_EXPERIENCIA/GESTION\ RRHH.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    color: #ffffff;
+    transition: all .5s ease-in-out;
+  }
+  #bulletCap:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../images/FOTOS_EXPERIENCIA/CAPACITACIÓN.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    color: #ffffff;
+    transition: all .5s ease-in-out;
+  }
+  #bulletC:hover #svgCegid-White {
+    width: 35px;
+  }
+  #bulletW:hover #svgWeb-White {
+    width: 51px;
+  }
+  #bulletM:hover #svgMobile-White {
+    width: 43px;
+  }
+  #bulletG:hover #svgGestion-White {
+    width: 43px;
+  }
+  #bulletCap:hover #svgCap-White {
+    width: 43px;
+  }
+  #bulletI:hover #svgIndicador-White {
+    width: 45px;
+  }
+  .bullet:hover .svgColors {
+    display: none;
+  }
+  .bullet:hover .svgWhite {
+    display: flex;
+  }
+  .description {
+    display: flex;
+  }
 
-  #contain {
-    height: 100%;
+  .arrow {
+    display: none;
   }
 }
-
 /* Fin Query's Nuestra Experiencia */
 
 
