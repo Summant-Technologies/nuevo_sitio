@@ -79,6 +79,58 @@ btnVision.addEventListener("click", visionCard);
 
 // Fin cards section porque
 
+// Inicio contador de porque summant
+
+document.addEventListener('DOMContentLoaded', function () {
+  var elements = document.querySelectorAll('.scrollingCounter');
+
+  var options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5
+  };
+
+  var observer = new IntersectionObserver(function (entries, observer) {
+      entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+              var targetValue = entry.target.dataset.target;
+              animateCounter(entry.target, targetValue);
+              observer.unobserve(entry.target);
+          }
+      });
+  }, options);
+
+  // Observe each target element
+  elements.forEach(function (element) {
+      observer.observe(element);
+  });
+
+  function animateCounter(element, targetValue) {
+      var currentValue = 0;
+      var duration = 2000;
+
+      var startTime = null;
+
+      function updateCounter(timestamp) {
+          if (!startTime) startTime = timestamp;
+          var progress = timestamp - startTime;
+
+          var newValue = Math.min((progress / duration) * targetValue, targetValue);
+
+          element.textContent = Math.round(newValue);
+
+          if (progress < duration) {
+              requestAnimationFrame(updateCounter);
+          }
+      }
+
+      requestAnimationFrame(updateCounter);
+  }
+});
+
+
+// Fin contador de porque summant
+
 // Este es el codigo para el slider de los clientes
 
 const scrollers = document.querySelectorAll(".scroller");
