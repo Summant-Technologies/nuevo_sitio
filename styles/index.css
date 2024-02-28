@@ -226,6 +226,7 @@
   z-index: 0;
   filter: brightness(0.6);
   object-fit: cover;
+  width: 100%;
 }
 
 .plus-sign {
@@ -251,6 +252,7 @@
   outline: none;
   background: transparent;
   box-shadow: none;
+  top: 8em;
 }
 
 .glide__bullets {
@@ -344,6 +346,15 @@
   .glide__bullets {
     bottom: -2em;
   }
+
+  #glide__track--resenas {
+    width: 90%;
+  }
+
+  #glide-resenas {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* Fin estilos para resenas */
@@ -390,11 +401,11 @@
 }
 
 .scroller[data-speed="fast"] {
-  --_animation-duration: 78s;
+  --_animation-duration: 80s;
 }
 
 .scroller[data-speed="slow"] {
-  --_animation-duration: 60s;
+  --_animation-duration: 120s;
 }
 
 @keyframes scroll {
@@ -997,7 +1008,7 @@
 }
 
 #glide-tech {
-  width: 70%;
+  width: 80%;
 }
 
 #glide__track--tech {
@@ -1007,14 +1018,25 @@
 #arrow-tech--right {
   position: absolute;
   top: 30px;
-  right: -50px;
+  right: -40px;
 }
 
 #arrow-tech--left {
   position: absolute;
   top: 30px;
-  left: -75px;
+  left: -45px;
 }
+
+@media (min-width: 1024px) {
+  #glide-tech {
+    width: 85%;
+  }
+
+  #arrow-tech--left {
+    left: -75px;
+  }
+}
+
 
 /* Fin slider tech */
 
@@ -1023,7 +1045,7 @@
 @media (min-width: 768px) {
   #contactanos-img {
     position: relative;
-    left: -230%;
+    left: 0%;
     bottom: 86px;
   }
 }
