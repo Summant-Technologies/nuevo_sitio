@@ -413,8 +413,8 @@
     justify-content: space-around;
     align-items: center;
     margin: auto;
-    gap: 3rem;
-    padding: 1rem;
+    gap: 2rem;
+    padding: 30px 40px;
   }
 
   #menuToggle {
@@ -427,7 +427,7 @@
     align-items: center;
     justify-content: space-between;
     position: static;
-    font-size: 12px;
+    font-size: 11px;
   }
 
   #menuItems li {
