@@ -221,17 +221,18 @@ glideResenas.mount();
 
 const glideTech = new Glide("#glide-tech", {
   type: 'carousel',
-  perView: 4,
-  autoplay: 3000,
-  hoverpause: true,
+  perView: 5,
+  autoplay: 4000,
   gap: 80,
   focusAt: 1,
   breakpoints: {
-    1200: {
-      perView: 3
-    },
     768: {
-      perView: 2
+      perView: 3,
+      gap: 10
+    },
+    460: {
+      perView: 2,
+      gap: 20,
     },
   }
 });
