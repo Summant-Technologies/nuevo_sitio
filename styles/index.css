@@ -87,7 +87,7 @@
 
 /* Inicio estilos para home*/
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .home-container {
     position: static;
   }
@@ -153,10 +153,19 @@
   }
 }
 
+/* Estas querys son para acomodar la imagen cuando cambia la resolucion, no es la mejor forma si 
+se sabe una mejor implementarla */
+
+@media (min-width: 800px) {
+  .home-card {
+    left: -14%;
+  }
+}
+
 @media (min-width: 1024px) {
   .home-card {
     top: -10px;
-    left: -10px;
+    left: -110px;
   }
 }
 
@@ -234,6 +243,64 @@
   margin-top: -10px;
   font-weight: 600;
 }
+
+/* estilos para la wave */
+
+.porque__bordes {
+  position: relative;
+  top: -170px;
+}
+
+.porque__borde--blanco,
+.porque__borde--color,
+.porque__circulo {
+  position: absolute;
+}
+
+.porque__borde--blanco {
+  z-index: 10;
+}
+
+.porque__borde--color {
+  z-index: 3;
+  top: 85px;
+}
+
+.porque__circulo {
+  z-index: 5;
+  right: 115px;
+  top: 125px;
+}
+
+.porque__div {
+  position: relative;
+  background-color: #ffffff;
+  height: 100px;
+  z-index: 9;
+  width: 100%;
+  top: 182px;
+}
+
+@media (min-width: 970px) {
+  .porque__div {
+    top: 210;
+  }
+}
+
+@media (min-width: 1025px) {
+  .porque__div {
+    top: 210px;
+  }
+}
+
+@media (min-width: 1090px) {
+  .porque__div {
+    top: 216px;
+  }
+}
+/* Fin estilos para porque summant  */
+
+/* Fin estilos para porque summant  */
 
 /* Inicio estilos para el slider de resenas */
 
