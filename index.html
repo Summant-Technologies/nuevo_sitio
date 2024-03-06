@@ -26,6 +26,8 @@
 </head>
 
 <body class="font-inter h-screen">
+    <!-- <img src="images/ICONOS/PORQUE/LINKEDIN.svg" alt="" class="sticky">
+    <img src="images/ICONOS/PORQUE/CONTACTO.svg" alt="" class="sticky"> -->
     <!-- INICIO DE HEADER (Agus) -->
     <header class="w-full">
         <nav class="flex justify-between items-center m-10" id="menuNav">
@@ -97,12 +99,13 @@
                     </span>
                 </h2>
                 <div class="flex flex-col justify-start items-center gap-4 sm:flex-row sm:items-center">
-                    <button class="uppercase font-bold text-sm rounded-3xl bg-primary px-6 py-2 text-white">
+                    <button class="uppercase font-bold text-sm rounded-3xl bg-primary px-6 py-3 text-white">
                         contactanos
                     </button>
                     <button
-                        class="uppercase font-bold text-sm rounded-3xl border-solid border-2 border-primary px-5 py-2">
-                        seguinos <img src="" alt="">
+                        class="uppercase font-bold flex justify-center gap-2 items-center text-sm rounded-3xl border-solid border-2 border-primary px-5 py-[0.2rem] md:py-2">
+                        seguinos
+                        <img src="images/ICONOS/PORQUE/LINKEDIN.svg" alt="" class="w-6">
                     </button>
                 </div>
             </div>
@@ -142,7 +145,7 @@
                     la mejora continua de nuestros procesos y lograr la plena satisfacción de nuestros clientes.
                 </p>
             </div>
-            <div class="flex justify-center mt-14 mb-2 md:order-5">
+            <div class="flex justify-center mt-14 mb-2 md:order-5 md:pb-40">
                 <button class="uppercase font-bold text-white rounded-3xl px-4 py-1 bg-primary">
                     políticas de calidad
                 </button>
@@ -210,15 +213,17 @@
                         </p>
                     </div>
                     <p
-                        class="text-center text-2xl md:text-lg text-transparent bg-clip-text bg-gradient-to-r from-primary from-0% to-secondary to-100% font-semibold">
+                        class="text-center pb-20 md:pb-0 text-2xl md:text-lg text-transparent bg-clip-text bg-gradient-to-r from-primary from-0% to-secondary to-100% font-semibold">
                         empresas asociadas</p>
                 </div>
             </div>
         </div>
-        <div class="bg-gradient-to-r from-primary from-0% to-secondary to-100%">
-            <img src="images/EXPORTS/SUMMANT WEB DESKTOP EXPORT 1.png" alt="" class="mt-12">
+        <div class="porque__bordes">
+            <div class="porque__div"></div>
+            <img src="images/EXPORTS/BORDERS/PORQUE-SUMMANT/BORDE-BLANCO.png" alt="" class="porque__borde--blanco">
+            <img src="images/EXPORTS/BORDERS/PORQUE-SUMMANT/BORDE-COLOR.png" alt="" class="porque__borde--color">
+            <img src="images/ICONOS/DETALLES/CIRCULO.svg" alt="" class="porque__circulo">
         </div>
-        <img src="images/ICONOS/DETALLES/CIRCULO.svg" alt="" class="relative">
     </section>
     <!-- FIN DE POR QUE SUMMANT (Lauti) -->
 
@@ -244,21 +249,27 @@
         </div>
 
         <div class="flex flex-col justify-evenly items-center gap-5 mt-5" id="servicios">
-            
-            <div class="w-[320px] h-[300px] mt-[50px] flex flex-col justify-center items-center relative bg-white drop-shadow-services rounded-3xl" id="cardTeam">
-                <img src="./images/PARTNERS/SVG/Icon Equipos.svg" alt="logo-equipos-dedicados" title="Equipos Dedicados" class="absolute mt-[-300px] logoService"/>
+
+            <div class="w-[320px] h-[300px] mt-[50px] flex flex-col justify-center items-center relative bg-white drop-shadow-services rounded-3xl"
+                id="cardTeam">
+                <img src="./images/PARTNERS/SVG/Icon Equipos.svg" alt="logo-equipos-dedicados" title="Equipos Dedicados"
+                    class="absolute mt-[-300px] logoService" />
                 <div class="flex flex-col justify-center items-center gap-3 cardServices">
-                    <h5 class="flex flex-col text-xl text-center font-semibold" id="titleTeam">Equipos <span>dedicados</span></h5>
+                    <h5 class="flex flex-col text-xl text-center font-semibold" id="titleTeam">Equipos
+                        <span>dedicados</span>
+                    </h5>
                     <div class="w-[40%] h-[2px] bg-gradient-to-r from-primary to-secondary"></div>
                     <p class="w-[83%] text-lg text-center font-light">Contamos con equipos multidisciplinarios,
                         adaptables a las necesidades de tu empresa.</p>
                 </div>
             </div>
 
-            <div class="w-[320px] h-[300px] mt-[50px] flex flex-col justify-center items-center relative bg-white drop-shadow-services rounded-3xl" id="cardSupport">
+            <div class="w-[320px] h-[300px] mt-[50px] flex flex-col justify-center items-center relative bg-white drop-shadow-services rounded-3xl"
+                id="cardSupport">
                 <img src="./images/PARTNERS/SVG/Icon Soporte.svg" alt="" class="absolute mt-[-300px] logoService" />
                 <div class="flex flex-col justify-center items-center gap-3 cardServices">
-                    <h5 class="w-[70%] mt-[20px] text-xl text-center font-semibold" id="titleSupport">Soporte y Mantenimiento</h5>
+                    <h5 class="w-[70%] mt-[20px] text-xl text-center font-semibold" id="titleSupport">Soporte y
+                        Mantenimiento</h5>
                     <div class="w-[30%] h-[2px] bg-gradient-to-r from-primary to-secondary"></div>
                     <p class="w-[80%] text-lg text-center font-light">Disponemos de profesionales con altos
                         conocimientos y experiencia realizando mantenimiento y soporte tecnico.</p>
@@ -268,21 +279,23 @@
             <div class="w-[320px] h-[300px] mt-[50px] flex flex-col justify-center items-center relative bg-white drop-shadow-services rounded-3xl" id="cardProfile">
                 <img src="./images/PARTNERS/SVG/Icon Perfiles.svg" alt="" class="absolute mt-[-300px] logoService" />
                 <div class="flex flex-col justify-center items-center gap-3 cardServices">
-                    <h5 class="w-[60%] text-xl text-center font-semibold" id="titleProfile">Provision de perfiles IT</h5>
+                    <h5 class="w-[60%] text-xl text-center font-semibold" id="titleProfile">Provision de perfiles IT
+                    </h5>
                     <div class="w-[30%] h-[2px] bg-gradient-to-r from-primary to-secondary"></div>
                     <p class="w-[90%] text-lg text-center font-light">Proveemos a nuestros clientes perfiles de IT
                         altamente especializados, tanto tecnicos como funcionales.</p>
                 </div>
             </div>
 
-            <div class="w-[320px] h-[300px] mt-[50px] flex flex-col justify-center items-center relative bg-white drop-shadow-services rounded-3xl" id="cardProject">
-                    <img src="./images/PARTNERS/SVG/Icon Desarrollo.svg" alt="" class="absolute mt-[-300px] logoService" />
-                    <div class="flex flex-col justify-center items-center gap-3 cardServices">
-                        <h5 class="w-[60%] text-xl text-center font-semibold" id="titleProject">Desarrollo de proyectos</h5>
-                        <div class="w-[30%] h-[2px] bg-gradient-to-r from-primary to-secondary"></div>
-                        <p class="w-[80%] text-lg text-center font-light">Construimos soluciones en base a tus
-                            necesidades y alcance, garantizando tus metas de negocio.</p>
-                    </div>
+            <div class="w-[320px] h-[300px] mt-[50px] flex flex-col justify-center items-center relative bg-white drop-shadow-services rounded-3xl"
+                id="cardProject">
+                <img src="./images/PARTNERS/SVG/Icon Desarrollo.svg" alt="" class="absolute mt-[-300px] logoService" />
+                <div class="flex flex-col justify-center items-center gap-3 cardServices">
+                    <h5 class="w-[60%] text-xl text-center font-semibold" id="titleProject">Desarrollo de proyectos</h5>
+                    <div class="w-[30%] h-[2px] bg-gradient-to-r from-primary to-secondary"></div>
+                    <p class="w-[80%] text-lg text-center font-light">Construimos soluciones en base a tus
+                        necesidades y alcance, garantizando tus metas de negocio.</p>
+                </div>
             </div>
 
         </div>
@@ -358,8 +371,7 @@
                     height="200" class="m-auto route" />
             </div>
         </div>
-        <img src="images/EXPORTS/SUMMANT WEB DESKTOP EXPORT 2.png" alt=""
-        class="w-full top-[100%]">
+        <img src="images/EXPORTS/SUMMANT WEB DESKTOP EXPORT 2.png" alt="" class="w-full top-[100%]">
     </section>
     <img src="./images/ICONOS/DETALLES/MID.svg" alt="" class="relative left-[100%] top-[-90%]" id="midCircle">
     <img src="./images/ICONOS/DETALLES/TICKS.svg" alt="" class="relative bottom-[40%] left-[-1%]">
@@ -377,7 +389,7 @@
                             class="text-transparent bg-clip-text bg-gradient-to-tr from-primary from-35% to-secondary to-55% font-extrabold sup-plus">+</sup></span>
                 </div>
             </h3>
-        </div> 
+        </div>
         <div class="container-tech">
             <div class="glide" id="glide-tech">
                 <div class="glide__track" id="glide__track--tech" data-glide-el="track">
@@ -543,7 +555,7 @@
             <!-- Contain Bullet & Toggle DESARROLLO WEB -->
 
             <!-- Contain Bullet & Toggle DESARROLLO MOBILE -->
-            <div class="acordeon flex flex-col justify-center items-center w-[100%]" >
+            <div class="acordeon flex flex-col justify-center items-center w-[100%]">
                 <!-- Bullet -->
                 <div class="w-[60%] flex flex-row gap-3 justify-around items-center border-2 border-white drop-shadow-services bg-white rounded-2xl p-2 cursor-pointer bullet"
                     id="bulletM">
@@ -615,7 +627,8 @@
                 <!-- Toggle -->
                 <div
                     class="desplegable flex flex-col w-[60%] h-[100%] rounded-2xl bg-white drop-shadow-services hidden">
-                    <div class="flex flex-row h-[10rem] justify-start items-end relative gap-2 contain__toggle-Indicadores">
+                    <div
+                        class="flex flex-row h-[10rem] justify-start items-end relative gap-2 contain__toggle-Indicadores">
                         <div class="flex flex-row justify-center items-center gap-2 p-3">
                             <img src="./images/EXPERIENCIA-TOGGLE/INDICADORES ICON.svg" alt="" class="pl-2">
                             <p class="text-white font-medium">Indicadores</p>
@@ -702,7 +715,8 @@
                 <!-- Toggle -->
                 <div
                     class="desplegable flex flex-col w-[60%] h-[100%] rounded-2xl bg-white drop-shadow-services hidden">
-                    <div class="flex flex-row h-[10rem] justify-start items-end relative gap-2 contain__toggle-Capacitacion">
+                    <div
+                        class="flex flex-row h-[10rem] justify-start items-end relative gap-2 contain__toggle-Capacitacion">
                         <div class="flex flex-row justify-center items-center gap-2 p-3">
                             <img src="./images/EXPERIENCIA-TOGGLE/GESTION RRHH ICON.svg" alt="" class="pl-2">
                             <p class="text-white font-medium">Capacitación</p>
@@ -718,8 +732,7 @@
             <!-- Contain Bullet & Toggle CAPACITACION -->
 
         </div>
-        <img src="images/EXPORTS/SUMMANT WEB DESKTOP EXPORT 1.png" alt=""
-        class="w-full h-full">
+        <img src="images/EXPORTS/SUMMANT WEB DESKTOP EXPORT 1.png" alt="" class="w-full h-full">
 
     </section>
     <!-- FIN DE NUESTRA EXP -->
@@ -775,7 +788,8 @@
 
     <!-- COMIENZO RESEÑAS -->
     <section class="mb-28 md:mb-0">
-        <img src="images/ICONOS/DETALLES/CIRCULO.svg" alt="" class="relative top-[120px] left-[-80px]">
+        <img src="images/ICONOS/DETALLES/CIRCULO.svg" alt=""
+            class="relative w-16 left-[-40px] top-[570px] md:top-[120px] md:left-[-80px] md:w-36">
         <h3 class="mb-12 flex flex-col justify-center items-center text-xl font-bold"><span
                 class="text-center text-2xl text-transparent bg-clip-text bg-gradient-to-r from-primary from-0% to-secondary to-100%">Resultados
                 de satisfacción
@@ -878,6 +892,7 @@
 
         <div class="flex flex-col md:flex-row md:justify-end md:relative">
             <div class="flex justify-center relative md:absolute left-0 bg-white md:bg-transparent">
+                <img src="images/ICONOS/CONTACTANOS/PLUS.svg" alt="" class="absolute top-[20px] left-[450px] md:top-[-80px] md:left-[250px] w-12">
                 <img src="images/EXPORTS/SUMMANT img footer.png" alt="" class="w-[21rem] h-[27rem]"
                     id="contactanos-img">
                 <img src="images/EXPORTS/BORDERS/BORDER-VERDE-CONTACTANOS.png" alt=""
@@ -885,7 +900,7 @@
                 <img src="images/EXPORTS/BORDERS/BORDER-CONTACTANOS.png" alt=""
                     class="absolute w-full h-[300px] top-[150px] md:hidden">
             </div>
-            <div class="m-8 md:mr-[3rem] xl:mr-[8.5rem] md:w-[65%] ">
+            <div class="m-8 md:z-10 md:mr-[3rem] xl:mr-[8.5rem] md:w-[65%] ">
                 <h2 class="text-primary text-center text-2xl font-bold font-inter mb-10 md:text-start">
                     Contactanos
                 </h2>
@@ -932,7 +947,9 @@
             class="relative bg-secondary mt-24 pb-14 md:mt-2 flex flex-col gap-8 z-10 md:flex-row md:justify-around md:items-center md:pb-5 md:pt-5">
             <img src="images/EXPORTS/BORDERS/BORDER-FOOTER.png" alt=""
                 class="w-full absolute z-[-10] top-[-75px] md:hidden">
-            <p class="text-4xl text-white text-center">+Summant</p>
+            <div class="flex justify-center">
+                <img src="images/ICONOS/CONTACTANOS/SUMMANT.svg" alt="" class="w-48">
+            </div>
             <div class="flex justify-center gap-2">
                 <img src="images/ICONOS/INFO/UBICACION.svg" alt="" class="w-6">
                 <p class="w-[14rem] text-white text-left">Cerrito 348 3 Piso Ciudad de Buenos Aires, Argentina.</p>
@@ -944,6 +961,9 @@
             <div class="flex justify-center gap-2">
                 <img src="images/ICONOS/INFO/CARTA.svg" alt="" class="w-6">
                 <p class="text-white text-center">info@summant.com</p>
+            </div>
+            <div>
+                <img src="images/ICONOS/CONTACTANOS/LINKEDIN.svg" alt="" class="hidden md:block">
             </div>
         </div>
 
