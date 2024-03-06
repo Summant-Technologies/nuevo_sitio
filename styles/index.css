@@ -555,6 +555,12 @@ se sabe una mejor implementarla */
 /* Fin Query's Navbar */
 
 /* Comienzo Query's Nuestros Servicios */
+.middleWave {
+  background-image: url(../images/EXPORTS/BORDERS/Vector.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 @media (min-width: 768px) and (max-width: 1024px) {
   #servicios {
     display: flex;
@@ -631,7 +637,6 @@ se sabe una mejor implementarla */
   #servicios {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-evenly; */
     width: 100%;
     padding: 0 70px;
     margin-top: 30px;
@@ -690,7 +695,7 @@ se sabe una mejor implementarla */
     gap: 10px;
   }
   .contain__toggle-Cegid {
-    background-image: url(../images/FOTOS_EXPERIENCIA/CAPACITACION.webp);
+    background-image: url(../images/FOTOS_EXPERIENCIA/CEGID.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -744,7 +749,7 @@ se sabe una mejor implementarla */
     gap: 10px;
   }
   .contain__toggle-Cegid {
-    background-image: url(../images/FOTOS_EXPERIENCIA/CAPACITACION.webp);
+    background-image: url(../images/FOTOS_EXPERIENCIA/CEGID.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -975,7 +980,7 @@ se sabe una mejor implementarla */
     height: 200px;
   }
   #bulletC:hover {
-    background-image: url(../images/FOTOS_EXPERIENCIA/CAPACITACION.webp);
+    background-image: url(../images/FOTOS_EXPERIENCIA/CEGID.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
