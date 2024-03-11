@@ -1056,3 +1056,160 @@
 }
 
 /* Fin contactanos */
+
+/* INICIO HOME POLITICAS DE CALIDAD */
+
+/* Inicio Politicas de Calidad */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #titleQuality {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  #titleQuality {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  #textQualityMD {
+    display: none;
+  }
+  #textQuality {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 18px;
+  }
+  #textQuality span {
+    font-weight: 700;
+  }
+  #gestion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #cardFinance {
+    width: 40%;
+    margin: 20px;
+    margin-top: 60px;
+  }
+  #cardClients {
+    width: 40%;
+    margin: 20px;
+    margin-top: 60px;
+  }
+  #cardColaborators {
+    width: 40%;
+    margin: 20px;
+    margin-top: 60px;
+  }
+  #cardProcess {
+    width: 40%;
+    margin: 20px;
+    margin-top: 60px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1240px) {
+  #gestion {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 49px 49px;
+    padding: 0 70px;
+    margin-top: 50px;
+  }
+  #titleQuality {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  #textQualityMD {
+    display: none;
+  }
+  #textQuality {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 18px;
+  }
+  #textQuality span {
+    font-weight: 700;
+  }
+   #cardFinance,#cardClients,#cardColaborators,#cardProcess {
+    width: 378px;
+    height: 240px;
+    padding: 8px;
+    margin-top: 0;
+   }
+   #titleFinance {
+    margin-right: 195px;
+   }
+   #titleClients {
+    margin-right: 200px;
+   }
+   #titleColaborators {
+    margin-right: 130px;
+   }
+   #titleProcess {
+    margin-right: 190px;
+   }
+   .logoQuality {
+    left: -38px;
+    top: 378px;
+    width: 70px;
+   }
+   #titleTeam {
+    margin-left: 0;
+   }
+   .cardGestion div {
+    display: none;
+   }
+   .cardGestion p {
+    text-align: start;
+    width: 90%;
+    line-height: 23px;
+    padding: 0 20px;
+   }
+}
+@media (min-width: 1241px) {
+  #qualitySection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  #titleQuality {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  #gestion {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 70px;
+    margin-top: 30px;
+    gap: 0;
+  }
+  #cardFinance,#cardClients,#cardColaborators,#cardProcess {
+    width: 285px;
+   }
+}
+/* Fin Politicas de Calidad */
+
+
+/* FIN HOME POLITICAS DE CALIDAD */
