@@ -1200,6 +1200,7 @@ se sabe una mejor implementarla */
     display: flex;
     flex-direction: row;
     gap: 10px;
+    font-size: 30px;
   }
   #textQualityMD {
     display: none;
@@ -1211,7 +1212,6 @@ se sabe una mejor implementarla */
     align-items: center;
     margin-top: 40px;
     text-align: center;
-    font-size: 18px;
   }
   #textQuality span {
     font-weight: 700;
@@ -1251,6 +1251,7 @@ se sabe una mejor implementarla */
     line-height: 23px;
     padding: 0 20px;
    }
+
 }
 @media (min-width: 1241px) {
   #qualitySection {
@@ -1263,6 +1264,18 @@ se sabe una mejor implementarla */
     display: flex;
     flex-direction: row;
     gap: 10px;
+    font-size: 60px;
+  }
+  #titleQuality span {
+    font-size: 60px;
+    height: 50px;
+    margin-top: 10px;
+  }
+  #textQualityMD p {
+    width: 50%;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 40px;
   }
   #gestion {
     display: flex;
