@@ -26,6 +26,8 @@
 </head>
 
 <body class="font-inter h-screen">
+    <!-- <img src="images/ICONOS/PORQUE/LINKEDIN.svg" alt="" class="sticky">
+    <img src="images/ICONOS/PORQUE/CONTACTO.svg" alt="" class="sticky"> -->
     <!-- INICIO DE HEADER (Agus) -->
     <header class="w-full">
         <nav class="flex justify-between items-center m-10" id="menuNav">
@@ -34,7 +36,7 @@
                     title="Summant" id="logoSummant">
             </a>
             <ul id="menuItems"
-                class="w-[100%] hidden absolute flex flex-col top-[15%] text-xl bg-white gap-6 left-0 z-40 font-medium">
+                class="w-[100%] hidden absolute flex flex-col top-[15%] text-lg bg-white gap-6 left-0 z-40">
                 <li class="mx-[50px]">
                     <a href="#"
                         class="p-3 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary transition ease-in-out">INICIO</a>
@@ -63,7 +65,7 @@
                 <li id="spanglish"
                     class="w-[30%] h-[40px] flex items-center justify-center rounded-full mx-[50px] border-2 border-primary mb-[20px]">
                     <a href="#"
-                        class="w-[42%] h-[100%] flex items-center justify-center bg-primary rounded-full rounded-tr-lg text-white">
+                        class="w-[60%] h-[100%] flex items-center justify-center bg-primary rounded-full rounded-tr-lg text-white">
                         <p class="font-medium">SP</p>
                     </a>
                     <a href="#" class="w-[50%] h-[100%] flex items-center justify-center text-primary">
@@ -97,12 +99,13 @@
                     </span>
                 </h2>
                 <div class="flex flex-col justify-start items-center gap-4 sm:flex-row sm:items-center">
-                    <button class="uppercase font-bold text-sm rounded-3xl bg-primary px-6 py-2 text-white">
+                    <button class="uppercase font-bold text-sm rounded-3xl bg-primary px-6 py-3 text-white">
                         contactanos
                     </button>
                     <button
-                        class="uppercase font-bold text-sm rounded-3xl border-solid border-2 border-primary px-5 py-2">
-                        seguinos <img src="" alt="">
+                        class="uppercase font-bold flex justify-center gap-2 items-center text-sm rounded-3xl border-solid border-2 border-primary px-5 py-[0.2rem] md:py-2">
+                        seguinos
+                        <img src="images/ICONOS/PORQUE/LINKEDIN.svg" alt="" class="w-6">
                     </button>
                 </div>
             </div>
@@ -142,7 +145,7 @@
                     la mejora continua de nuestros procesos y lograr la plena satisfacción de nuestros clientes.
                 </p>
             </div>
-            <div class="flex justify-center mt-14 mb-2 md:order-5">
+            <div class="flex justify-center mt-14 mb-2 md:order-5 md:pb-40">
                 <button class="uppercase font-bold text-white rounded-3xl px-4 py-1 bg-primary">
                     políticas de calidad
                 </button>
@@ -210,21 +213,24 @@
                         </p>
                     </div>
                     <p
-                        class="text-center text-2xl md:text-lg text-transparent bg-clip-text bg-gradient-to-r from-primary from-0% to-secondary to-100% font-semibold">
+                        class="text-center pb-20 md:pb-0 text-2xl md:text-lg text-transparent bg-clip-text bg-gradient-to-r from-primary from-0% to-secondary to-100% font-semibold">
                         empresas asociadas</p>
                 </div>
             </div>
         </div>
-        <div class="bg-gradient-to-r from-primary from-0% to-secondary to-100%">
-            <img src="images/EXPORTS/SUMMANT WEB DESKTOP EXPORT 1.png" alt="" class="mt-12">
+        <div class="porque__bordes">
+            <div class="porque__div"></div>
+            <img src="images/EXPORTS/BORDERS/PORQUE-SUMMANT/BORDE-BLANCO.png" alt="" class="porque__borde--blanco">
+            <img src="images/EXPORTS/BORDERS/PORQUE-SUMMANT/BORDE-COLOR.png" alt="" class="porque__borde--color">
+            <img src="images/ICONOS/DETALLES/CIRCULO.svg" alt="" class="porque__circulo">
         </div>
-        <img src="images/ICONOS/DETALLES/CIRCULO.svg" alt="" class="relative">
     </section>
     <!-- FIN DE POR QUE SUMMANT (Lauti) -->
 
     <!-- ////// -->
 
     <!-- COMIENZO NUESTROS SERVICIOS (Agus) -->
+    <img src="./images/ICONOS/DETALLES/TICKS2.svg" alt="" class="relative left-[-1%] bottom-[-40%]">
     <section>
         <div class="text-center mt-10 px-[100px]">
             <h3 class="mb-6 flex flex-col justify-center items-center text-xl font-bold"><span
@@ -234,67 +240,76 @@
                             class="text-transparent bg-clip-text bg-gradient-to-tr from-primary from-35% to-secondary to-55% font-extrabold sup-plus">+</sup></span>
                 </div>
             </h3>
-            <p class="text-xl">Summant Technologies está en condiciones de ofrecer a sus clientes
+            <p class="text-xl" id="titleServices">Summant Technologies está en condiciones de ofrecer a sus clientes
                 toda su experiencia y
                 conocimientos para la <span class="font-bold">solucion de necesidades específicas, utilizando para ello
                     metodologías y herramientas de vanguardia.</span></p>
         </div>
 
-        <div class="flex flex-col justify-around items-center" id="servicios">
+        <div class="flex flex-col justify-evenly items-center gap-5 mt-5" id="servicios">
 
-            <div class="max-w-[100%] mt-[50px] flex flex-col justify-center items-center relative">
-                <img src="./images/PARTNERS/SVG/Icon Equipos.svg" alt="" class="absolute mt-[-380px] " />
-                <img src="./images/PARTNERS/SVG/Card Services.svg" width="350" alt="" class="" />
-                <div class="absolute flex flex-col justify-center items-center gap-5 cardServices">
-                    <h5 class="flex flex-col text-2xl text-center font-semibold">Equipos <span>dedicados</span></h5>
-                    <div class="w-[30%] h-[2px] bg-gradient-to-r from-primary to-secondary"></div>
-                    <p class="w-[83%] text-xl text-center font-light">Contamos con equipos multidisciplinarios,
+            <div class="w-[320px] h-[300px] mt-[50px] flex flex-col justify-center items-center relative bg-white drop-shadow-services rounded-3xl"
+                id="cardTeam">
+                <img src="./images/PARTNERS/SVG/Icon Equipos.svg" alt="logo-equipos-dedicados" title="Equipos Dedicados"
+                    class="absolute mt-[-300px] logoService" />
+                <div class="flex flex-col justify-center items-center gap-3 cardServices">
+                    <h5 class="flex flex-col text-xl text-center font-semibold" id="titleTeam">Equipos
+                        <span>dedicados</span>
+                    </h5>
+                    <div class="w-[40%] h-[2px] bg-gradient-to-r from-primary to-secondary"></div>
+                    <p class="w-[83%] text-lg text-center font-light">Contamos con equipos multidisciplinarios,
                         adaptables a las necesidades de tu empresa.</p>
                 </div>
             </div>
 
-            <div class="max-w-[100%] mt-[50px] flex flex-col justify-center items-center relative">
-                <img src="./images/PARTNERS/SVG/Icon Soporte.svg" alt="" class="absolute mt-[-380px] " />
-                <img src="./images/PARTNERS/SVG/Card Services.svg" width="350" alt="" class="" />
-                <div class="absolute flex flex-col justify-center items-center gap-5 cardServices">
-                    <h5 class="w-[80%] text-2xl text-center font-semibold">Soporte y Mantenimiento</h5>
+            <div class="w-[320px] h-[300px] mt-[50px] flex flex-col justify-center items-center relative bg-white drop-shadow-services rounded-3xl"
+                id="cardSupport">
+                <img src="./images/PARTNERS/SVG/Icon Soporte.svg" alt="" class="absolute mt-[-300px] logoService" />
+                <div class="flex flex-col justify-center items-center gap-3 cardServices">
+                    <h5 class="w-[70%] mt-[20px] text-xl text-center font-semibold" id="titleSupport">Soporte y
+                        Mantenimiento</h5>
                     <div class="w-[30%] h-[2px] bg-gradient-to-r from-primary to-secondary"></div>
-                    <p class="w-[80%] text-xl text-center font-light">Disponemos de profesionales con altos
-                        conocimientos y experiencia realizando mantenimiento y soporte tecnico</p>
+                    <p class="w-[80%] text-lg text-center font-light">Disponemos de profesionales con altos
+                        conocimientos y experiencia realizando mantenimiento y soporte tecnico.</p>
                 </div>
             </div>
-
-            <div class="max-w-[100%] mt-[50px] flex flex-col justify-center items-center relative">
-                <img src="./images/PARTNERS/SVG/Icon Perfiles.svg" alt="" class="absolute mt-[-380px] " />
-                <img src="./images/PARTNERS/SVG/Card Services.svg" width="350" alt="" class="" />
-                <div class="absolute flex flex-col justify-center items-center gap-5 cardServices">
-                    <h5 class="w-[60%] text-2xl text-center font-semibold">Provision de perfiles IT</h5>
+            <div class="middleWave w-full h-[200px] absolute z-[-20] sm:hidden"></div>
+            <div class="w-[320px] h-[300px] mt-[50px] flex flex-col justify-center items-center relative bg-white drop-shadow-services rounded-3xl" id="cardProfile">
+                <img src="./images/PARTNERS/SVG/Icon Perfiles.svg" alt="" class="absolute mt-[-300px] logoService" />
+                <div class="flex flex-col justify-center items-center gap-3 cardServices">
+                    <h5 class="w-[60%] text-xl text-center font-semibold" id="titleProfile">Provision de perfiles IT
+                    </h5>
                     <div class="w-[30%] h-[2px] bg-gradient-to-r from-primary to-secondary"></div>
-                    <p class="w-[90%] text-xl text-center font-light">Proveemos a nuestros clientes perfiles de IT
+                    <p class="w-[90%] text-lg text-center font-light">Proveemos a nuestros clientes perfiles de IT
                         altamente especializados, tanto tecnicos como funcionales.</p>
                 </div>
             </div>
 
-            <div class="max-w-[100%] mt-[50px] flex flex-col justify-center items-center relative">
-                <img src="./images/PARTNERS/SVG/Icon Desarrollo.svg" alt="" class="absolute mt-[-380px]" />
-                <img src="./images/PARTNERS/SVG/Card Services.svg" width="350" alt="" />
-                <div class="absolute flex flex-col justify-center items-center gap-5 cardServices">
-                    <h5 class="w-[60%] text-2xl text-center font-semibold">Desarrollo de proyectos</h5>
+            <div class="w-[320px] h-[300px] mt-[50px] flex flex-col justify-center items-center relative bg-white drop-shadow-services rounded-3xl"
+                id="cardProject">
+                <img src="./images/PARTNERS/SVG/Icon Desarrollo.svg" alt="" class="absolute mt-[-300px] logoService" />
+                <div class="flex flex-col justify-center items-center gap-3 cardServices">
+                    <h5 class="w-[60%] text-xl text-center font-semibold" id="titleProject">Desarrollo de proyectos</h5>
                     <div class="w-[30%] h-[2px] bg-gradient-to-r from-primary to-secondary"></div>
-                    <p class="w-[80%] text-xl text-center font-light">Construimos soluciones en base a tus
+                    <p class="w-[80%] text-lg text-center font-light">Construimos soluciones en base a tus
                         necesidades y alcance, garantizando tus metas de negocio.</p>
                 </div>
             </div>
 
         </div>
+
     </section>
+    <img src="./images/ICONOS/DETALLES/TICKS2.svg" alt="" class="absolute left-[100%] top-[-50%]">
     <!-- FIN DE NUESTROS SERVICIOS (Agus) -->
 
     <!-- ////// -->
 
     <!-- COMIENZO CEGID (Agus) -->
-    <section>
-        <div class="text-center mt-10 px-[60px]">
+    <img src="images/EXPORTS/BORDERS/Vector.png" alt=""
+    class="w-full">
+    <img src="./images/ICONOS/DETALLES/CIRCULO.svg" alt="" class="absolute left-[-20%]">
+    <section class="bg-[#F8F8F8] pt-[50px]">
+        <div class="text-center px-[60px]">
             <h3 class="mb-6 flex flex-col justify-center items-center text-xl font-bold titleCegid"><span
                     class="w-[60%] text-center text-2xl text-transparent bg-clip-text bg-gradient-to-r from-primary from-15% to-secondary to-85%">
                     <p class="flex flex-col justify-center items-center">Somos
@@ -313,7 +328,7 @@
                 humanos contar con una herramienta integral que responda a las necesidades actuales.</p>
         </div>
 
-        <div class="flex flex-col justify-center items-center bg-slate-200 p-5" id="cegidMobile">
+        <div class="flex flex-col justify-center items-center p-5" id="cegidMobile">
             <div class="relative">
                 <img src="./images/PARTNERS/SVG/Seleccion.svg" alt=""
                     class="absolute right-[-42%] top-[3%] transition ease-in-out delay-70 duration-300 hover:scale-[1.1] hover:drop-shadow-cegid-seleccion">
@@ -354,7 +369,10 @@
                     height="200" class="m-auto route" />
             </div>
         </div>
+        <img src="images/EXPORTS/SUMMANT WEB DESKTOP EXPORT 2.png" alt="" class="w-full top-[100%]">
     </section>
+    <img src="./images/ICONOS/DETALLES/MID.svg" alt="" class="absolute left-[100%] top-[-90%]" id="midCircle">
+    <img src="./images/ICONOS/DETALLES/TICKS.svg" alt="" class="relative bottom-[40%] left-[-1%]">
     <!-- FIN DE CEGID (Agus) -->
 
     <!-- ////// -->
@@ -369,80 +387,48 @@
                             class="text-transparent bg-clip-text bg-gradient-to-tr from-primary from-35% to-secondary to-55% font-extrabold sup-plus">+</sup></span>
                 </div>
             </h3>
-            <div class="grid grid-cols-2 grid-rows-5 gap-10 md:hidden">
-                <div class="flex justify-center">
-                    <img src="/images/LOGOS_TECNOLOGÍAS/ANDROID.svg" alt="">
-                </div>
-                <div class="flex justify-center">
-                    <img src="/images/LOGOS_TECNOLOGÍAS/ANGULAR.svg" alt="">
-                </div>
-                <div class="flex justify-center">
-                    <img src="/images/LOGOS_TECNOLOGÍAS/DOCKER.svg" alt="">
-                </div>
-                <div class="flex justify-center">
-                    <img src="/images/LOGOS_TECNOLOGÍAS/SPRING.svg" alt="">
-                </div>
-                <div class="flex justify-center">
-                    <img src="/images/LOGOS_TECNOLOGÍAS/C#.svg" alt="">
-                </div>
-                <div class="flex justify-center">
-                    <img src="/images/LOGOS_TECNOLOGÍAS/IOS.svg" alt="">
-                </div>
-                <div class="flex justify-center">
-                    <img src="/images/LOGOS_TECNOLOGÍAS/AZURE.svg" alt="">
-                </div>
-                <div class="flex justify-center">
-                    <img src="/images/LOGOS_TECNOLOGÍAS/ICONIC.svg" alt="">
-                </div>
-                <div class="flex justify-center">
-                    <img src="/images/LOGOS_TECNOLOGÍAS/KUBERNETES.svg" alt="">
-                </div>
-                <div class="flex justify-center">
-                    <img src="/images/LOGOS_TECNOLOGÍAS/AZURE DEVOPS.svg" alt="">
-                </div>
-            </div>
-        </div> -->
+        </div>
         <div class="container-tech">
             <div class="glide" id="glide-tech">
                 <div class="glide__track" id="glide__track--tech" data-glide-el="track">
                     <ul class="glide__slides">
-                        <li class="glide__slide">
+                        <li class="glide__slide glide__slide-tech">
                             <img src="images/LOGOS_TECNOLOGÍAS/AMAZON.svg" alt="" class="tech-img" />
                         </li>
-                        <li class="glide__slide">
+                        <li class="glide__slide glide__slide-tech">
                             <img src="images/LOGOS_TECNOLOGÍAS/ANDROID.svg" alt="" class="tech-img" />
                         </li>
-                        <li class="glide__slide">
+                        <li class="glide__slide glide__slide-tech">
                             <img src="images/LOGOS_TECNOLOGÍAS/BOOTSTRAP.svg" alt="" class="tech-img" />
                         </li>
-                        <li class="glide__slide">
+                        <li class="glide__slide glide__slide-tech">
                             <img src="images/LOGOS_TECNOLOGÍAS/DOCKER.svg" alt="" class="tech-img" />
                         </li>
-                        <li class="glide__slide">
+                        <li class="glide__slide glide__slide-tech">
                             <img src="images/LOGOS_TECNOLOGÍAS/ASP.NET.svg" alt="" class="tech-img" />
                         </li>
-                        <li class="glide__slide">
+                        <li class="glide__slide glide__slide-tech">
                             <img src="images/LOGOS_TECNOLOGÍAS/JAVA.svg" alt="" class="tech-img" />
                         </li>
-                        <li class="glide__slide">
+                        <li class="glide__slide glide__slide-tech">
                             <img src="images/LOGOS_TECNOLOGÍAS/JAVASCRPIT.svg" alt="" class="tech-img" />
                         </li>
-                        <li class="glide__slide">
+                        <li class="glide__slide glide__slide-tech">
                             <img src="images/LOGOS_TECNOLOGÍAS/IOS.svg" alt="" class="tech-img" />
                         </li>
-                        <li class="glide__slide">
+                        <li class="glide__slide glide__slide-tech">
                             <img src="images/LOGOS_TECNOLOGÍAS/NODE.svg" alt="" class="tech-img" />
                         </li>
-                        <li class="glide__slide">
+                        <li class="glide__slide glide__slide-tech">
                             <img src="images/LOGOS_TECNOLOGÍAS/PHP.svg" alt="" class="tech-img" />
                         </li>
-                        <li class="glide__slide">
+                        <li class="glide__slide glide__slide-tech">
                             <img src="images/LOGOS_TECNOLOGÍAS/KOTLIN.svg" alt="" class="tech-img" />
                         </li>
-                        <li class="glide__slide">
+                        <li class="glide__slide glide__slide-tech">
                             <img src="images/LOGOS_TECNOLOGÍAS/KUBERNETES.svg" alt="" class="tech-img" />
                         </li>
-                        <li class="glide__slide">
+                        <li class="glide__slide glide__slide-tech">
                             <img src="images/LOGOS_TECNOLOGÍAS/GOOGLE CLOUD.svg" alt="" class="tech-img" />
                         </li>
                     </ul>
@@ -465,7 +451,7 @@
     <!-- ////// -->
 
     <!-- COMIENZO NUESTRA EXP -->
-    <section class="mb-10" id="experience">
+    <section class="mb-10 bg-[#F8F8F8]" id="experience">
         <div class="flex flex-col justify-center items-center p-10">
             <h3 class="mb-6 flex flex-col justify-center items-center text-xl font-bold"><span
                     class="text-center text-2xl text-transparent bg-clip-text bg-gradient-to-r from-primary from-0% to-secondary to-100%">Nuestra</span>
@@ -482,17 +468,17 @@
 
         <div class="flex flex-col justify-center items-center gap-10" id="experienceCards">
             <!-- Contain Bullet & Toggle CEGID -->
-            <div class="acordeon flex flex-col justify-center items-center w-[100%]" id="contain">
+            <div class="acordeon flex flex-col justify-center items-center w-[100%]" id="acordeon">
                 <!-- Bullet -->
                 <div class="w-[60%] flex flex-row gap-3 justify-around items-center border-2 border-white drop-shadow-services bg-white rounded-2xl p-3 cursor-pointer bullet"
-                    id="bullet">
-                    <div class="flex flex-row justify-center items-center gap-2" id="bulletContain">
-                        <img src="./images/FOTOS_EXPERIENCIA/CEGID.jpg" alt="" class="hidden imgHover">
+                    id="bulletC">
+                    <div class="flex flex-row justify-center items-center gap-2" id="bulletCegid">
+                        <img src="./images/FOTOS_EXPERIENCIA/CEGID.jpg" alt="" class="hidden imgHover" />
                         <div id="bulletImg">
                             <img src="./images/ICONOS/EXPERIENCIA/CEGID ICON.svg" width="35"
-                                alt="logo-experiencia-cegid" title="CEGID" id="svgColors" />
+                                alt="logo-experiencia-cegid" title="CEGID" class="svgColors" id="svgCegid-Colors" />
                             <img src="./images/EXPERIENCIA-TOGGLE/CEGID ICON.svg" alt="logo-experiencia-cegid"
-                                title="CEGID" class="hidden" id="svgWhite">
+                                title="CEGID" class="hidden svgWhite" id="svgCegid-White" />
                             <h4 class="font-semibold">CEGID - PEOPLENET</h4>
                         </div>
                         <p class="description">Somos partners certificados de Cegid, empresa líder
@@ -505,17 +491,15 @@
 
                 <!-- Toggle -->
                 <div
-                    class="desplegable flex flex-col w-[60%] mt-[34px] rounded-2xl bg-white drop-shadow-services hidden">
-                    <div class="flex flex-row h-[10rem] justify-start items-end relative gap-2">
-                        <img src="./images/FOTOS_EXPERIENCIA/CEGID.jpg" alt=""
-                            class="absolute z-[-2] brightness-50 rounded-t-2xl" />
+                    class="desplegable flex flex-col w-[60%] h-[100%] rounded-2xl bg-white drop-shadow-services hidden">
+                    <div class="flex flex-row h-[10rem] justify-start items-end relative gap-2 contain__toggle-Cegid">
                         <div class="flex flex-row justify-center items-center gap-2 p-3">
                             <img src="./images/EXPERIENCIA-TOGGLE/CEGID ICON.svg" alt="" class="pl-2">
                             <p class="text-white font-medium">CEGID - PEOPLENET</p>
                         </div>
                     </div>
                     <div>
-                        <p class="text-start p-5 w-[95%]">Somos partners certificados de Cegid, empresa líder
+                        <p class="text-start p-5">Somos partners certificados de Cegid, empresa líder
                             mundial en
                             soluciones de RR.HH. y gestión del talento, en América Latina.</p>
                     </div>
@@ -525,14 +509,20 @@
             <!-- Contain Bullet & Toggle CEGID -->
 
             <!-- Contain Bullet & Toggle DESARROLLO WEB -->
-            <div class="acordeon flex flex-col justify-center items-center w-[100%]" id="contain">
+            <div class="acordeon flex flex-col justify-center items-center w-[100%]">
                 <!-- Bullet -->
-                <div class="w-[60%] flex flex-row gap-3 justify-around items-center border-2 border-white drop-shadow-services bg-white rounded-2xl p-3 cursor-pointer"
-                    id="bullet">
-                    <div class="flex flex-row justify-center items-center gap-2">
-                        <img src="./images/ICONOS/EXPERIENCIA/DESARROLLO WEB ICON.svg"
-                            alt="logo-experiencia-desarrollo-mobile" title="Desarrollo Mobile" />
-                        <h4 class="font-semibold">Desarrollo Web</h4>
+                <div class="w-[60%] flex flex-row gap-3 justify-around items-center border-2 border-white drop-shadow-services bg-white rounded-2xl p-3 cursor-pointer bullet"
+                    id="bulletW">
+                    <div class="flex flex-row justify-center items-center gap-2" id="bulletWeb">
+                        <img src="./images/FOTOS_EXPERIENCIA/DESARROLLO WEB.jpg" alt="" class="hidden imgHover">
+                        <div id="bulletImg">
+                            <img src="./images/ICONOS/EXPERIENCIA/DESARROLLO WEB ICON.svg"
+                                alt="logo-experiencia-desarrollo-mobile" title="Desarrollo Mobile" class="svgColors"
+                                id="svgWeb-Colors" />
+                            <img src="./images/EXPERIENCIA-TOGGLE/DESARROLLO WEB ICON.svg" alt="logo-experiencia-cegid"
+                                title="CEGID" class="hidden svgWhite" id="svgWeb-White" width="35px">
+                            <h4 class="font-semibold">Desarrollo Web</h4>
+                        </div>
                         <p class="description">Creamos sitios webs acordes a las necesidades del negocio
                             y
                             con la
@@ -544,10 +534,8 @@
 
                 <!-- Toggle -->
                 <div
-                    class="desplegable flex flex-col w-[60%] h-[100%] mt-[34px] rounded-2xl bg-white drop-shadow-services hidden">
-                    <div class="flex flex-row h-[10rem] justify-start items-end relative gap-2">
-                        <img src="./images/FOTOS_EXPERIENCIA/DESARROLLO WEB.jpg" alt=""
-                            class="absolute z-[-2] brightness-50 rounded-t-2xl" />
+                    class="desplegable flex flex-col w-[60%] h-[100%] rounded-2xl bg-white drop-shadow-services hidden">
+                    <div class="flex flex-row h-[10rem] justify-start items-end relative gap-2 contain__toggle-Web">
                         <div class="flex flex-row justify-center items-center gap-2 p-3">
                             <img src="./images/EXPERIENCIA-TOGGLE/DESARROLLO WEB ICON.svg" alt="" class="pl-2">
                             <p class="text-white font-medium">Desarrollo Web</p>
@@ -565,14 +553,21 @@
             <!-- Contain Bullet & Toggle DESARROLLO WEB -->
 
             <!-- Contain Bullet & Toggle DESARROLLO MOBILE -->
-            <div class="acordeon flex flex-col justify-center items-center w-[100%]" id="contain">
+            <div class="acordeon flex flex-col justify-center items-center w-[100%]">
                 <!-- Bullet -->
-                <div class="w-[60%] flex flex-row gap-3 justify-around items-center border-2 border-white drop-shadow-services bg-white rounded-2xl p-2 cursor-pointer"
-                    id="bullet">
-                    <div class="flex flex-row justify-center items-center gap-2">
-                        <img src="./images/ICONOS/EXPERIENCIA/DESARROLLO MOB ICON.svg"
-                            alt="logo-experiencia-desarrollo-mobile" title="Desarrollo Mobile" />
-                        <h4 class="font-semibold">Desarrollo Mobile</h4>
+                <div class="w-[60%] flex flex-row gap-3 justify-around items-center border-2 border-white drop-shadow-services bg-white rounded-2xl p-2 cursor-pointer bullet"
+                    id="bulletM">
+                    <div class="flex flex-row justify-center items-center gap-2" id="bulletMobile">
+                        <img src="./images/FOTOS_EXPERIENCIA/DESARROLLO MOBILE.jpg" alt="" class="hidden imgHover">
+                        <div id="bulletImg">
+                            <img src="./images/ICONOS/EXPERIENCIA/DESARROLLO MOB ICON.svg"
+                                alt="logo-experiencia-desarrollo-mobile" title="Desarrollo Mobile" class="svgColors"
+                                id="svgMobile-Colors" />
+                            <img src="./images/EXPERIENCIA-TOGGLE/DESARROLLO MOBILE.svg"
+                                alt="logo-experiencia-desarrollo-mobile" title="CEGID" class="hidden svgWhite"
+                                id="svgMobile-White">
+                            <h4 class="font-semibold">Desarrollo Mobile</h4>
+                        </div>
                         <p class="description">Contamos con un staff de profesionales altamente
                             capacitados
                             en el
@@ -584,10 +579,8 @@
 
                 <!-- Toggle -->
                 <div
-                    class="desplegable flex flex-col w-[60%] h-[100%] mt-[34px] rounded-2xl bg-white drop-shadow-services hidden">
-                    <div class="flex flex-row h-[10rem] justify-start items-end relative gap-2">
-                        <img src="./images/FOTOS_EXPERIENCIA/DESARROLLO MOBILE.jpg" alt=""
-                            class="absolute z-[-2] brightness-50 rounded-t-2xl" />
+                    class="desplegable flex flex-col w-[60%] h-[100%] rounded-2xl bg-white drop-shadow-services hidden">
+                    <div class="flex flex-row h-[10rem] justify-start items-end relative gap-2 contain__toggle-Mobile">
                         <div class="flex flex-row justify-center items-center gap-2 p-3">
                             <img src="./images/EXPERIENCIA-TOGGLE/DESARROLLO MOBILE.svg" alt="" class="pl-2">
                             <p class="text-white font-medium">Desarrollo Mobile</p>
@@ -605,14 +598,21 @@
             <!-- Contain Bullet & Toggle DESARROLLO MOBILE -->
 
             <!-- Contain Bullet & Toggle INDICADORES -->
-            <div class="acordeon flex flex-col justify-center items-center w-[100%]" id="contain">
+            <div class="acordeon flex flex-col justify-center items-center w-[100%]">
                 <!-- Bullet -->
-                <div class="w-[60%] flex flex-row gap-10 justify-around items-center border-2 border-white drop-shadow-services bg-white rounded-2xl p-2 cursor-pointer"
-                    id="bullet">
-                    <div class="flex flex-row justify-center items-center gap-2">
-                        <img src="./images/ICONOS/EXPERIENCIA/INDICADORES ICON.svg"
-                            alt="logo-experiencia-indicadores-kpi" title="Indicadores" />
-                        <h4 class="font-semibold">Indicadores</h4>
+                <div class="w-[60%] flex flex-row gap-10 justify-around items-center border-2 border-white drop-shadow-services bg-white rounded-2xl p-2 cursor-pointer bullet"
+                    id="bulletI">
+                    <div class="flex flex-row justify-center items-center gap-2" id="bulletIndicador">
+                        <img src="./images/FOTOS_EXPERIENCIA/INDICADORES.jpg" alt="" class="hidden imgHover">
+                        <div id="bulletImg">
+                            <img src="./images/ICONOS/EXPERIENCIA/INDICADORES ICON.svg"
+                                alt="logo-experiencia-indicadores-kpi" title="Indicadores" class="svgColors"
+                                id="svgMobile-Colors" />
+                            <img src="./images/EXPERIENCIA-TOGGLE/INDICADORES ICON.svg"
+                                alt="logo-experiencia-indicadores-kpi" title="KPI" class="hidden svgWhite"
+                                id="svgIndicador-White" />
+                            <h4 class="font-semibold">Indicadores</h4>
+                        </div>
                         <p class="description">Contamos con un staff de profesionales altamente
                             capacitados
                             en el
@@ -624,10 +624,9 @@
 
                 <!-- Toggle -->
                 <div
-                    class="desplegable flex flex-col w-[60%] h-[100%] mt-[34px] rounded-2xl bg-white drop-shadow-services hidden">
-                    <div class="flex flex-row h-[10rem] justify-start items-end relative gap-2">
-                        <img src="./images/FOTOS_EXPERIENCIA/INDICADORES.jpg" alt=""
-                            class="absolute z-[-2] brightness-50 rounded-t-2xl" width="300" height="300" />
+                    class="desplegable flex flex-col w-[60%] h-[100%] rounded-2xl bg-white drop-shadow-services hidden">
+                    <div
+                        class="flex flex-row h-[10rem] justify-start items-end relative gap-2 contain__toggle-Indicadores">
                         <div class="flex flex-row justify-center items-center gap-2 p-3">
                             <img src="./images/EXPERIENCIA-TOGGLE/INDICADORES ICON.svg" alt="" class="pl-2">
                             <p class="text-white font-medium">Indicadores</p>
@@ -645,14 +644,21 @@
             <!-- Contain Bullet & Toggle INDICADORES -->
 
             <!-- Contain Bullet & Toggle GESTION RR.HH -->
-            <div class="acordeon flex flex-col justify-center items-center w-[100%]" id="contain">
+            <div class="acordeon flex flex-col justify-center items-center w-[100%]">
                 <!-- Bullet -->
-                <div class="w-[60%] flex flex-row justify-around items-center border-2 border-white drop-shadow-services bg-white rounded-2xl p-2 cursor-pointer"
-                    id="bullet">
-                    <div class="flex flex-row justify-center items-center gap-1">
-                        <img src="./images/ICONOS/EXPERIENCIA/GESTION RRHH ICON.svg"
-                            alt="logo-experiencia-gestion-de-rrhh" title="Gestion de RR.HH" />
-                        <h4 class="font-semibold">Gestión de RR.HH</h4>
+                <div class="w-[60%] flex flex-row justify-around items-center border-2 border-white drop-shadow-services bg-white rounded-2xl p-2 cursor-pointer bullet"
+                    id="bulletG">
+                    <div class="flex flex-row justify-center items-center gap-1" id="bulletGestion">
+                        <img src="./images/FOTOS_EXPERIENCIA/GESTION RRHH.jpg" alt="" class="hidden imgHover">
+                        <div id="bulletImg">
+                            <img src="./images/ICONOS/EXPERIENCIA/GESTION RRHH ICON.svg"
+                                alt="logo-experiencia-gestion-de-rrhh" title="Gestion de RR.HH" class="svgColors"
+                                id="svgGestion-Colors" />
+                            <img src="./images/EXPERIENCIA-TOGGLE/GESTION RRHH ICON.svg"
+                                alt="logo-experiencia-gestion-de-rrhh" title="Gestion de RR.HH" class="hidden svgWhite"
+                                id="svgGestion-White">
+                            <h4 class="font-semibold">Gestión de RR.HH</h4>
+                        </div>
                         <p class="description">Llevamos adelante importantes proyectos de RRHH en
                             Argentina,
                             y
@@ -664,10 +670,8 @@
 
                 <!-- Toggle -->
                 <div
-                    class="desplegable flex flex-col w-[60%] h-[100%] mt-[34px] rounded-2xl bg-white drop-shadow-services hidden">
-                    <div class="flex flex-row h-[10rem] justify-start items-end relative gap-2">
-                        <img src="./images/FOTOS_EXPERIENCIA/GESTION RRHH.jpg" alt=""
-                            class="absolute z-[-2] brightness-50 rounded-t-2xl" />
+                    class="desplegable flex flex-col w-[60%] h-[100%] rounded-2xl bg-white drop-shadow-services hidden">
+                    <div class="flex flex-row h-[10rem] justify-start items-end relative gap-2 contain__toggle-Gestion">
                         <div class="flex flex-row justify-center items-center gap-2 p-3">
                             <img src="./images/EXPERIENCIA-TOGGLE/GESTION RRHH ICON.svg" alt="" class="pl-2">
                             <p class="text-white font-medium">Gestion de RR.HH</p>
@@ -685,14 +689,20 @@
             <!-- Contain Bullet & Toggle GESTION RR.HH -->
 
             <!-- Contain Bullet & Toggle CAPACITACION -->
-            <div class="acordeon flex flex-col justify-center items-center w-[100%]" id="contain">
+            <div class="acordeon flex flex-col justify-center items-center w-[100%]">
                 <!-- Bullet -->
-                <div class="w-[60%] flex flex-row gap-8 justify-around items-center border-2 border-white drop-shadow-services bg-white rounded-2xl p-3 cursor-pointer"
-                    id="bullet">
-                    <div class="flex flex-row justify-center items-center gap-2">
-                        <img src="./images/ICONOS/EXPERIENCIA/CAPACITACION ICON.svg" alt="logo-experiencia-capacitacion"
-                            title="Capacitacion" />
-                        <h4 class="font-semibold">Capacitación</h4>
+                <div class="w-[60%] flex flex-row gap-8 justify-around items-center border-2 border-white drop-shadow-services bg-white rounded-2xl p-3 cursor-pointer bullet"
+                    id="bulletCap">
+                    <div class="flex flex-row justify-center items-center gap-2" id="bulletCapacitacion">
+                        <img src="./images/FOTOS_EXPERIENCIA/CAPACITACIÓN.jpg" alt="" class="hidden imgHover">
+                        <div id="bulletImg">
+                            <img src="./images/ICONOS/EXPERIENCIA/CAPACITACION ICON.svg"
+                                alt="logo-experiencia-capacitacion" title="Capacitacion" class="svgColors"
+                                id="svgCapacitacion-Colors" />
+                            <img src="./images/EXPERIENCIA-TOGGLE/CAPACITACION.svg" alt="logo-experiencia-capacitacion"
+                                title="Capacitacion" class="hidden svgWhite" id="svgCap-White" />
+                            <h4 class="font-semibold">Capacitación</h4>
+                        </div>
                         <p class="description">Brindamos cursos para capacitar al personal de tu empresa,
                             logrando así organizaciones más rentables, productivas y eficientes.</p>
                     </div>
@@ -703,9 +713,8 @@
                 <!-- Toggle -->
                 <div
                     class="desplegable flex flex-col w-[60%] h-[100%] rounded-2xl bg-white drop-shadow-services hidden">
-                    <div class="flex flex-row h-[10rem] justify-start items-end relative gap-2">
-                        <img src="./images/FOTOS_EXPERIENCIA/CAPACITACIÓN.jpg" alt=""
-                            class="absolute z-[-2] brightness-50 rounded-t-2xl" />
+                    <div
+                        class="flex flex-row h-[10rem] justify-start items-end relative gap-2 contain__toggle-Capacitacion">
                         <div class="flex flex-row justify-center items-center gap-2 p-3">
                             <img src="./images/EXPERIENCIA-TOGGLE/GESTION RRHH ICON.svg" alt="" class="pl-2">
                             <p class="text-white font-medium">Capacitación</p>
@@ -721,6 +730,7 @@
             <!-- Contain Bullet & Toggle CAPACITACION -->
 
         </div>
+        <img src="images/EXPORTS/SUMMANT WEB DESKTOP EXPORT 1.png" alt="" class="w-full h-full">
 
     </section>
     <!-- FIN DE NUESTRA EXP -->
@@ -740,7 +750,7 @@
             </h3>
         </div>
 
-        <div class="md:flex md:justify-center">
+        <div class="flex justify-center">
             <div class="scroller" data-direction="right" data-speed="slow">
                 <div class="scroller__inner">
                     <img src="images/LOGOS_CLIENTES/CORDOBA.svg" alt="" />
@@ -749,8 +759,8 @@
                 </div>
             </div>
         </div>
-        <div class="md:flex md:justify-center">
-            <div class="scroller" data-direction="right" data-speed="slow">
+        <div class="flex justify-center">
+            <div class="scroller" data-direction="left" data-speed="slow">
                 <div class="scroller__inner">
                     <img src="images/LOGOS_CLIENTES/MACRO.svg" alt="" />
                     <img src="images/LOGOS_CLIENTES/BAILARDA.svg" alt="" />
@@ -759,7 +769,7 @@
                 </div>
             </div>
         </div>
-        <div class="md:flex md:justify-center">
+        <div class="flex justify-center">
             <div class="scroller" data-direction="right" data-speed="slow">
                 <div class="scroller__inner">
                     <img src="images/LOGOS_CLIENTES/EQUIFAX.svg" alt="" />
@@ -775,8 +785,9 @@
     <!-- ////// -->
 
     <!-- COMIENZO RESEÑAS -->
-    <section>
-        <img src="images/ICONOS/DETALLES/CIRCULO.svg" alt="" class="relative top-[120px] left-[-80px]">
+    <section class="mb-28 md:mb-0">
+        <img src="images/ICONOS/DETALLES/CIRCULO.svg" alt=""
+            class="relative w-16 left-[-40px] top-[570px] md:top-[120px] md:left-[-80px] md:w-36">
         <h3 class="mb-12 flex flex-col justify-center items-center text-xl font-bold"><span
                 class="text-center text-2xl text-transparent bg-clip-text bg-gradient-to-r from-primary from-0% to-secondary to-100%">Resultados
                 de satisfacción
@@ -788,7 +799,7 @@
         </h3>
         <div class="container-resenas">
             <div class="glide" id="glide-resenas">
-                <div class="glide__track" data-glide-el="track">
+                <div class="glide__track" data-glide-el="track" id="glide__track--resenas">
                     <ul class="glide__slides">
                         <li class="glide__slide glide__slide--resenas">
                             <div class="card">
@@ -866,24 +877,8 @@
                 </div>
             </div>
         </div>
-
-        <script>
-            new Glide("#glide-resenas", {
-                type: 'carousel',
-                perView: 3,
-                gap: 40,
-                focusAt: "center",
-                width: 300,
-                breakpoints: {
-                    768: {
-                        perView: 1
-                    },
-                }
-            }).mount();
-        </script>
-
         <div class="bg-gradient-to-r from-blue-700 to-green-500">
-            <img src="images/EXPORTS/SUMMANT WEB DESKTOP EXPORT 3.png" alt="" class="mt-9">
+            <img src="images/EXPORTS/SUMMANT WEB DESKTOP EXPORT 3.png" alt="" class="mt-9 hidden md:block">
         </div>
     </section>
     <!-- FIN DE RESEÑAS -->
@@ -894,7 +889,8 @@
     <section class="bg-[#F4F4F4]">
 
         <div class="flex flex-col md:flex-row md:justify-end md:relative">
-            <div class="flex justify-center relative md:absolute">
+            <div class="flex justify-center relative md:absolute left-0 bg-white md:bg-transparent">
+                <!-- <img src="images/ICONOS/CONTACTANOS/PLUS.svg" alt="" class="absolute top-[20px] left-[450px] md:top-[-80px] md:left-[250px] w-12"> -->
                 <img src="images/EXPORTS/SUMMANT img footer.png" alt="" class="w-[21rem] h-[27rem]"
                     id="contactanos-img">
                 <img src="images/EXPORTS/BORDERS/BORDER-VERDE-CONTACTANOS.png" alt=""
@@ -902,8 +898,8 @@
                 <img src="images/EXPORTS/BORDERS/BORDER-CONTACTANOS.png" alt=""
                     class="absolute w-full h-[300px] top-[150px] md:hidden">
             </div>
-            <div class="m-8 md:mr-[3rem] xl:mr-[8.5rem] md:w-[65%] ">
-                <h2 class="text-primary text-2xl font-bold font-inter mb-10">
+            <div class="m-8 md:z-10 md:mr-[3rem] xl:mr-[8.5rem] md:w-[65%] ">
+                <h2 class="text-primary text-center text-2xl font-bold font-inter mb-10 md:text-start">
                     Contactanos
                 </h2>
                 <form action="" class="grid md:grid-cols-2 md:gap-8">
@@ -949,7 +945,9 @@
             class="relative bg-secondary mt-24 pb-14 md:mt-2 flex flex-col gap-8 z-10 md:flex-row md:justify-around md:items-center md:pb-5 md:pt-5">
             <img src="images/EXPORTS/BORDERS/BORDER-FOOTER.png" alt=""
                 class="w-full absolute z-[-10] top-[-75px] md:hidden">
-            <p class="text-4xl text-white text-center">+Summant</p>
+            <div class="flex justify-center">
+                <img src="images/ICONOS/CONTACTANOS/SUMMANT.svg" alt="" class="w-48">
+            </div>
             <div class="flex justify-center gap-2">
                 <img src="images/ICONOS/INFO/UBICACION.svg" alt="" class="w-6">
                 <p class="w-[14rem] text-white text-left">Cerrito 348 3 Piso Ciudad de Buenos Aires, Argentina.</p>
@@ -961,6 +959,9 @@
             <div class="flex justify-center gap-2">
                 <img src="images/ICONOS/INFO/CARTA.svg" alt="" class="w-6">
                 <p class="text-white text-center">info@summant.com</p>
+            </div>
+            <div>
+                <img src="images/ICONOS/CONTACTANOS/LINKEDIN.svg" alt="" class="hidden md:block">
             </div>
         </div>
 

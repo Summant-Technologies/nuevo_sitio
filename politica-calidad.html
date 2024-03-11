@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/index.css">
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="./styles/output.css">
+    <!-- JavaScript -->
+    <script src="./js/main.js" defer></script>
+    <title>Politica de Calidad</title>
+</head>
+
+<body>
+    <!-- Inicio Header -->
+    <header class="w-full">
+        <nav class="flex justify-between items-center m-10" id="menuNav">
+            <a href="">
+                <img src="./images/LOGO_SUMMANT/SUMMANT LOGO.svg" width="150px" height="100px" alt="logo-summant-nav"
+                    title="Summant" id="logoSummant">
+            </a>
+            <ul id="menuItems"
+                class="w-[100%] hidden absolute flex flex-col top-[15%] text-lg bg-white gap-6 left-0 z-40">
+                <li class="mx-[50px]">
+                    <a href="#"
+                        class="p-3 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary transition ease-in-out">INICIO</a>
+                </li>
+                <li class="mx-[50px]">
+                    <a href="#"
+                        class="p-3 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary transition ease-in-out">NOSOTROS</a>
+                </li>
+                <li class="mx-[50px]">
+                    <a href="#"
+                        class="p-3 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary transition ease-in-out">SERVICIOS</a>
+                </li>
+                <li class="mx-[50px]">
+                    <a href="#"
+                        class="p-3 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary transition ease-in-out">EXPERIENCIA</a>
+                </li>
+                <li class="mx-[50px]">
+                    <a href="#"
+                        class="p-3 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary transition ease-in-out">CLIENTES</a>
+                </li>
+                <li class="mx-[50px]">
+                    <a href="#"
+                        class="p-3 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary transition ease-in-out">CONTACTO</a>
+                </li>
+                <div class="w-[100%] h-[2px] bg-gradient-to-r from-blue-700 to-green-500" id="navDivider"></div>
+                <li id="spanglish"
+                    class="w-[30%] h-[40px] flex items-center justify-center rounded-full mx-[50px] border-2 border-primary mb-[20px]">
+                    <a href="#"
+                        class="w-[60%] h-[100%] flex items-center justify-center bg-primary rounded-full rounded-tr-lg text-white">
+                        <p class="font-medium">SP</p>
+                    </a>
+                    <a href="#" class="w-[50%] h-[100%] flex items-center justify-center text-primary">
+                        <p class="font-medium">EN</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="ml-2" id="menuToggle">
+                <img src="./images/PARTNERS/SVG/Menu Nav.svg" onclick="toggleMenu()" id="menuIconOpen" name="menu"
+                    class="text-4xl cursor-pointer bg-clip-text bg-gradient-to-r from-primary to-secondary" width="40"
+                    height="40" />
+                <img src="./images/PARTNERS/SVG/Close Nav.svg" onclick="toggleMenu()" id="menuIconClose" name="close"
+                    class="text-4xl cursor-pointer hidden bg-clip-text bg-gradient-to-r from-primary to-secondary"
+                    width="30" height="30" />
+            </div>
+        </nav>
+    </header>
+    <!-- Fin Header -->
+
+    <!-- Comienzo Politicas de Calidad -->
+    <section id="qualitySection">
+        <div class="flex flex-col justify-center items-center">
+            <img src="./images/POLITICA_CALIDAD/DETAILS/Stars.png" class="mt-8" alt="5 Stars of Quality"
+                title="5 Starts of our quality">
+            <h3 class="flex flex-col justify-center items-center text-4xl font-bold mt-10" id="titleQuality">Políticas 
+                <span
+                    class="text-center text-4xl text-transparent bg-clip-text bg-gradient-to-r from-primary from-0% to-secondary to-100% font-bold">de
+                    calidad
+                </span>
+            </h3>
+        </div>
+        <div class="flex flex-col justify-center items-center mt-8" id="textQualityMD">
+            <p class="text-lg text-center w-[60%]">Somos una empresa orientada <span class="font-bold">a brindar
+                    servicios IT de calidad</span> cumpliendo con los requisitos acordados con
+                nuestros clientes y con los <span class="font-bold">requisitos legales aplicables a nuestra
+                    actividad.</span></p>
+        </div>
+        <div class="hidden" id="textQuality">
+            <p class="text-lg text-center w-[60%]">Summant Technologies esta en condiciones de ofrecer a sus clientes toda su experiencia y conociomientos para la <span class="font-bold">solucion de necesidad especificas, utilizando para ello metodologias y herramientas de vanguardia</span></p>
+        </div>
+    </section>
+    <!-- Fin Politicas de Calidad -->
+
+    <!-- Inicio Details -->
+    <div class="details relative top-[-100px]">
+        <img src="./images/POLITICA_CALIDAD/DETAILS/TICKS G.svg" width="25" class="relative left-10 top-[-50px]" alt="">
+        <img src="./images/EXPORTS/WAVESQ.svg" class="w-full static" alt="">
+    </div>
+    <!-- Fin Details -->
+
+    <!-- Comienzo Gestion de calidad -->
+    <section class="relative top-[-200px]" id="gestionQuality">
+        <div class="flex flex-col justify-center items-center">
+            <h3 class="flex flex-col justify-center items-center font-bold mt-10 w-[50%] text-center"><span
+                    class="text-center text-4xl text-transparent bg-clip-text bg-gradient-to-r from-primary from-0% to-secondary to-100%">Sistema
+                    de</span>
+                <span class="text-4xl font-semibold">gestión de calidad<sup
+                        class="text-transparent bg-clip-text bg-gradient-to-tr from-primary from-35% to-secondary to-55% font-extrabold sup-plus">+</sup></span>
+            </h3>
+        </div>
+        <div class="flex flex-col justify-center items-center mt-10">
+            <p class="w-[58%] text-center text-lg">La implementacion del <span class="font-bold">Sistema de Gestion de
+                    la Calidad</span> basado en la <span class="font-bold">Norma Internacional ISO 9001:2015</span> es
+                la manera de demostrar nuestro compromiso con la mejora continua, en todos los niveles de la
+                organizacion, en busca de la eficiencia de nuestros procesos y la satisfaccion de las partes interesadas
+                pertinentes.</p>
+        </div>
+        <div class="flex flex-col justify-center items-center mt-5">
+            <p class="w-[63%] text-center text-lg">Alineados con la <span class="font-bold">Politica de la
+                    Calidad,</span> en Summant nos planteamos los siguientes <span class="font-bold">Ejes
+                    Estrategicos:</span></p>
+        </div>
+        <div class="flex flex-col justify-evenly items-center mt-5 text-center px-[100px]" id="gestion">
+            <div class="w-[320px] h-[353px] mt-[100px] flex flex-col justify-center items-center relative bg-white drop-shadow-services rounded-3xl"
+                id="cardFinance">
+                <img src="./images/POLITICA_CALIDAD/ICONS/Icon Finanzas.svg" alt="logo-equipos-dedicados"
+                    title="Finanzas" class="absolute mt-[-350px] logoQuality" />
+                <div class="flex flex-col justify-center items-center gap-5 cardGestion">
+                    <h5 class="flex flex-col text-2xl text-center font-semibold" id="titleFinance">Finanzas</h5>
+                    <div class="w-[25%] h-[2px] bg-gradient-to-r from-primary to-secondary"></div>
+                    <p class="w-[74%] text-xl text-center font-light">Lograr sustentabilidad financiera y crecimiento
+                        continuo en el desarrollo de nuestra actividad empresarial.</p>
+                </div>
+            </div>
+            <div class="w-[320px] h-[350px] mt-[100px] flex flex-col justify-center items-center relative bg-white drop-shadow-services rounded-3xl"
+                id="cardClients">
+                <img src="./images/POLITICA_CALIDAD/ICONS/Icon Clientes.svg" alt="logo-equipos-dedicados"
+                    title="Equipos Dedicados" class="absolute mt-[-350px] logoQuality" />
+                <div class="flex flex-col justify-center items-center gap-4 cardGestion mt-2">
+                    <h5 class="flex flex-col text-2xl text-center font-semibold" id="titleClients">Clientes</h5>
+                    <div class="w-[25%] h-[2px] bg-gradient-to-r from-primary to-secondary"></div>
+                    <p class="w-[90%] text-xl text-center font-light px-4">Establecer vinculos de confianza con nuestros
+                        clientes, persistentes en el tiempo, sustentados en nuestra suma de valor a traves de productos
+                        y servicios innovadores y de calidad.</p>
+                </div>
+            </div>
+            <div class="w-[320px] h-[350px] mt-[100px] flex flex-col justify-center items-center relative bg-white drop-shadow-services rounded-3xl"
+                id="cardColaborators">
+                <img src="./images/POLITICA_CALIDAD/ICONS/Icon Colaboradores.svg" alt="logo-equipos-dedicados"
+                    title="Equipos Dedicados" class="absolute mt-[-350px] logoQuality" />
+                <div class="flex flex-col justify-center items-center gap-4 cardGestion">
+                    <h5 class="flex flex-col text-2xl text-center font-semibold" id="titleColaborators">Colaboradores</h5>
+                    <div class="w-[25%] h-[2px] bg-gradient-to-r from-primary to-secondary"></div>
+                    <p class="w-[75%] text-xl text-center font-light">Dar un lugar central a nuestros colaboradores,
+                        brindando un entorno laboral que favorezca su desarrollo humano y profesional.</p>
+                </div>
+            </div>
+            <div class="w-[320px] h-[350px] mt-[100px] flex flex-col justify-center items-center relative bg-white drop-shadow-services rounded-3xl"
+                id="cardProcess">
+                <img src="./images/POLITICA_CALIDAD/ICONS/Icon Procesos.svg" alt="logo-equipos-dedicados"
+                    title="Equipos Dedicados" class="absolute mt-[-350px] logoQuality" />
+                <div class="flex flex-col justify-center items-center gap-4 cardGestion">
+                    <h5 class="flex flex-col text-2xl text-center font-semibold mt-4" id="titleProcess">Procesos</h5>
+                    <div class="w-[25%] h-[2px] bg-gradient-to-r from-primary to-secondary"></div>
+                    <p class="w-[73%] text-xl text-center font-light">Tener un funcionamiento de empresa basado en
+                        procesos documentados, utilizando metodologias y estandares de mercado orientados a la mejora
+                        continua.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fin Gestion de calidad -->
+
+    <!-- Comienzo Contacto -->
+    <section class="bg-[#F4F4F4] mt-10">
+
+        <div class="flex flex-col md:flex-row md:justify-end md:relative">
+            <div class="flex justify-center relative md:absolute left-0 bg-white md:bg-transparent">
+                <img src="./images/EXPORTS/SUMMANT img footer.png" alt="" class="w-[21rem] h-[27rem]"
+                    id="contactanos-img">
+                <img src="images/EXPORTS/BORDERS/BORDER-VERDE-CONTACTANOS.png" alt=""
+                    class="absolute w-full h-[300px] top-[170px] md:hidden">
+                <img src="images/EXPORTS/BORDERS/BORDER-CONTACTANOS.png" alt=""
+                    class="absolute w-full h-[300px] top-[150px] md:hidden">
+            </div>
+            <div class="m-8 md:mr-[3rem] xl:mr-[8.5rem] md:w-[65%] ">
+                <h2 class="text-primary text-center text-2xl font-bold font-inter mb-10 md:text-start">
+                    Contactanos
+                </h2>
+                <form action="" class="grid md:grid-cols-2 md:gap-8">
+                    <div class="grid gap-3 mb-6">
+                        <div>
+                            <div>
+                                <input type="text" id="nombre" name="nombre" placeholder="Nombre"
+                                    class="shadow appearance-none border rounded-xl w-full py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <input type="email" id="email" name="email" placeholder="Email"
+                                    class="shadow appearance-none border rounded-xl w-full py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <input type="tel" id="telefono" name="telefono" placeholder="Telefono"
+                                    class="shadow appearance-none border rounded-xl w-full py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="grid gap-6">
+                            <div>
+                                <input type="text" id="comentario" name="comentario" placeholder="Comentario"
+                                    class="shadow appearance-none border rounded-xl w-full pt-2 pb-[5.55rem] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                            </div>
+
+                            <div class="flex justify-center">
+                                <button type="submit"
+                                    class="mt-8 md:mt-0 uppercase text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm sm:w-auto px-7 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">enviar
+                                    formulario</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="hidden md:block md:py-1 bg-gradient-to-r from-blue-700 to-green-500 mb-[-10px]"></div>
+        <div
+            class="relative bg-secondary mt-24 pb-14 md:mt-2 flex flex-col gap-2 z-10 md:flex-row md:justify-around md:items-center md:pb-5 md:pt-5">
+            <img src="images/EXPORTS/BORDERS/BORDER-FOOTER.png" alt=""
+                class="w-full absolute z-[-10] top-[-75px] md:hidden">
+            <p class="text-4xl text-white text-center">+Summant</p>
+            <div class="flex justify-center gap-2">
+                <img src="images/ICONOS/INFO/UBICACION.svg" alt="" class="w-6">
+                <p class="w-[14rem] text-white text-left">Cerrito 348 3 Piso Ciudad de Buenos Aires, Argentina.</p>
+            </div>
+            <div class="flex justify-center gap-2">
+                <img src="images/ICONOS/INFO/TELEFONO.svg" alt="" class="w-5 gap-2">
+                <p class="text-white text-center">+54 11 50318009</p>
+            </div>
+            <div class="flex justify-center gap-2">
+                <img src="images/ICONOS/INFO/CARTA.svg" alt="" class="w-6">
+                <p class="text-white text-center">info@summant.com</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- Fin Contacto -->
+
+
+    <!-- Comienzo Footer -->
+    <footer class="py-3 md:flex md:gap-2 md:justify-center">
+        <p class="text-[#777777] text-center">Copyright @2023 Summant Technologies.</p>
+        <p class="text-[#777777] text-center">All Rights Reserved</p>
+    </footer>
+    <!-- Fin Footer -->
+</body>
+
+</html>

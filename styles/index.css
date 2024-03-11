@@ -87,7 +87,7 @@
 
 /* Inicio estilos para home*/
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .home-container {
     position: static;
   }
@@ -153,10 +153,19 @@
   }
 }
 
+/* Estas querys son para acomodar la imagen cuando cambia la resolucion, no es la mejor forma si 
+se sabe una mejor implementarla */
+
+@media (min-width: 800px) {
+  .home-card {
+    left: -14%;
+  }
+}
+
 @media (min-width: 1024px) {
   .home-card {
     top: -10px;
-    left: -10px;
+    left: -110px;
   }
 }
 
@@ -226,6 +235,7 @@
   z-index: 0;
   filter: brightness(0.6);
   object-fit: cover;
+  width: 100%;
 }
 
 .plus-sign {
@@ -233,6 +243,139 @@
   margin-top: -10px;
   font-weight: 600;
 }
+
+/* estilos para la wave */
+
+.porque__bordes {
+  position: relative;
+  top: -170px;
+}
+
+.porque__borde--blanco,
+.porque__borde--color,
+.porque__circulo {
+  position: absolute;
+}
+
+.porque__borde--blanco {
+  z-index: 10;
+}
+
+.porque__borde--color {
+  z-index: 3;
+  top: 85px;
+}
+
+.porque__circulo {
+  z-index: 5;
+  right: 115px;
+  top: 125px;
+}
+
+.porque__div {
+  position: relative;
+  background-color: #ffffff;
+  height: 100px;
+  z-index: 9;
+  width: 100%;
+  top: 182px;
+}
+
+/* arreglos para las resoluciones mobile */
+
+@media (max-width: 450px) {
+  .porque__circulo {
+    width: 80px;
+    right: 60px;
+  }
+  
+  .porque__div {
+    top: 146px;
+  }
+  
+}
+
+@media (max-width: 430px) {
+  .porque__bordes {
+    top: -120px;
+  }
+
+  .porque__div {
+    top: 132px;
+  }
+
+  .porque__borde--blanco {
+    top: 92px;
+  }
+
+  .porque__circulo {
+    top: 100px;
+    right: 30px;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 550px) {
+  .porque__div {
+    top: 146px;
+  }
+
+  .porque__circulo {
+    width: 80px;
+    right: 60px;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 700px) {
+  .porque__div {
+    top: 158px;
+  }
+
+  .porque__bordes {
+    top: -130px;
+  }
+
+  .porque__circulo {
+    width: 80px;
+    right: 50px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 767px) {
+  .porque__div {
+    top: 175px;
+  }
+
+  .porque__circulo {
+    right: 50px;
+    top: 100px;
+  }
+}
+
+@media (min-width: 970px) {
+  .porque__div {
+    top: 210px;
+  }
+
+  .porque__circulo {
+    width: 180px;
+    top: 110px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .porque__div {
+    top: 210px;
+  }
+}
+
+@media (min-width: 1090px) {
+  .porque__div {
+    top: 216px;
+  }
+}
+/* Fin estilos para porque summant  */
+
+/* Fin estilos para porque summant  */
 
 /* Inicio estilos para el slider de resenas */
 
@@ -251,6 +394,7 @@
   outline: none;
   background: transparent;
   box-shadow: none;
+  top: 8em;
 }
 
 .glide__bullets {
@@ -344,6 +488,15 @@
   .glide__bullets {
     bottom: -2em;
   }
+
+  #glide__track--resenas {
+    width: 90%;
+  }
+
+  #glide-resenas {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* Fin estilos para resenas */
@@ -390,11 +543,11 @@
 }
 
 .scroller[data-speed="fast"] {
-  --_animation-duration: 78s;
+  --_animation-duration: 80s;
 }
 
 .scroller[data-speed="slow"] {
-  --_animation-duration: 60s;
+  --_animation-duration: 120s;
 }
 
 @keyframes scroll {
@@ -413,8 +566,8 @@
     justify-content: space-around;
     align-items: center;
     margin: auto;
-    gap: 3rem;
-    padding: 1rem;
+    gap: 2rem;
+    padding: 30px 40px;
   }
 
   #menuToggle {
@@ -427,7 +580,7 @@
     align-items: center;
     justify-content: space-between;
     position: static;
-    font-size: 12px;
+    font-size: 11px;
   }
 
   #menuItems li {
@@ -477,33 +630,98 @@
 /* Fin Query's Navbar */
 
 /* Comienzo Query's Nuestros Servicios */
-@media (min-width: 768px) {
+.middleWave {
+  background-image: url(../images/EXPORTS/BORDERS/Vector.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
   #servicios {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
   }
+  #cardTeam, #cardSupport, #cardProfile, #cardProject {
+    width: 35%;
+    margin: 20px;
+   }
 }
-
-@media (min-width: 1024px) {
+@media (min-width: 1025px) and (max-width: 1240px) {
+ #servicios {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0 49px;
+  padding: 0 70px;
+ }
+ #cardTeam, #cardSupport, #cardProfile, #cardProject {
+  width: 378px;
+  height: 160px;
+  padding: 8px;
+ }
+ .logoService {
+  left: -38px;
+  bottom: 50px;
+  width: 70px;
+ }
+ .cardServices {
+  width: 100%;
+ }
+ .cardServices h5 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: auto;
+  font-weight: 500;
+  margin-right: 80px;
+ }
+ #titleTeam {
+  margin-right: 103px;
+ }
+ #titleSupport {
+  margin-right: 50px;
+ }
+ #titleProfile {
+  margin-right: 72px;
+ }
+ #titleProject {
+  margin-right: 62px;
+ }
+ .cardServices div {
+  display: none;
+ }
+ .cardServices p {
+  text-align: start;
+  width: 90%;
+  line-height: 23px;
+  padding: 0 20px;
+ }
+}
+@media (min-width: 1241px) {
+  #titleServices {
+    width: 100%;
+    padding: 0 200px;
+  }
   #servicios {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    margin-top: 50px;
+    width: 100%;
+    padding: 0 70px;
+    margin-top: 30px;
+    gap: 0;
   }
-
-  .cardServices h5 {
-    width: 60%;
-  }
-
-  .cardServices p {
-    width: 95%;
-    padding: 20px;
-  }
+  #cardTeam, #cardSupport, #cardProfile, #cardProject {
+    width: 248px;
+    height: 284px;
+   }
 }
-
 /* Fin Query's Nuestros Servicios */
 
 /* Comienzo Query's Cegid - PeopleNet */
@@ -531,14 +749,12 @@
     height: auto;
   }
 }
-
 @media (min-width: 1024px) {
   .hexagon {
     min-width: 15%;
     height: auto;
   }
 }
-
 /* Fin Query's Cegid - PeopleNet */
 
 /* Comienzo Query's Nuestra Experiencia */
@@ -553,27 +769,161 @@
     align-items: center;
     gap: 10px;
   }
+  .contain__toggle-Cegid {
+    background-image: url(../images/FOTOS_EXPERIENCIA/CEGID.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  .contain__toggle-Web {
+    background-image: url(../images/FOTOS_EXPERIENCIA/DESARROLLO\ WEB.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  .contain__toggle-Mobile {
+    background-image: url(../images/FOTOS_EXPERIENCIA/DESARROLLO\ MOBILE.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  .contain__toggle-Indicadores {
+    background-image: url(../images/FOTOS_EXPERIENCIA/INDICADORES.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  .contain__toggle-Gestion {
+    background-image: url(../images/FOTOS_EXPERIENCIA/GESTION\ RRHH.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  .contain__toggle-Capacitacion {
+    background-image: url(../images/FOTOS_EXPERIENCIA/CAPACITACION.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+  }
 }
 @media (min-width: 768px) {
-  #experienceCards {
+  .description {
+    display: none;
+  }
+  #bulletImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .contain__toggle-Cegid {
+    background-image: url(../images/FOTOS_EXPERIENCIA/CEGID.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  .contain__toggle-Web {
+    background-image: url(../images/FOTOS_EXPERIENCIA/DESARROLLO\ WEB.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  .contain__toggle-Mobile {
+    background-image: url(../images/FOTOS_EXPERIENCIA/DESARROLLO\ MOBILE.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  .contain__toggle-Indicadores {
+    background-image: url(../images/FOTOS_EXPERIENCIA/INDICADORES.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  .contain__toggle-Gestion {
+    background-image: url(../images/FOTOS_EXPERIENCIA/GESTION\ RRHH.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  .contain__toggle-Capacitacion {
+    background-image: url(../images/FOTOS_EXPERIENCIA/CAPACITACION.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  /* #experienceCards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 30px;
+  } */
+  /* .bullet {
+    max-width: 80%;
   }
-
-  #contain {
-    justify-content: start;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+  #bulletCegid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 10px;
   }
-
-  #bullet {
-    justify-content: space-around;
+  #bulletWeb {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 10px;
+  }
+  #bulletMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 10px;
+  }
+  #bulletIndicador {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 10px;
+  }
+  #bulletGestion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 10px;
+  }
+  #bulletCapacitacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 10px;
+  }
+  #bulletImg {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    width: 80%;
-    height: 90%;
+    gap: 10px;
+  }
+  #cardDesktop {
+    display: flex;
+    flex-direction: row;
   }
   #bullet:hover {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../images/FOTOS_EXPERIENCIA/CEGID.jpg);
@@ -604,30 +954,189 @@
     gap: 10px;
   }
   .description {
-    display: flex;
-    flex-direction: column;
+    display: none;
   }
   .arrow {
-    display: none;
+    display: flex;
   }
   #cardDesktop {
     display: flex;
     flex-direction: row;
-  }
+  } */
 }
 @media (min-width: 1024px) {
   #experienceCards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
+    gap: 10px;
+    margin: 0 60px;
   }
-
-  #contain {
-    height: 100%;
+  #bulletImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+  #bulletCegid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  #bulletWeb {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  #bulletMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  #bulletIndicador {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  #bulletGestion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  #bulletCapacitacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  #bulletC {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 90%;
+    height: 200px;
+  }
+  #bulletW {
+    justify-content: space-around;
+    align-items: center;
+    min-width: 90%;
+    height: 200px;
+  }
+  #bulletM {
+    justify-content: space-around;
+    align-items: center;
+    min-width: 90%;
+    height: 200px;
+  }
+  #bulletI {
+    justify-content: space-around;
+    align-items: center;
+    min-width: 90%;
+    height: 200px;
+  }
+  #bulletG {
+    justify-content: space-around;
+    align-items: center;
+    min-width: 90%;
+    height: 200px;
+  }
+  #bulletCap {
+    justify-content: space-around;
+    align-items: center;
+    min-width: 90%;
+    height: 200px;
+  }
+  #bulletC:hover {
+    background-image: url(../images/FOTOS_EXPERIENCIA/CEGID.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    transition: all .5s ease-in-out;
+  }
+  #bulletW:hover {
+    background-image: url(../images/FOTOS_EXPERIENCIA/DESARROLLO\ WEB.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    transition: all .5s ease-in-out;
+  }
+  #bulletM:hover {
+    background-image: url(../images/FOTOS_EXPERIENCIA/DESARROLLO\ MOBILE.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    transition: all .5s ease-in-out;
+  }
+  #bulletI:hover {
+    background-image: url(../images/FOTOS_EXPERIENCIA/INDICADORES.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    transition: all .5s ease;
+  }
+  #bulletG:hover {
+    background-image: url(../images/FOTOS_EXPERIENCIA/GESTION\ RRHH.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    transition: all .5s ease-in-out;
+  }
+  #bulletCap:hover {
+    background-image: url(../images/FOTOS_EXPERIENCIA/CAPACITACION.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    transition: all .5s ease-in-out;
+  }
+  #bulletC:hover #svgCegid-White {
+    width: 35px;
+  }
+  #bulletW:hover #svgWeb-White {
+    width: 51px;
+  }
+  #bulletM:hover #svgMobile-White {
+    width: 43px;
+  }
+  #bulletG:hover #svgGestion-White {
+    width: 43px;
+  }
+  #bulletCap:hover #svgCap-White {
+    width: 43px;
+  }
+  #bulletI:hover #svgIndicador-White {
+    width: 45px;
+  }
+  #bulletImg h4 {
+    width: 50%;
+    text-align: start;
+  }
+  .bullet:hover .svgColors {
+    display: none;
+  }
+  .bullet:hover .svgWhite {
+    display: flex;
+  }
+  .description {
+    display: flex;
+  }
+  .arrow {
+    display: none;
   }
 }
-
 /* Fin Query's Nuestra Experiencia */
 
 
@@ -646,7 +1155,7 @@
 }
 
 #glide-tech {
-  width: 70%;
+  width: 80%;
 }
 
 #glide__track--tech {
@@ -656,14 +1165,25 @@
 #arrow-tech--right {
   position: absolute;
   top: 30px;
-  right: -50px;
+  right: -40px;
 }
 
 #arrow-tech--left {
   position: absolute;
   top: 30px;
-  left: -75px;
+  left: -45px;
 }
+
+@media (min-width: 1024px) {
+  #glide-tech {
+    width: 85%;
+  }
+
+  #arrow-tech--left {
+    left: -75px;
+  }
+}
+
 
 /* Fin slider tech */
 
@@ -672,9 +1192,179 @@
 @media (min-width: 768px) {
   #contactanos-img {
     position: relative;
-    left: -230%;
+    left: 0%;
     bottom: 86px;
   }
 }
 
 /* Fin contactanos */
+
+/* INICIO HOME POLITICAS DE CALIDAD */
+
+/* Inicio Politicas de Calidad */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #titleQuality {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  #titleQuality {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  #textQualityMD {
+    display: none;
+  }
+  #textQuality {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 18px;
+  }
+  #textQuality span {
+    font-weight: 700;
+  }
+  #gestion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #cardFinance {
+    width: 40%;
+    margin: 20px;
+    margin-top: 60px;
+  }
+  #cardClients {
+    width: 40%;
+    margin: 20px;
+    margin-top: 60px;
+  }
+  #cardColaborators {
+    width: 40%;
+    margin: 20px;
+    margin-top: 60px;
+  }
+  #cardProcess {
+    width: 40%;
+    margin: 20px;
+    margin-top: 60px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1240px) {
+  #gestion {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 49px 49px;
+    padding: 0 70px;
+    margin-top: 50px;
+  }
+  #titleQuality {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 30px;
+  }
+  #textQualityMD {
+    display: none;
+  }
+  #textQuality {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    text-align: center;
+  }
+  #textQuality span {
+    font-weight: 700;
+  }
+   #cardFinance,#cardClients,#cardColaborators,#cardProcess {
+    width: 378px;
+    height: 240px;
+    padding: 8px;
+    margin-top: 0;
+   }
+   #titleFinance {
+    margin-right: 195px;
+   }
+   #titleClients {
+    margin-right: 200px;
+   }
+   #titleColaborators {
+    margin-right: 130px;
+   }
+   #titleProcess {
+    margin-right: 190px;
+   }
+   .logoQuality {
+    left: -38px;
+    top: 378px;
+    width: 70px;
+   }
+   #titleTeam {
+    margin-left: 0;
+   }
+   .cardGestion div {
+    display: none;
+   }
+   .cardGestion p {
+    text-align: start;
+    width: 90%;
+    line-height: 23px;
+    padding: 0 20px;
+   }
+
+}
+@media (min-width: 1241px) {
+  #qualitySection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  #titleQuality {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 60px;
+  }
+  #titleQuality span {
+    font-size: 60px;
+    height: 50px;
+    margin-top: 10px;
+  }
+  #textQualityMD p {
+    width: 50%;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 40px;
+  }
+  #gestion {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 70px;
+    margin-top: 30px;
+    gap: 0;
+  }
+  #cardFinance,#cardClients,#cardColaborators,#cardProcess {
+    width: 285px;
+   }
+}
+/* Fin Politicas de Calidad */
+
+
+/* FIN HOME POLITICAS DE CALIDAD */

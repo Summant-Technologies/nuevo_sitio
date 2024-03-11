@@ -161,18 +161,17 @@ function addAnimation() {
 }
 
 /* Experiencia */
-
-if (window.innerWidth < 769) {
+if (window.innerWidth < 1025) {
   const acordeones = document.querySelectorAll('.acordeon');
   acordeones.forEach(acordeon => {
-    const bullet = acordeon.querySelector('#bullet');
+    const bullet = acordeon.querySelector('.bullet');
     const desplegable = acordeon.querySelector('.desplegable');
 
     bullet.addEventListener('click', () => {
       const isVisible = !desplegable.classList.contains('hidden');
       acordeones.forEach(container => {
         container.querySelector('.desplegable').classList.add('hidden');
-        container.querySelector('#bullet').style.display = 'flex';
+        container.querySelector('.bullet').style.display = 'flex';
       });
       bullet.style.display = isVisible ? 'flex' : 'none';
       desplegable.classList.toggle('hidden', isVisible);
@@ -183,8 +182,7 @@ if (window.innerWidth < 769) {
       bullet.style.display = 'flex';
     });
   });
-}
-
+} 
 /* Experiencia */
 
 /* Navbar */
@@ -211,6 +209,9 @@ const glideResenas = new Glide("#glide-resenas", {
     768: {
       perView: 1
     },
+    1200: {
+      focusAt: 1
+    }
   }
 });
 
@@ -218,17 +219,18 @@ glideResenas.mount();
 
 const glideTech = new Glide("#glide-tech", {
   type: 'carousel',
-  perView: 4,
-  autoplay: 3000,
-  hoverpause: true,
+  perView: 5,
+  autoplay: 4000,
   gap: 80,
   focusAt: 1,
   breakpoints: {
-    1200: {
-      perView: 3
-    },
     768: {
-      perView: 2
+      perView: 3,
+      gap: 10
+    },
+    460: {
+      perView: 2,
+      gap: 20,
     },
   }
 });
