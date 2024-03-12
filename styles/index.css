@@ -636,7 +636,6 @@ se sabe una mejor implementarla */
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 @media (min-width: 768px) and (max-width: 1024px) {
   #servicios {
     display: flex;
