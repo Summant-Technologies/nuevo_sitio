@@ -636,6 +636,7 @@ se sabe una mejor implementarla */
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 @media (min-width: 768px) and (max-width: 1024px) {
   #servicios {
     display: flex;
@@ -714,12 +715,22 @@ se sabe una mejor implementarla */
     flex-direction: row;
     width: 100%;
     padding: 0 70px;
-    margin-top: 30px;
+    margin-top: 70px;
     gap: 0;
+  }
+  .cardServices {
+    gap: 7px !important;
   }
   #cardTeam, #cardSupport, #cardProfile, #cardProject {
     width: 248px;
     height: 284px;
+   }
+   #cardTeam p, #cardSupport p, #cardProfile p, #cardProject p {
+    width: 90%;
+    font-size: 16px;
+   }
+   #titleTeam, #titleSupport, #titleProfile, #titleProject {
+    font-size: 17px;
    }
 }
 /* Fin Query's Nuestros Servicios */
@@ -975,10 +986,10 @@ se sabe una mejor implementarla */
   #bulletImg {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 10px;
-    width: 100%;
+    width: 88%;
   }
   #bulletCegid {
     display: flex;

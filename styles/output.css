@@ -736,10 +736,6 @@ video {
   top: 84.6%;
 }
 
-.top-\[-150px\] {
-  top: -150px;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -1038,6 +1034,10 @@ video {
   width: 100%;
 }
 
+.w-\[85\%\] {
+  width: 85%;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1118,6 +1118,18 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-\[5px\] {
+  gap: 5px;
+}
+
+.gap-\[15px\] {
+  gap: 15px;
+}
+
+.gap-\[10px\] {
+  gap: 10px;
 }
 
 .rounded-2xl {
@@ -1342,6 +1354,36 @@ video {
 .py-\[0\.2rem\] {
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
+}
+
+.px-\[95px\] {
+  padding-left: 95px;
+  padding-right: 95px;
+}
+
+.px-\[85px\] {
+  padding-left: 85px;
+  padding-right: 85px;
+}
+
+.px-\[98px\] {
+  padding-left: 98px;
+  padding-right: 98px;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .pb-14 {
