@@ -742,10 +742,20 @@ se sabe una mejor implementarla */
     display: flex;
     flex-direction: row;
   }
+  #titleCegid {
+    display: flex;
+    flex-direction: row;
+    gap: 5px
+  }
 
   .paragraphCegid {
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px 0;
     width: 100%;
+    margin: 0 -5px;
   }
 
   #cegidMobile {
