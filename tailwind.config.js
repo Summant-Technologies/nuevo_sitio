@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}","./index.html","./politica-calidad.html"],
+  content: ["./src/**/*.{html,js}", "./index.html", "./politica-calidad.html"],
   theme: {
     extend: {
       colors: {
@@ -27,6 +27,21 @@ module.exports = {
         'hexagon-right': "url('./images/PARTNERS/PNG/Right.png')",
         'hexagon-left': "url('./images/PARTNERS/PNG/Left.png')"
       },
+      animation: {
+        'text': 'text 2s ease infinite',
+      },
+      keyframes: {
+        text: {
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left center'
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center'
+          }
+        },
+      }
     },
   },
   plugins: [],
