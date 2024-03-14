@@ -244,6 +244,7 @@ se sabe una mejor implementarla */
   font-weight: 600;
 }
 
+
 /* estilos para la wave */
 
 .porque__bordes {
@@ -1390,3 +1391,59 @@ se sabe una mejor implementarla */
 
 
 /* FIN HOME POLITICAS DE CALIDAD */
+
+
+#cardTeam:hover svg > .pepito {
+  fill: white;
+  transform-origin: center;
+  animation: girar2 4s alternate-reverse infinite, girar 4s alternate;
+  }
+#cardTeam:hover {
+  box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.1);
+  transition: all ease-in-out 2s;
+}
+#cardSupport:hover svg > .pepito {
+  fill: white;
+  transform-origin: center;
+  animation: girar2 4s alternate-reverse infinite, girar 4s alternate;
+  }
+#cardSupport:hover {
+  box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.1);
+  transition: all ease-in-out 2s;
+}
+#cardProfile:hover svg > .pepito {
+  fill: white;
+  transform-origin: center;
+  animation: girar2 4s alternate-reverse infinite, girar 4s alternate;
+  }
+#cardProfile:hover {
+  box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.1);
+  transition: all ease-in-out 2s;
+}
+#cardProject:hover svg > .pepito {
+  fill: white;
+  transform-origin: center;
+  animation: girar2 4s alternate-reverse infinite, girar 4s alternate;
+  }
+#cardProject:hover {
+  box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.1);
+  transition: all ease-in-out 2s;
+}
+
+  @keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(290deg);
+    }
+  }
+
+  @keyframes girar2 {
+    from {
+      transform: rotate(290deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }

@@ -27,36 +27,36 @@
 
 <body class="font-inter h-screen">
     <!-- Inicio de Header -->
-    <header class="h-[80px] bg-white fixed top-0 w-full shadow-md z-50">
+    <header class="h-[80px] bg-white fixed w-full shadow-md z-50">
         <nav class="flex justify-between items-center m-8" id="menuNav">
-            <a href="#home">
+            <a href="#home-section">
                 <img src="./images/LOGO_SUMMANT/SUMMANT LOGO.svg" width="150px" height="100px" alt="logo-summant-nav"
                     title="Summant" id="logoSummant">
             </a>
             <ul id="menuItems"
-                class="w-[100%] h-[55%] hidden fixed flex flex-col top-[13%] text-md bg-white gap-4 left-0 z-40 shadow-md">
+                class="w-[100%] hidden fixed flex flex-col top-[80px] text-md bg-white gap-4 left-0 z-40">
                 <li class="mx-[50px]">
-                    <a href="#"
-                        class="font-inter hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary hover:animate-text hover:transition hover:duration-100 hover:ease-out">INICIO</a>
+                    <a href="#home"
+                        class="selected font-inter hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary hover:animate-text hover:transition hover:duration-100 hover:ease-out">INICIO</a>
                 </li>
                 <li class="mx-[50px]">
-                    <a href="#"
+                    <a href="#summant"
                         class="font-inter hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary hover:animate-text hover:transition hover:ease-in-out">NOSOTROS</a>
                 </li>
                 <li class="mx-[50px]">
-                    <a href="#"
+                    <a href="#service"
                         class="font-inter hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary hover:animate-text hover:transition hover:ease-in-out">SERVICIOS</a>
                 </li>
                 <li class="mx-[50px]">
-                    <a href="#"
+                    <a href="#experience"
                         class="font-inter hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary hover:animate-text hover:transition hover:ease-in-out">EXPERIENCIA</a>
                 </li>
                 <li class="mx-[50px]">
-                    <a href="#"
+                    <a href="#clientes"
                         class="font-inter hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary hover:animate-text hover:transition hover:ease-in-out">CLIENTES</a>
                 </li>
                 <li class="mx-[50px]">
-                    <a href="#"
+                    <a href="#contacto"
                         class="font-inter hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary hover:animate-text hover:transition hover:ease-in-out">CONTACTO</a>
                 </li>
                 <div class="w-[100%] h-[2px] bg-gradient-to-r from-blue-700 to-green-500" id="navDivider"></div>
@@ -87,7 +87,7 @@
 
     <!-- COMIENZO DE HOME (Lauti) -->
     <section class="home-section relative top-[100px]" id="home">
-        <div class="home-container flex flex-col justify-center items-center">
+        <div class="home-container flex flex-col justify-center items-center relative">
             <div class="overlay"></div>
             <div class="home-card">
                 <h2 class="text-4xl font-bold lg:text-6xl lg:text-center mb-6">
@@ -116,8 +116,7 @@
     <!-- ////// -->
 
     <!-- COMIENZO POR QUE SUMMANT (Lauti) -->
-    <section class="bg-dark-grey">
-        <img src="images/ICONOS/DETALLES/TICKS.svg" alt="" class="relative top-[290px]">
+    <section class="bg-dark-grey relative top-[100px]" id="summant">
         <h3 class="flex flex-col justify-center items-center text-xl font-bold"><span
                 class="text-center text-2xl text-transparent bg-clip-text bg-gradient-to-r from-primary from-0% to-secondary to-100%">Por
                 qué
@@ -143,9 +142,9 @@
                     la mejora continua de nuestros procesos y lograr la plena satisfacción de nuestros clientes.
                 </p>
             </div>
-            <div class="flex justify-center mt-14 mb-2 md:order-5 md:pb-40">
+            <div class="flex justify-center mt-8 mb-2">
                 <button class="uppercase font-bold text-white rounded-3xl px-4 py-1 bg-primary">
-                    <a href="./politica-calidad.html">Politicas de calidad</a>
+                    <a href="./politica-calidad.html">Politica de calidad</a>
                 </button>
             </div>
             <div class="flex flex-col justify-center items-center gap-12 my-12 md:flex-row">
@@ -177,7 +176,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col justify-center items-center gap-12 mb-4 md:flex-row">
+            <div class="flex flex-col justify-center items-center gap-12 mb-4 md:mb-[10rem] md:flex-row">
                 <div class="flex flex-col justify-start items-center md:w-40 md:h-20">
                     <div class="flex">
                         <p class="scrollingCounter text-5xl font-medium" data-target="15">0</p>
@@ -224,7 +223,7 @@
 
     <!-- COMIENZO NUESTROS SERVICIOS (Agus) -->
     <img src="./images/ICONOS/DETALLES/TICKS2.svg" alt="" class="relative left-[-1%] bottom-[-40%]">
-    <section class="relative top-[10px]">
+    <section class="servicios relative top-[100px]" id="service">
         <div class="flex flex-col justify-center items-center text-center mt-10 px-10">
             <h3 class="mb-6 flex flex-col justify-center items-center text-xl font-bold"><span
                     class="text-center text-2xl text-transparent bg-clip-text bg-gradient-to-r from-primary from-0% to-secondary to-100% tracking-[2px]">Nuestros</span>
@@ -243,8 +242,9 @@
 
             <div class="w-[320px] h-[300px] mt-[50px] flex flex-col justify-center items-center relative bg-white drop-shadow-services rounded-3xl"
                 id="cardTeam">
-                <img src="./images/PARTNERS/SVG/Icon Equipos.svg" alt="logo-equipos-dedicados" title="Equipos Dedicados"
-                    class="absolute mt-[-300px] logoService" />
+                <!-- <img src="./images/PARTNERS/SVG/Icon Equipos.svg" alt="logo-equipos-dedicados" title="Equipos Dedicados"
+                    class="absolute mt-[-300px] logoService" /> -->
+                <svg class="absolute mt-[-300px] logoService" width="87" height="87" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="43.5" cy="43.5" r="43.5" fill="#fff"/><path d="M69.606 16.56c7.44 7.076 12.079 17.072 12.079 28.15 0 21.453-17.391 38.843-38.843 38.843C21.391 83.553 4 66.163 4 44.711c0-13.295 6.678-25.028 16.866-32.032" stroke="url(#a)" stroke-width="2" stroke-miterlimit="10"/><path class="pepito" d="M65.434 18.384a5.692 5.692 0 1 0 0-11.384 5.692 5.692 0 0 0 0 11.384Z" stroke="url(#b)" stroke-width="2" stroke-miterlimit="10"/><path d="M46.935 41.453c3.816 1.534 6.385 4.137 7.501 8.094.295 1.044.426 2.158.48 3.247.062 1.27-.652 2.211-1.564 2.984-1.89 1.602-4.125 2.394-6.487 2.844-3.819.727-7.559.436-11.15-1.138-3.894-1.707-4.872-3.902-3.618-8.048 1.065-3.518 3.26-6.031 6.52-7.556.274-.13.551-.254.956-.44-2.272-1.673-3.42-3.846-3.298-6.65.09-2.067.95-3.748 2.454-5.095 2.84-2.546 7.41-2.176 9.858.789 2.353 2.849 2.644 7.755-1.652 10.968Zm-3.832 16.01c2.977-.111 5.856-.644 8.492-2.247 1.512-.92 2.015-2.188 1.729-3.936-.805-4.912-4.95-8.6-9.664-8.802-4.601-.199-9.283 3.021-10.369 8.417-.507 2.523-.04 3.515 2.208 4.753 2.366 1.302 4.947 1.69 7.604 1.814Zm.157-16.613c3.012-.004 5.507-2.516 5.523-5.562.016-3.075-2.547-5.74-5.517-5.74-3.029.002-5.477 2.567-5.466 5.73.01 3.134 2.405 5.576 5.46 5.572Z" fill="url(#c)"/><path d="M56.292 53.04v-1.368c1.36-.214 2.73-.248 3.982-.66 3.532-1.164 4.155-2.192 2.152-5.832-1.778-3.23-6.289-4.384-9.838-1.466l-1.2-1.043 2.428-1.653c-1.278-1.233-1.996-2.743-1.802-4.608.143-1.369.722-2.511 1.752-3.388 2.008-1.71 4.935-1.509 6.748.447 1.947 2.1 1.775 4.937-.514 7.572.299.172.587.329.866.5 2.449 1.502 3.827 3.7 4.116 6.634.117 1.186-.334 2.083-1.209 2.777-2.187 1.734-4.712 2.175-7.481 2.088Zm-2.757-16.123c-.013 1.976 1.45 3.543 3.34 3.576 1.823.031 3.457-1.598 3.49-3.48.032-1.91-1.495-3.509-3.388-3.545-1.908-.036-3.428 1.487-3.441 3.448Z" fill="url(#d)"/><path d="M26.814 41.104c-2.225-2.638-2.33-5.524-.351-7.51 1.805-1.809 4.738-1.884 6.578-.168 2.192 2.046 2.172 4.676-.047 7.619l2.256 1.548-1.168 1.06c-1.355-1.047-2.84-1.64-4.582-1.58-3.025.103-5.946 2.978-5.945 6.112 0 .551.457 1.267.912 1.624 1.328 1.039 2.942 1.324 4.573 1.45.405.03.814.004 1.267.004v1.516c-2.55.121-4.9-.3-6.984-1.834-1.304-.959-1.5-2.303-1.2-3.795.56-2.802 2.12-4.8 4.69-6.046Zm-.22-4.062c-.007 1.933 1.373 3.395 3.218 3.41 1.803.015 3.323-1.501 3.346-3.337.023-1.846-1.454-3.38-3.27-3.394-1.875-.015-3.286 1.408-3.294 3.321Z" fill="url(#e)"/><defs><linearGradient id="a" x1="4" y1="83.555" x2="81.685" y2="83.555" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="b" x1="59.742" y1="18.384" x2="71.126" y2="18.384" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="c" x1="22" y1="59.001" x2="65" y2="59.001" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="d" x1="22" y1="59.001" x2="65" y2="59.001" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="e" x1="22" y1="59.001" x2="65" y2="59.001" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient></defs></svg>
                 <div class="flex flex-col justify-center items-center gap-3 cardServices">
                     <h5 class="flex flex-col text-xl text-center font-semibold" id="titleTeam">Equipos
                         <span>dedicados</span>
@@ -257,7 +257,8 @@
 
             <div class="w-[320px] h-[300px] mt-[50px] flex flex-col justify-center items-center relative bg-white drop-shadow-services rounded-3xl"
                 id="cardSupport">
-                <img src="./images/PARTNERS/SVG/Icon Soporte.svg" alt="" class="absolute mt-[-300px] logoService" />
+                <!-- <img src="./images/PARTNERS/SVG/Icon Soporte.svg" alt="" class="absolute mt-[-300px] logoService" /> -->
+                <svg class="absolute mt-[-300px] logoService" width="87" height="87" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="43.5" cy="43.5" r="43.5" fill="#fff"/><path d="M69.7 15.575c7.452 7.085 12.096 17.095 12.096 28.19 0 21.483-17.415 38.898-38.898 38.898C21.416 82.663 4 65.248 4 43.765c0-13.314 6.688-25.064 16.89-32.077" stroke="url(#a)" stroke-width="2" stroke-miterlimit="10"/><path class="pepito" d="M65.522 17.4a5.7 5.7 0 1 0 0-11.4 5.7 5.7 0 0 0 0 11.4Z" stroke="url(#b)" stroke-width="2" stroke-miterlimit="10"/><path d="M31.926 60.148a3.889 3.889 0 0 1-2.783-1.178 3.88 3.88 0 0 1-1.14-2.872c.035-1.108.535-2.144 1.406-2.918 4.452-3.958 9.078-8.056 14.142-12.53.388-.342.498-.719.359-1.223-.835-3.013-.116-5.555 2.135-7.556C47.441 30.63 49.005 30 50.69 30c.982 0 2.021.214 3.088.636.32.127.519.304.56.498.042.205-.083.475-.345.739-.926.934-1.854 1.867-2.782 2.8l-1.605 1.615c-.055.055-.102.11-.144.16a2.803 2.803 0 0 1-.05.055l-.318.36 2.31 2.259.353-.363.693-.715c.528-.545 1.074-1.11 1.62-1.663.691-.699 1.507-1.52 2.326-2.31.17-.164.348-.252.515-.252.23 0 .443.176.583.483 1.027 2.241.837 4.83-.51 6.925-1.35 2.103-3.617 3.358-6.064 3.359-.212 0-.428-.01-.642-.028-.56-.048-1.124-.194-1.555-.316a1.384 1.384 0 0 0-.381-.058c-.407 0-.659.23-.812.405a3276.5 3276.5 0 0 1-6.738 7.604l-1.37 1.544c-.439.494-.877.99-1.315 1.485a422.016 422.016 0 0 1-3.173 3.56c-.8.881-1.867 1.367-3.008 1.367Zm18.863-28.914c-2.021 0-3.9 1.044-5.023 2.792-1.119 1.738-1.283 3.879-.44 5.725.286.626.27.701-.246 1.16l-6.237 5.534-1.345 1.193c-.755.67-1.51 1.338-2.267 2.007-1.668 1.477-3.394 3.003-5.084 4.513a2.713 2.713 0 0 0-.908 2.35c.1.886.613 1.644 1.404 2.079.417.23.85.346 1.286.346.822 0 1.625-.417 2.324-1.207 4.2-4.74 8.406-9.475 13.072-14.73.31-.349.458-.349.529-.349.112 0 .26.044.454.133a6.115 6.115 0 0 0 2.584.576c2.862 0 5.288-1.973 5.9-4.796.127-.592.23-1.305.028-2.104l-.214-.837-.624.597-.171.163c-.109.102-.203.192-.295.282l-1.017 1.01c-.648.645-1.318 1.31-1.982 1.961-.332.326-.76.506-1.206.506-.434 0-.851-.172-1.176-.483a49.646 49.646 0 0 1-1.618-1.618c-.668-.7-.655-1.716.03-2.415.816-.832 1.542-1.562 2.222-2.231.254-.251.526-.5.814-.763.142-.13.29-.265.445-.41l.7-.65-.933-.211a9.332 9.332 0 0 1-.208-.05 1.641 1.641 0 0 0-.268-.051 6.651 6.651 0 0 0-.53-.022Z" fill="url(#c)"/><defs><linearGradient id="a" x1="4" y1="82.665" x2="81.796" y2="82.665" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="b" x1="59.822" y1="17.401" x2="71.222" y2="17.401" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="c" x1="28" y1="60.149" x2="58.148" y2="60.149" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient></defs></svg>
                 <div class="flex flex-col justify-center items-center gap-3 cardServices">
                     <h5 class="w-[70%] mt-[20px] text-xl text-center font-semibold" id="titleSupport">Soporte y
                         Mantenimiento</h5>
@@ -268,7 +269,8 @@
             </div>
             <div class="middleWave w-full h-[200px] absolute z-[-20] sm:hidden"></div>
             <div class="w-[320px] h-[300px] mt-[50px] flex flex-col justify-center items-center relative bg-white drop-shadow-services rounded-3xl" id="cardProfile">
-                <img src="./images/PARTNERS/SVG/Icon Perfiles.svg" alt="" class="absolute mt-[-300px] logoService" />
+                <!-- <img src="./images/PARTNERS/SVG/Icon Perfiles.svg" alt="" class="absolute mt-[-300px] logoService" /> -->
+                <svg class="absolute mt-[-300px] logoService" width="85" height="85" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="42.5" cy="42.5" r="42.5" fill="#fff"/><path d="M68.398 14.404c7.28 6.923 11.818 16.702 11.818 27.542 0 20.99-17.015 38.004-38.004 38.004-20.989 0-38.004-17.015-38.004-38.004 0-13.007 6.534-24.488 16.502-31.34" stroke="url(#a)" stroke-width="2" stroke-miterlimit="10"/><path class="pepito" d="M64.316 16.188a5.57 5.57 0 1 0 0-11.139 5.57 5.57 0 0 0 0 11.139Z" stroke="url(#b)" stroke-width="2" stroke-miterlimit="10"/><path d="M53.136 31.28v-7.272h1.448v7.273h-1.448Zm-2.91-2.915v-1.447H57.5v1.447h-7.273Z" fill="url(#c)"/><path d="M45.93 40.554c3.809 1.459 6.373 3.932 7.487 7.692.294.991.425 2.05.478 3.085.063 1.206-.65 2.1-1.56 2.835-1.886 1.522-4.117 2.275-6.475 2.703-3.812.69-7.545.413-11.13-1.082-3.886-1.621-4.863-3.708-3.61-7.647 1.062-3.342 3.254-5.73 6.506-7.18.275-.122.551-.24.955-.417-2.267-1.59-3.414-3.655-3.292-6.319.09-1.964.948-3.56 2.45-4.841 2.835-2.42 7.397-2.067 9.84.75 2.349 2.706 2.64 7.368-1.65 10.421Zm-3.825 15.212c2.972-.104 5.845-.61 8.476-2.134 1.51-.873 2.011-2.078 1.726-3.74-.803-4.667-4.942-8.17-9.646-8.363-4.593-.189-9.266 2.87-10.35 7.997-.506 2.398-.04 3.34 2.204 4.517 2.362 1.237 4.937 1.605 7.59 1.724Zm.157-15.784c3.006-.004 5.496-2.39 5.512-5.285.016-2.921-2.542-5.455-5.507-5.454-3.023.002-5.466 2.44-5.456 5.445.01 2.977 2.4 5.298 5.45 5.294Z" fill="url(#d)"/><defs><linearGradient id="a" x1="4.208" y1="79.952" x2="80.216" y2="79.952" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="b" x1="58.746" y1="16.188" x2="69.885" y2="16.188" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="c" x1="30.606" y1="57.228" x2="53.899" y2="57.228" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="d" x1="30.606" y1="57.228" x2="53.899" y2="57.228" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient></defs></svg>
                 <div class="flex flex-col justify-center items-center gap-3 cardServices">
                     <h5 class="w-[60%] text-xl text-center font-semibold" id="titleProfile">Provision de perfiles IT
                     </h5>
@@ -280,7 +282,8 @@
 
             <div class="w-[320px] h-[300px] mt-[50px] flex flex-col justify-center items-center relative bg-white drop-shadow-services rounded-3xl"
                 id="cardProject">
-                <img src="./images/PARTNERS/SVG/Icon Desarrollo.svg" alt="" class="absolute mt-[-300px] logoService" />
+                <!-- <img src="./images/PARTNERS/SVG/Icon Desarrollo.svg" alt="" class="absolute mt-[-300px] logoService" /> -->
+                <svg class="absolute mt-[-300px] logoService w-[90px]" width="85" height="85" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="42.5" cy="42.5" r="42.5" fill="#fff"/><path d="M69.24 14.404c7.279 6.923 11.817 16.702 11.817 27.542 0 20.99-17.015 38.004-38.004 38.004-20.989 0-38.004-17.015-38.004-38.004 0-13.007 6.534-24.488 16.502-31.34" stroke="url(#a)" stroke-width="2" stroke-miterlimit="10"/><path class="pepito" d="M65.157 16.188a5.57 5.57 0 1 0 0-11.139 5.57 5.57 0 0 0 0 11.139Z" stroke="url(#b)" stroke-width="2" stroke-miterlimit="10"/><path d="M60.67 50.353c-.567.965-1.043 1.873-1.627 2.707-.174.248-.648.39-.986.39-.455.002-.925-.137-1.362-.293-1-.358-1.73-.126-2.434.708-.415.494-.577.885-.389 1.468.072.222.1.457.133.69.097.654.497 1.656.223 1.9-.85.762-1.953 1.247-2.974 1.81-.084.047-.31-.1-.433-.201-.36-.299-.732-.592-1.043-.94-.782-.878-1.65-1.363-2.791-.699-.31.18-.67.422-.81.725-.322.714-.485 1.499-.794 2.22-.105.243-.446.526-.695.544-.902.065-1.812.065-2.714-.004-.248-.02-.555-.31-.69-.557a4.202 4.202 0 0 1-.466-1.314c-.18-1.11-.73-1.707-1.894-1.874-.554-.08-.916-.062-1.316.328-.647.631-1.347 1.21-2.105 1.882-.943-.554-1.907-1.091-2.832-1.688-.181-.116-.307-.473-.29-.706.039-.49.146-.986.304-1.451.356-1.047.212-1.868-.73-2.59-.439-.337-.78-.546-1.31-.386-.222.067-.455.098-.683.145-2.155.438-2.157.44-3.227-1.535-.235-.432-.451-.875-.68-1.323.438-.49.808-.99 1.262-1.394.865-.771 1.227-1.578.706-2.746-.2-.45-.353-.745-.82-.87-.365-.096-.72-.228-1.079-.35-1.703-.58-1.703-.58-1.712-2.381-.009-1.92-.009-1.92 1.767-2.523.165-.056.333-.102.5-.156 1.003-.329 1.725-1.335 1.661-2.375-.01-.18-.143-.37-.266-.52-.353-.429-.727-.841-1.099-1.254-.95-1.056-.953-1.054-.252-2.335 1.084-1.985 1.084-1.985 3.3-1.539 1.334.269 2.042-.002 2.76-1.128.121-.19.116-.502.08-.744-.071-.49-.213-.968-.31-1.455-.295-1.484-.293-1.484.972-2.256 1.902-1.148 1.999-1.243 3.517.327.979 1.014 1.907.828 2.958.471.198-.067.375-.335.468-.552.197-.453.332-.932.488-1.403.507-1.521.507-1.521 2.139-1.548 2.134-.033 2.276-.065 2.739 2.006.314 1.407 1.233 1.66 2.314 1.88.21.042.506-.082.688-.225.484-.376 1-.748 1.37-1.224.644-.828 1.25-.713 2.07-.251 2.133 1.201 2.152 1.166 1.675 3.583-.216 1.091.246 2.152 1.205 2.646.206.105.51.068.758.028.546-.088 1.116-.144 1.622-.352.982-.404 1.449.044 1.92.85 1.213 2.082 1.34 2.161-.34 3.804-1.026 1.005-.598 1.915-.343 2.914.042.167.316.32.514.397.57.22 1.144.473 1.739.571 1.014.167 1.231.733 1.244 1.688.03 2.465.077 2.465-2.24 3.227-1.087.359-1.703 1.188-1.689 2.35.002.2.158.42.293.59.309.39.646.756.977 1.127.33.37.665.734 1.058 1.166ZM34.04 57.067c.191.155.427.425.723.555.242.106.618.148.828.03.372-.21.707-.53.981-.866.77-.941 1.588-.92 2.785-.722 1.888.313 2.695 1.302 2.96 2.994.128.813.617.9 1.3.873.805-.034.702-.722.82-1.146.36-1.3.815-2.123 2.387-2.601 1.85-.562 2.885.012 3.948 1.219.381.432.71.518 1.267.207.563-.316.627-.674.484-1.205-.082-.31-.09-.645-.207-.94-.412-1.063-.094-1.735.688-2.637 1.256-1.447 2.497-1.84 4.208-1.133.495.204.886.104 1.202-.467.305-.553.245-.892-.199-1.27-.22-.188-.37-.462-.594-.643-.98-.785-.948-1.637-.729-2.868.33-1.852 1.292-2.637 2.95-2.89.867-.132 1.088-.719.833-1.36-.145-.365-.712-.67-1.147-.79-1.276-.353-2.078-.826-2.527-2.358-.517-1.769-.093-2.831 1.125-3.896.396-.348.707-.66.31-1.33-.394-.666-.822-.588-1.375-.46-.284.067-.59.075-.853.186-1.053.443-1.691.023-2.55-.699-1.457-1.228-1.87-2.479-1.156-4.199.199-.477.144-.897-.445-1.213-.54-.29-.883-.285-1.274.175-.244.287-.6.48-.835.771-.695.863-1.44.742-2.49.603-2.011-.265-2.845-1.342-3.14-3.136-.09-.553-.371-.755-.945-.764-.607-.01-.92.188-1.025.785-.049.283-.23.545-.272.83-.19 1.285-1.002 1.647-2.175 2.123-1.887.765-2.932-.035-4.022-1.226-.37-.404-.684-.472-1.198-.19-.536.296-.71.619-.532 1.185.088.277.08.588.191.851.49 1.17.058 1.9-.765 2.86-1.202 1.404-2.388 1.666-3.985 1.061-.542-.205-1-.186-1.354.483-.314.593-.093.88.263 1.267.93 1.012 1.81 1.787 1.277 3.624-.52 1.797-1.452 2.436-2.984 2.763-.602.129-.87.385-.867 1.054.002.662.323.856.862.97.282.06.543.23.826.277 1.191.2 1.605.902 2.023 2.061.646 1.79.188 2.956-1.118 4.056-.4.336-.61.663-.28 1.256.33.594.701.671 1.268.53.621-.154 1.246-.338 1.88-.39a1.54 1.54 0 0 1 1.022.333c.642.548 1.178 1.222 1.822 1.769.401.34.475.648.345 1.133-.209.755-.333 1.535-.535 2.515Z" fill="url(#c)"/><path d="M54.365 42.522a10.977 10.977 0 0 1-11.01 11.025c-6.118.01-11.014-4.87-11.036-11-.023-6.149 4.923-11.104 11.055-11.076a10.994 10.994 0 0 1 10.991 11.051Zm-11.041 9.5c5.17.025 9.466-4.25 9.519-9.47.052-5.18-4.34-9.584-9.53-9.554-5.187.03-9.503 4.363-9.477 9.519.028 5.212 4.289 9.48 9.488 9.505Z" fill="url(#d)"/><defs><linearGradient id="a" x1="5.049" y1="79.952" x2="81.057" y2="79.952" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="b" x1="59.587" y1="16.188" x2="70.726" y2="16.188" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="c" x1="24.411" y1="61.431" x2="62.277" y2="61.431" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="d" x1="32.319" y1="53.547" x2="54.365" y2="53.547" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient></defs></svg>
                 <div class="flex flex-col justify-center items-center gap-3 cardServices">
                     <h5 class="w-[60%] text-xl text-center font-semibold" id="titleProject">Desarrollo de proyectos</h5>
                     <div class="w-[30%] h-[2px] bg-gradient-to-r from-primary to-secondary"></div>
@@ -301,7 +304,7 @@
     <img src="images/EXPORTS/BORDERS/Vector.png" alt=""
     class="w-full">
     <img src="./images/ICONOS/DETALLES/CIRCULO.svg" alt="" class="absolute left-[-20%]">
-    <section class="bg-[#F8F8F8] pt-[50px]">
+    <section class="bg-[#F8F8F8] pt-[50px]" id="cegid">
         <div class="text-center m-[30px]">
             <h3 class="mb-6 flex flex-col justify-center items-center text-xl font-bold titleCegid"><span
                     class="w-[60%] text-center text-2xl text-transparent bg-clip-text bg-gradient-to-r from-primary from-15% to-secondary to-85%">
@@ -317,7 +320,7 @@
             <p class="text-xl font-light leading-8 mb-10 paragraphCegid">Nuestra condición de <span
                     class="font-bold">partner
                     certificado implica el aval de Cegid en los conocimientos y prácticas de nuestros
-                    profesionales.</span>Implementamos y evolucionamos éxito funcionalidades que permiten a recursos
+                    profesionales.</span>Implementamos y evolucionamos con éxito funcionalidades que permiten a recursos
                 humanos contar con una herramienta integral que responda a las necesidades actuales.</p>
         </div>
 
@@ -371,7 +374,7 @@
     <!-- ////// -->
 
     <!-- COMIENZO DOMINIO TECH (Lauti) -->
-    <section>
+    <section id="dominio">
         <div>
             <h3 class="mb-16 flex flex-col justify-center items-center text-xl font-bold"><span
                     class="text-center text-2xl text-transparent bg-clip-text bg-gradient-to-r from-primary from-0% to-secondary to-100%">Dominio</span>
@@ -606,10 +609,7 @@
                                 id="svgIndicador-White" />
                             <h4 class="font-semibold">Indicadores</h4>
                         </div>
-                        <p class="description px-5">Contamos con un staff de profesionales altamente
-                            capacitados
-                            en el
-                            desarrollo de aplicaciones móviles.</p>
+                        <p class="description px-5">Definimos e implementamos tableros corporativos basados en KPIs, reporting y sistemas de visualizacion</p>
                     </div>
                     <img src="./images/PARTNERS/SVG/Arrow.svg" alt="" class="arrow" />
                 </div>
@@ -626,10 +626,7 @@
                         </div>
                     </div>
                     <div>
-                        <p class="text-start p-5 w-[95%]">Contamos con un staff de profesionales altamente
-                            capacitados
-                            en el
-                            desarrollo de aplicaciones móviles.</p>
+                        <p class="text-start p-5 w-[95%]">Definimos e implementamos tableros corporativos basados en KPIs, reporting y sistemas de visualizacion.</p>
                     </div>
                 </div>
                 <!-- Toggle -->
@@ -731,7 +728,7 @@
     <!-- ////// -->
 
     <!-- COMIENZO CLIENTES (Lauti) -->
-    <section>
+    <section id="clientes">
         <div>
             <h3 class="mb-12 flex flex-col justify-center items-center text-xl font-bold"><span
                     class="text-center text-2xl text-transparent bg-clip-text bg-gradient-to-r from-primary from-0% to-secondary to-100%">Confían
@@ -899,7 +896,7 @@
     <!-- ////// -->
 
     <!-- COMIENZO CONTACTO (Lauti) -->
-    <section class="bg-[#F4F4F4]">
+    <section class="bg-[#F4F4F4]" id="contacto">
 
         <div class="flex flex-col md:flex-row md:justify-end md:relative">
             <div class="flex justify-center relative md:absolute left-0 bg-white md:bg-transparent">
@@ -986,7 +983,7 @@
     <!-- COMIENZO FOOTER -->
     <footer class="py-3 md:flex md:gap-2 md:justify-center">
         <p class="text-[#777777] text-center">Copyright @2023 Summant Technologies.</p>
-        <p class="text-[#777777] text-center">All Rights Reserved</p>
+        <p class="text-[#777777] text-center">Todos los derechos reservados.</p>
     </footer>
 
     <!-- FIN DE FOOTER -->

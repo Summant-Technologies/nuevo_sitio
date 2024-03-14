@@ -704,10 +704,6 @@ video {
   top: 20px;
 }
 
-.top-\[290px\] {
-  top: 290px;
-}
-
 .top-\[3\%\] {
   top: 3%;
 }
@@ -736,8 +732,52 @@ video {
   top: 71%;
 }
 
+.top-\[80px\] {
+  top: 80px;
+}
+
 .top-\[84\.6\%\] {
   top: 84.6%;
+}
+
+.top-\[50px\] {
+  top: 50px;
+}
+
+.top-\[-80px\] {
+  top: -80px;
+}
+
+.top-\[-800px\] {
+  top: -800px;
+}
+
+.bottom-\[100px\] {
+  bottom: 100px;
+}
+
+.bottom-\[-100px\] {
+  bottom: -100px;
+}
+
+.bottom-\[-200px\] {
+  bottom: -200px;
+}
+
+.bottom-\[0px\] {
+  bottom: 0px;
+}
+
+.top-\[200px\] {
+  top: 200px;
+}
+
+.top-\[-200px\] {
+  top: -200px;
+}
+
+.top-\[-100px\] {
+  top: -100px;
 }
 
 .z-10 {
@@ -758,6 +798,10 @@ video {
 
 .z-\[-20\] {
   z-index: -20;
+}
+
+.order-5 {
+  order: 5;
 }
 
 .m-10 {
@@ -789,6 +833,11 @@ video {
 .my-12 {
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 
 .mb-10 {
@@ -883,6 +932,22 @@ video {
   margin-top: 60px;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
+.mb-\[10rem\] {
+  margin-bottom: 10rem;
+}
+
 .flex {
   display: flex;
 }
@@ -939,6 +1004,10 @@ video {
   height: 353px;
 }
 
+.h-\[55\%\] {
+  height: 55%;
+}
+
 .h-\[80px\] {
   height: 80px;
 }
@@ -949,26 +1018,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[8\%\] {
-  height: 8%;
-}
-
-.h-\[80\%\] {
-  height: 80%;
-}
-
-.h-\[50\%\] {
-  height: 50%;
-}
-
-.h-\[60\%\] {
-  height: 60%;
-}
-
-.h-\[55\%\] {
-  height: 55%;
 }
 
 .w-12 {
@@ -1069,6 +1118,18 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[60px\] {
+  width: 60px;
+}
+
+.w-\[100px\] {
+  width: 100px;
+}
+
+.w-\[90px\] {
+  width: 90px;
 }
 
 .cursor-pointer {
@@ -1232,11 +1293,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
@@ -1403,6 +1459,10 @@ video {
 
 .pt-\[50px\] {
   padding-top: 50px;
+}
+
+.pb-40 {
+  padding-bottom: 10rem;
 }
 
 .text-left {
@@ -1715,6 +1775,10 @@ video {
     order: 5;
   }
 
+  .md\:order-1 {
+    order: 1;
+  }
+
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1729,6 +1793,18 @@ video {
 
   .md\:mt-2 {
     margin-top: 0.5rem;
+  }
+
+  .md\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .md\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
+  .md\:mb-\[10rem\] {
+    margin-bottom: 10rem;
   }
 
   .md\:block {
