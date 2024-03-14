@@ -640,10 +640,6 @@ video {
   top: 0px;
 }
 
-.top-\[-100px\] {
-  top: -100px;
-}
-
 .top-\[-50\%\] {
   top: -50%;
 }
@@ -680,12 +676,12 @@ video {
   top: 100px;
 }
 
-.top-\[13\%\] {
-  top: 13%;
+.top-\[10px\] {
+  top: 10px;
 }
 
-.top-\[15\%\] {
-  top: 15%;
+.top-\[13\%\] {
+  top: 13%;
 }
 
 .top-\[150px\] {
@@ -706,10 +702,6 @@ video {
 
 .top-\[20px\] {
   top: 20px;
-}
-
-.top-\[290px\] {
-  top: 290px;
 }
 
 .top-\[3\%\] {
@@ -740,28 +732,52 @@ video {
   top: 71%;
 }
 
+.top-\[80px\] {
+  top: 80px;
+}
+
 .top-\[84\.6\%\] {
   top: 84.6%;
 }
 
-.top-\[30px\] {
-  top: 30px;
+.top-\[50px\] {
+  top: 50px;
 }
 
-.top-\[10px\] {
-  top: 10px;
+.top-\[-80px\] {
+  top: -80px;
 }
 
-.top-\[-20px\] {
-  top: -20px;
+.top-\[-800px\] {
+  top: -800px;
 }
 
-.top-5 {
-  top: 1.25rem;
+.bottom-\[100px\] {
+  bottom: 100px;
 }
 
-.top-2 {
-  top: 0.5rem;
+.bottom-\[-100px\] {
+  bottom: -100px;
+}
+
+.bottom-\[-200px\] {
+  bottom: -200px;
+}
+
+.bottom-\[0px\] {
+  bottom: 0px;
+}
+
+.top-\[200px\] {
+  top: 200px;
+}
+
+.top-\[-200px\] {
+  top: -200px;
+}
+
+.top-\[-100px\] {
+  top: -100px;
 }
 
 .z-10 {
@@ -784,12 +800,20 @@ video {
   z-index: -20;
 }
 
+.order-5 {
+  order: 5;
+}
+
 .m-10 {
   margin: 2.5rem;
 }
 
 .m-8 {
   margin: 2rem;
+}
+
+.m-\[30px\] {
+  margin: 30px;
 }
 
 .m-auto {
@@ -809,6 +833,11 @@ video {
 .my-12 {
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 
 .mb-10 {
@@ -891,10 +920,6 @@ video {
   margin-top: -350px;
 }
 
-.mt-\[100px\] {
-  margin-top: 100px;
-}
-
 .mt-\[20px\] {
   margin-top: 20px;
 }
@@ -905,6 +930,22 @@ video {
 
 .mt-\[60px\] {
   margin-top: 60px;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
+.mb-\[10rem\] {
+  margin-bottom: 10rem;
 }
 
 .flex {
@@ -963,6 +1004,10 @@ video {
   height: 353px;
 }
 
+.h-\[55\%\] {
+  height: 55%;
+}
+
 .h-\[80px\] {
   height: 80px;
 }
@@ -973,22 +1018,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[30rem\] {
-  height: 30rem;
-}
-
-.h-\[400px\] {
-  height: 400px;
-}
-
-.h-\[500px\] {
-  height: 500px;
-}
-
-.h-\[450px\] {
-  height: 450px;
 }
 
 .w-12 {
@@ -1051,16 +1080,8 @@ video {
   width: 50%;
 }
 
-.w-\[58\%\] {
-  width: 58%;
-}
-
 .w-\[60\%\] {
   width: 60%;
-}
-
-.w-\[63\%\] {
-  width: 63%;
 }
 
 .w-\[70\%\] {
@@ -1099,20 +1120,16 @@ video {
   width: 100%;
 }
 
-@keyframes text {
-  0%, 100% {
-    background-size: 200% 200%;
-    background-position: left center;
-  }
-
-  50% {
-    background-size: 200% 200%;
-    background-position: right center;
-  }
+.w-\[60px\] {
+  width: 60px;
 }
 
-.animate-text {
-  animation: text 2s ease infinite;
+.w-\[100px\] {
+  width: 100px;
+}
+
+.w-\[90px\] {
+  width: 90px;
 }
 
 .cursor-pointer {
@@ -1395,16 +1412,6 @@ video {
   padding-right: 100px;
 }
 
-.px-\[30px\] {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.px-\[60px\] {
-  padding-left: 60px;
-  padding-right: 60px;
-}
-
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -1430,16 +1437,6 @@ video {
   padding-bottom: 0.2rem;
 }
 
-.px-\[20px\] {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.px-\[10px\] {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 .pb-14 {
   padding-bottom: 3.5rem;
 }
@@ -1462,6 +1459,10 @@ video {
 
 .pt-\[50px\] {
   padding-top: 50px;
+}
+
+.pb-40 {
+  padding-bottom: 10rem;
 }
 
 .text-left {
@@ -1648,10 +1649,6 @@ video {
           background-clip: text;
 }
 
-.hover\:font-semibold:hover {
-  font-weight: 600;
-}
-
 .hover\:text-transparent:hover {
   color: transparent;
 }
@@ -1697,14 +1694,6 @@ video {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-
-.hover\:duration-500:hover {
-  transition-duration: 500ms;
-}
-
-.hover\:duration-300:hover {
-  transition-duration: 300ms;
 }
 
 .hover\:duration-100:hover {
@@ -1786,6 +1775,10 @@ video {
     order: 5;
   }
 
+  .md\:order-1 {
+    order: 1;
+  }
+
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1800,6 +1793,18 @@ video {
 
   .md\:mt-2 {
     margin-top: 0.5rem;
+  }
+
+  .md\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .md\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
+  .md\:mb-\[10rem\] {
+    margin-bottom: 10rem;
   }
 
   .md\:block {
