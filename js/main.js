@@ -217,22 +217,22 @@ const glideResenas = new Glide("#glide-resenas", {
 
 glideResenas.mount();
 
-const glideTech = new Glide("#glide-tech", {
-  type: 'carousel',
-  perView: 5,
-  autoplay: 4000,
-  gap: 80,
-  focusAt: 1,
-  breakpoints: {
-    768: {
-      perView: 3,
-      gap: 10
-    },
-    460: {
-      perView: 2,
-      gap: 20,
-    },
-  }
-});
+// const glideTech = new Glide("#glide-tech", {
+//   type: 'carousel',
+//   perView: 5,
+//   autoplay: 4000,
+//   gap: 80,
+//   focusAt: 1,
+//   breakpoints: {
+//     768: {
+//       perView: 3,
+//       gap: 10
+//     },
+//     460: {
+//       perView: 2,
+//       gap: 20,
+//     },
+//   }
+// });
 
-glideTech.mount();
+// glideTech.mount();

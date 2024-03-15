@@ -87,7 +87,7 @@
 
     <!-- COMIENZO DE HOME (Lauti) -->
     <section class="home-section relative top-[100px]" id="home">
-        <div class="home-container flex flex-col justify-center items-center relative">
+        <div class="home-container flex flex-col justify-center items-center">
             <div class="overlay"></div>
             <div class="home-card">
                 <h2 class="text-4xl font-bold lg:text-6xl lg:text-center mb-6">
@@ -98,11 +98,10 @@
                 </h2>
                 <div class="flex flex-col justify-start items-center gap-4 sm:flex-row sm:items-center">
                     <button class="uppercase font-bold text-sm rounded-3xl bg-primary px-6 py-3 text-white">
-                        contactanos
+                        <a href="#contacto">contactanos</a>
                     </button>
                     <button
-                        class="uppercase font-bold flex justify-center gap-2 items-center text-sm rounded-3xl border-solid border-2 border-primary px-5 py-[0.2rem] md:py-2">
-                        seguinos
+                        class="uppercase font-bold flex justify-center gap-2 items-center text-sm rounded-3xl border-solid border-2 border-primary px-5 py-[0.2rem] md:py-2"><a href="https://ar.linkedin.com/company/summant-technologies" target="_blank">seguinos</a>
                         <img src="images/ICONOS/PORQUE/LINKEDIN.svg" alt="" class="w-6">
                     </button>
                 </div>
@@ -142,9 +141,12 @@
                     la mejora continua de nuestros procesos y lograr la plena satisfacción de nuestros clientes.
                 </p>
             </div>
-            <div class="flex justify-center mt-8 mb-2">
-                <button class="uppercase font-bold text-white rounded-3xl px-4 py-1 bg-primary">
+            <div class="flex flex-col gap-5 justify-center ml-[15%] mr-[15%] mt-5" id="buttonContain">
+                <button class="uppercase font-bold text-white rounded-3xl px-8 py-1 bg-primary">
                     <a href="./politica-calidad.html">Politica de calidad</a>
+                </button>
+                <button class="uppercase font-bold text-white rounded-3xl px-4 py-1 bg-secondary">
+                    <a href="./politica-calidad.html">Politica de seguridad</a>
                 </button>
             </div>
             <div class="flex flex-col justify-center items-center gap-12 my-12 md:flex-row">
@@ -376,7 +378,7 @@
     <!-- COMIENZO DOMINIO TECH (Lauti) -->
     <section id="dominio">
         <div>
-            <h3 class="mb-16 flex flex-col justify-center items-center text-xl font-bold"><span
+            <h3 class="mb-6 flex flex-col justify-center items-center text-xl font-bold"><span
                     class="text-center text-2xl text-transparent bg-clip-text bg-gradient-to-r from-primary from-0% to-secondary to-100%">Dominio</span>
                 <div>
                     <span class="text-3xl font-semibold leading-[0]">tecnológico<sup
@@ -384,8 +386,45 @@
                 </div>
             </h3>
         </div>
-        <div class="container-tech">
-            <div class="glide" id="glide-tech">
+        <div>
+            <div class="flex justify-center">
+                <div class="scroller" data-direction="right" data-speed="slow">
+                    <div class="scroller__inner">
+                        <img src="images/LOGOS_TECNOLOGÍAS/AMAZON.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/ANDROID.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/ANGULAR.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/ASP.NET.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/AZURE DEVOPS.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/AZURE.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/BOOTSTRAP.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/C#.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/DOCKER.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/GOOGLE CLOUD.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/REACT.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/SPRING.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/SWIFT.svg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="scroller" data-direction="left" data-speed="fast">
+                    <div class="scroller__inner">
+                        <img src="images/LOGOS_TECNOLOGÍAS/ICONIC.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/IOS.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/JAVA.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/JAVASCRPIT.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/JENKINS.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/KOTLIN.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/KUBERNETES.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/NODE.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/PHP.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/PHTON.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/VUE.JS.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/XAMARIN.svg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="glide" id="glide-tech">
                 <div class="glide__track" id="glide__track--tech" data-glide-el="track">
                     <ul class="glide__slides">
                         <li class="glide__slide glide__slide-tech">
@@ -437,7 +476,7 @@
                         <img src="images/ICONOS/SLIDERS/FLECHA-DERECHA-TECH.svg" alt="">
                     </button>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <img src="images/EXPORTS/BORDERS/Vector.png" class="w-full" alt="">

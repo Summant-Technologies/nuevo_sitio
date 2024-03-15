@@ -63,30 +63,7 @@
   vertical-align: sub;
 }
 
-/* #rod {
-    position: relative;
-    margin-top: 50px;
-    margin-left: 150px;
-    width: 2px;
-    height: 150px;
-    border-radius: 5px;
-    transform-origin: 50% 0%;
-    transform: rotate(60deg);
-    background-color: transparent;
-  }
-  
-  #ball {
-    position: absolute;
-    bottom: -10px;
-    left: -10px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: orange;
-  } */
-
 /* Inicio estilos para home*/
-
 @media (max-width: 600px) {
   .home-container {
     position: static;
@@ -155,7 +132,6 @@
 
 /* Estas querys son para acomodar la imagen cuando cambia la resolucion, no es la mejor forma si 
 se sabe una mejor implementarla */
-
 @media (min-width: 800px) {
   .home-card {
     left: -14%;
@@ -175,11 +151,9 @@ se sabe una mejor implementarla */
     left: -95px;
   }
 }
-
 /* Fin estilos para home */
 
 /* Inicio estilos para porque summant*/
-
 .card-porque {
   width: 16rem;
   height: 16rem;
@@ -244,9 +218,7 @@ se sabe una mejor implementarla */
   font-weight: 600;
 }
 
-
 /* estilos para la wave */
-
 .porque__bordes {
   position: relative;
   top: -170px;
@@ -283,7 +255,6 @@ se sabe una mejor implementarla */
 }
 
 /* arreglos para las resoluciones mobile */
-
 @media (max-width: 450px) {
   .porque__circulo {
     width: 80px;
@@ -352,6 +323,13 @@ se sabe una mejor implementarla */
   }
 }
 
+@media (min-width: 768px) {
+  #buttonContain {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 @media (min-width: 970px) {
   .porque__div {
     top: 210px;
@@ -374,12 +352,12 @@ se sabe una mejor implementarla */
     top: 216px;
   }
 }
-/* Fin estilos para porque summant  */
+/* arreglos para las resoluciones mobile */
 
 /* Fin estilos para porque summant  */
+
 
 /* Inicio estilos para el slider de resenas */
-
 .glide__slides {
   height: 350px;
 }
@@ -499,11 +477,9 @@ se sabe una mejor implementarla */
     justify-content: center;
   }
 }
-
 /* Fin estilos para resenas */
 
 /* Inicio estilos para slider de clientes */
-
 .scroller {
   max-width: 90%;
 }
@@ -556,8 +532,6 @@ se sabe una mejor implementarla */
     transform: translate(calc(-50% - 0.5rem));
   }
 }
-
-
 /* Fin estilos para slider de clientes */
 
 /* Comienzo Query's Navbar */
@@ -629,16 +603,16 @@ se sabe una mejor implementarla */
     width: 80px;
   }
 }
-
 /* Fin Query's Navbar */
 
-/* Comienzo Query's Nuestros Servicios */
 .middleWave {
   background-image: url(../images/EXPORTS/BORDERS/MiddleWave.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* Comienzo Query's Nuestros Servicios */
 @media (min-width: 768px) and (max-width: 1024px) {
   #servicios {
     display: flex;
@@ -888,104 +862,6 @@ se sabe una mejor implementarla */
     background-size: cover;
     border-radius: 15px 15px 0 0;
   }
-  /* #experienceCards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-  } */
-  /* .bullet {
-    max-width: 80%;
-  }
-  #bulletCegid {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 10px;
-  }
-  #bulletWeb {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 10px;
-  }
-  #bulletMobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 10px;
-  }
-  #bulletIndicador {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 10px;
-  }
-  #bulletGestion {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 10px;
-  }
-  #bulletCapacitacion {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 10px;
-  }
-  #bulletImg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-  #cardDesktop {
-    display: flex;
-    flex-direction: row;
-  }
-  #bullet:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../images/FOTOS_EXPERIENCIA/CEGID.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #ffffff;
-    transition: all .5s ease-in-out;
-  }
-  #bullet:hover #svgColors {
-    display: none;
-  }
-  #bullet:hover #svgWhite {
-    display: flex;
-    width: 35px;
-  }
-  #bulletContain {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 10px;
-  }
-  #bulletImg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-  .description {
-    display: none;
-  }
-  .arrow {
-    display: flex;
-  }
-  #cardDesktop {
-    display: flex;
-    flex-direction: row;
-  } */
 }
 @media (min-width: 1024px) {
   #experienceCards {
@@ -1389,9 +1265,9 @@ se sabe una mejor implementarla */
 }
 /* Fin Politicas de Calidad */
 
-
 /* FIN HOME POLITICAS DE CALIDAD */
 
+/* Comienzo Animacion Cards */
 
 #cardTeam:hover svg > .pepito {
   fill: white;
@@ -1447,3 +1323,5 @@ se sabe una mejor implementarla */
       transform: rotate(0deg);
     }
   }
+
+  /* Fin Animacion Cards */
