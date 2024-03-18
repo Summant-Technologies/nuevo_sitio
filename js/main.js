@@ -21,15 +21,37 @@ const btnValores = document.querySelector("#btn-valores");
 
 
 function visionCard() {
-    let imgBg = "images/EXPORTS/PORQUE/businesspeople-celebrating-victory 1.png";
+    let imgBg = "images/EXPORTS/PORQUE/vision-card.png";
     let icon = "images/ICONOS/PORQUE/BANDERIN.svg";
     let text = "Vision";
 
     const content = document.createElement("p");
     content.textContent = `Ser una empresa de IT valorada por nuestros clientes, construyendo
-con ellos un vínculo de confianza basados en la calidad de nuestros productos y servicios y en las cualidades humanas y profesionales de nuestros colaboradores`
+con ellos un vínculo de confianza basados en la calidad de nuestros productos y servicios y en las cualidades humanas y profesionales de nuestros colaboradores.`
 
     changeCardContent(cardVision, imgBg, icon, text, content)
+}
+
+function misionCard() {
+  let imgBg = "images/EXPORTS/PORQUE/mision-card.png";
+  let icon = "images/ICONOS/PORQUE/FLECHA.svg";
+  let text = "Mision";
+
+  const content = document.createElement("p");
+  content.textContent = `Constituirnos en aliados estrategicos de nuestros clientes, proveyendo productos y servicios de alta calidad y guiandolos en las transformaciones digitales que potencien sus organizaciones.`
+
+  changeCardContent(cardMision, imgBg, icon, text, content)
+}
+
+function valoresCard() {
+  let imgBg = "images/EXPORTS/PORQUE/valores-card.png";
+  let icon = "images/ICONOS/PORQUE/TICK.svg";
+  let text = "Valores";
+
+  const content = document.createElement("ul");
+  content.textContent = `prueba1.prueba2.prueba3`
+
+  changeCardContent(cardValores, imgBg, icon, text, content)
 }
 
 // Esta funcion crea el contenido de la card en porque summant cuando se hace click
@@ -76,6 +98,10 @@ function changeCardContent(card, imgBgUrl, iconUrl, text, content) {
 }
 
 btnVision.addEventListener("click", visionCard);
+btnMision.addEventListener("click", misionCard);
+btnValores.addEventListener("click", valoresCard);
+
+
 
 // Fin cards section porque
 
@@ -236,3 +262,22 @@ glideResenas.mount();
 // });
 
 // glideTech.mount();
+
+/* Form */
+const emailInput = document.querySelector('#email');
+const errorMessage = document.querySelector('.error-message');
+
+emailInput.addEventListener('input', () => {
+  if (!emailInput.validity.valid) {
+    emailInput.classList.add('invalid');
+    errorMessage.textContent = 'El correo electrónico ingresado no es válido';
+  } else {
+    emailInput.classList.remove('invalid');
+    errorMessage.textContent = '';
+  }
+});
+/* Form */
+
+/* Toastify */
+
+/* Toastify */

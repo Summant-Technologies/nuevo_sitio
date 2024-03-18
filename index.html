@@ -143,7 +143,7 @@
             </div>
             <div class="flex flex-col gap-5 justify-center ml-[15%] mr-[15%] mt-5" id="buttonContain">
                 <button class="uppercase font-bold text-white rounded-3xl px-8 py-1 bg-primary">
-                    <a href="./politica-calidad.html">Politica de calidad</a>
+                    <a href="./pages/politica-calidad.html">Politica de calidad</a>
                 </button>
                 <button class="uppercase font-bold text-white rounded-3xl px-4 py-1 bg-secondary">
                     <a href="./politica-calidad.html">Politica de seguridad</a>
@@ -168,7 +168,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="card-porque card--valores">
+                <div class="card-porque card--valores" id="cardValores">
                     <div class="flex flex-col gap-10 items-center">
                         <img src="images/ICONOS/PORQUE/TICK.svg" alt="" class="w-24 h-24 fill-black">
                         <button class="uppercase font-bold px-8 py-2 bg-secondary text-white rounded-3xl"
@@ -176,6 +176,7 @@
                             Valores
                         </button>
                     </div>
+                    <ul id="listaValores"></ul>
                 </div>
             </div>
             <div class="flex flex-col justify-center items-center gap-12 mb-4 md:mb-[10rem] md:flex-row">
@@ -939,7 +940,6 @@
 
         <div class="flex flex-col md:flex-row md:justify-end md:relative">
             <div class="flex justify-center relative md:absolute left-0 bg-white md:bg-transparent">
-                <!-- <img src="images/ICONOS/CONTACTANOS/PLUS.svg" alt="" class="absolute top-[20px] left-[450px] md:top-[-80px] md:left-[250px] w-12"> -->
                 <img src="images/EXPORTS/SUMMANT img footer.png" alt="" class="w-[21rem] h-[27rem]"
                     id="contactanos-img">
                 <img src="images/EXPORTS/BORDERS/BORDER-VERDE-CONTACTANOS.png" alt=""
@@ -951,26 +951,51 @@
                 <h2 class="text-primary text-center text-2xl font-bold font-inter mb-10 md:text-start">
                     Contactanos
                 </h2>
-                <form action="" class="grid md:grid-cols-2 md:gap-8">
-                    <div class="grid gap-3 mb-6">
+                <form action="" id="contactForm" class="grid md:grid-cols-2 md:gap-8">
+                    <div class="grid gap-4 mb-6">
+                      <div>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre"
+                            class="shadow appearance-none border rounded-xl w-full py-4 px-4 text-gray-700 leading-tight focus:outline-secondary focus:shadow-outline">
+                      </div>
+                      <div>
+                        <input type="email" id="email" name="email" placeholder="Email"
+                            class="shadow appearance-none border rounded-xl w-full py-4 px-4 text-gray-700 leading-tight focus:outline-secondary focus:shadow-outline">
+                        <span class="error-message relative top-1 text-sm text-red-600 ml-2">El correo electrónico ingresado no es válido</span>
+                      </div>
+                      <div>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Telefono"
+                            class="shadow appearance-none border rounded-xl w-full py-4 px-4 text-gray-700 leading-tight focus:outline-secondary focus:shadow-outline">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="grid gap-6">
                         <div>
+                          <input type="text" id="comentario" name="comentario" placeholder="Comentario"
+                              class="shadow appearance-none border rounded-xl w-full pt-2 pb-[5.55rem] px-3 text-gray-700 leading-tight focus:outline-secondary focus:shadow-outline">
+                        </div>
+                  
+                        <div class="flex justify-center">
+                          <button type="submit"
+                              class="mt-8 md:mt-0 uppercase text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm sm:w-auto px-7 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" id="send">enviar
+                              formulario</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                <!-- <form action="" id="contactForm" class="grid md:grid-cols-2 md:gap-8">
+                    <div class="grid gap-3 mb-6">
                             <div>
                                 <input type="text" id="nombre" name="nombre" placeholder="Nombre"
                                     class="shadow appearance-none border rounded-xl w-full py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                             </div>
-                        </div>
-                        <div>
                             <div>
                                 <input type="email" id="email" name="email" placeholder="Email"
                                     class="shadow appearance-none border rounded-xl w-full py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                             </div>
-                        </div>
-                        <div>
                             <div>
                                 <input type="tel" id="telefono" name="telefono" placeholder="Telefono"
                                     class="shadow appearance-none border rounded-xl w-full py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                             </div>
-                        </div>
                     </div>
                     <div>
                         <div class="grid gap-6">
@@ -981,12 +1006,12 @@
 
                             <div class="flex justify-center">
                                 <button type="submit"
-                                    class="mt-8 md:mt-0 uppercase text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm sm:w-auto px-7 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">enviar
+                                    class="mt-8 md:mt-0 uppercase text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm sm:w-auto px-7 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" id="send">enviar
                                     formulario</button>
                             </div>
                         </div>
                     </div>
-                </form>
+                </form> -->
             </div>
         </div>
         <div class="hidden md:block md:py-1 bg-gradient-to-r from-blue-700 to-green-500 mb-[-10px]"></div>
@@ -1024,7 +1049,6 @@
         <p class="text-[#777777] text-center">Copyright @2023 Summant Technologies.</p>
         <p class="text-[#777777] text-center">Todos los derechos reservados.</p>
     </footer>
-
     <!-- FIN DE FOOTER -->
 
 
