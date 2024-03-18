@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/LOGO_SUMMANT/LOGO_TITLE.svg">
+    <!--Glide.js-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css"
+        integrity="sha512-tYKqO78H3mRRCHa75fms1gBvGlANz0JxjN6fVrMBvWL+vOOy200npwJ69OBl9XEsTu3yVUvZNrdWFIIrIf8FLg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.theme.css"
+        integrity="sha512-rF+FkLhdJu8p6NNoi0y30W5xPessa8yC8/3u3p5/biTeDpsxik1XfrgfqZG/mUmJ/2cA73nArDuWnX2JQLvlmw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.min.js"
+        integrity="sha512-2sI5N95oT62ughlApCe/8zL9bQAXKsPPtZZI2KE3dznuZ8HpE2gTMHYzyVN7OoSPJCM1k9ZkhcCo3FvOirIr2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/index.css">
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="../styles/output.css">
+    <!-- JavaScript -->
+    <script src="../js/main.js" defer></script>
+    <title>Politica de Seguridad</title>
+</head>
+
+<body class="font-inter">
+    <!-- Inicio de Header -->
+    <header class="h-[80px] bg-white fixed w-full shadow-md z-50">
+        <nav class="flex justify-between items-center m-8" id="menuNav">
+            <a href="">
+                <img src="../images/LOGO_SUMMANT/SUMMANT LOGO.svg" width="150px" height="100px" alt="logo-summant-nav"
+                    title="Summant" id="logoSummant">
+            </a>
+            <ul id="menuItems"
+                class="w-[100%] hidden fixed flex flex-col top-[80px] text-md bg-white gap-4 left-0 z-40">
+                <li class="mx-[50px]">
+                    <a href="#home"
+                        class="selected font-inter hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary hover:animate-text hover:transition hover:duration-100 hover:ease-out">INICIO</a>
+                </li>
+                <li class="mx-[50px]">
+                    <a href="#summant"
+                        class="font-inter hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary hover:animate-text hover:transition hover:ease-in-out">NOSOTROS</a>
+                </li>
+                <li class="mx-[50px]">
+                    <a href="#service"
+                        class="font-inter hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary hover:animate-text hover:transition hover:ease-in-out">SERVICIOS</a>
+                </li>
+                <li class="mx-[50px]">
+                    <a href="#experience"
+                        class="font-inter hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary hover:animate-text hover:transition hover:ease-in-out">EXPERIENCIA</a>
+                </li>
+                <li class="mx-[50px]">
+                    <a href="#clientes"
+                        class="font-inter hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary hover:animate-text hover:transition hover:ease-in-out">CLIENTES</a>
+                </li>
+                <li class="mx-[50px]">
+                    <a href="#contacto"
+                        class="font-inter hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary hover:animate-text hover:transition hover:ease-in-out">CONTACTO</a>
+                </li>
+                <div class="w-[100%] h-[2px] bg-gradient-to-r from-blue-700 to-green-500" id="navDivider"></div>
+                <li id="spanglish"
+                    class="w-[20%] h-[30px] flex items-center justify-center rounded-full mx-[60px] border-2 border-primary mb-[20px]">
+                    <a href="#"
+                        class="w-[50%] h-[100%] flex items-center justify-center bg-primary rounded-full rounded-tr-lg text-white">
+                        <p class="font-inter text-sm font-medium">SP</p>
+                    </a>
+                    <a href="#" class="w-[50%] h-[100%] flex items-center justify-center text-primary">
+                        <p class="font-inter text-sm font-medium">EN</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="ml-2" id="menuToggle">
+                <img src="../images/PARTNERS/SVG/Menu Nav.svg" onclick="toggleMenu()" id="menuIconOpen" name="menu"
+                    class="text-4xl cursor-pointer bg-clip-text bg-gradient-to-r from-primary to-secondary" width="30"
+                    height="30" />
+                <img src="../images/PARTNERS/SVG/Close Nav.svg" onclick="toggleMenu()" id="menuIconClose" name="close"
+                    class="text-4xl cursor-pointer hidden bg-clip-text bg-gradient-to-r from-primary to-secondary"
+                    width="20" height="20" />
+            </div>
+        </nav>
+    </header>
+    <!-- Fin de Header -->
+
+    <!-- Comienzo Home -->
+    <section>
+        <div class="flex flex-col justify-center items-center text-center relative top-[150px]">
+            <h3 class="text-4xl font-bold w-[50%] m-10">Politica de <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">seguridad de
+                    informacion</span></h3>
+        </div>
+
+        <img src="../images/POLITICA_CALIDAD/DETAILS/Seguridad.svg" class="w-full relative top-[150px]" alt="">
+
+        <div class="m-8 p-10 flex flex-col justify-center items-center bg-white drop-shadow-services rounded-2xl">
+            <div class="titleSeguridad">
+                <h4 class="text-2xl font-bold text-start">Somos una empresa orientada a brindar servicios IT de calidad,
+                    entendiendo la <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">importancia de
+                        gestionar de manera adecuada la seguridad de la informacion</span> de las diferentes partes
+                    interesadas</h4>
+                <p class="text-xl font-bold mt-5">En virtud de ello, nos comprometemos a:</p>
+            </div>
+            <div class="flex flex-col px-2">
+                <div class="compromiso">
+                    <img src="../images/POLITICA_CALIDAD/DETAILS/Check.svg" alt="" />
+                    <p class="text-lg">Proporcionar los recursos y el soporte necesario para lograr el cumplimiento de los objetivos
+                        establecidos en referencia a la confidencialidad, integridad y disponibilidad de la informacion
+                    </p>
+                </div>
+                <div class="compromiso">
+                    <img src="../images/POLITICA_CALIDAD/DETAILS/Check.svg" alt="">
+                    <p class="text-lg">Actuar dentro del marco de los requisitos legales y reglamentrios aplicables a la organizacion.
+                    </p>
+                </div>
+                <div class="compromiso">
+                    <img src="../images/POLITICA_CALIDAD/DETAILS/Check.svg" alt="">
+                    <p class="text-lg">Asegurar la disponibilidad y el funcionamiento de los sistemas y activos tecnologicos de la
+                        organizacion.</p>
+                </div>
+                <div class="compromiso">
+                    <img src="../images/POLITICA_CALIDAD/DETAILS/Check.svg" alt="">
+                    <p class="text-lg">Gestionar de manera adecuada las vulnerabilidades tecnicas de nuestros productos y servicios.</p>
+                </div>
+                <div class="compromiso">
+                    <img src="../images/POLITICA_CALIDAD/DETAILS/Check.svg" alt="">
+                    <p class="text-lg">Difundir y promovoer la cultura de la seguridad informatica entre los miembros de la organizacion
+                        y los terceros asociados.</p>
+                </div>
+                <div class="compromiso">
+                    <img src="../images/POLITICA_CALIDAD/DETAILS/Check.svg" alt="">
+                    <p class="text-lg">Fomentar la revision periodica de nuestro Sistema de Gestion de la Seguridad de la Informacion
+                        para lograr la implementacion de un proceso de mejora continua.</p>
+                </div>
+                <div class="compromiso">
+                    <img src="../images/POLITICA_CALIDAD/DETAILS/Check.svg" alt="">
+                    <p class="text-lg">Gestionar los riesgos a la seguridad de la informacion, identificando los posibles desvios y
+                        estrategias de mitigacion tendientes a gestionar la seguridad de lso activos de informacion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fin Home -->
+
+    <img src="../images/EXPORTS/WAVESQ.svg" alt="">
+
+    <!-- Comienzo Contacto -->
+    <section class="bg-[#F4F4F4] relative" id="contacto">
+
+        <div class="flex flex-col md:flex-row md:justify-end md:relative">
+            <div class="flex justify-center relative md:absolute left-0 bg-white md:bg-transparent">
+                <img src="../images/EXPORTS/SUMMANT img footer.png" alt="" class="w-[21rem] h-[27rem]"
+                    id="contactanos-img">
+                <img src="../images/EXPORTS/BORDERS/BORDER-VERDE-CONTACTANOS.png" alt=""
+                    class="absolute w-full h-[300px] top-[170px] md:hidden">
+                <img src="../images/EXPORTS/BORDERS/BORDER-CONTACTANOS.png" alt=""
+                    class="absolute w-full h-[300px] top-[150px] md:hidden">
+            </div>
+            <div class="m-8 md:z-10 md:mr-[3rem] xl:mr-[8.5rem] md:w-[65%] ">
+                <h2 class="text-primary text-center text-2xl font-bold font-inter mb-10 md:text-start">
+                    Contactanos
+                </h2>
+                <form action="" id="contactForm" class="grid md:grid-cols-2 md:gap-8">
+                    <div class="grid gap-4 mb-6">
+                        <div>
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre"
+                                class="shadow appearance-none border rounded-xl w-full py-4 px-4 text-gray-700 leading-tight focus:outline-secondary focus:shadow-outline">
+                        </div>
+                        <div>
+                            <input type="email" id="email" name="email" placeholder="Email"
+                                class="shadow appearance-none border rounded-xl w-full py-4 px-4 text-gray-700 leading-tight focus:outline-secondary focus:shadow-outline">
+                            <span class="error-message relative top-1 text-sm text-red-600 ml-2">El correo electrónico
+                                ingresado no es válido</span>
+                        </div>
+                        <div>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Telefono"
+                                class="shadow appearance-none border rounded-xl w-full py-4 px-4 text-gray-700 leading-tight focus:outline-secondary focus:shadow-outline">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="grid gap-6">
+                            <div>
+                                <input type="text" id="comentario" name="comentario" placeholder="Comentario"
+                                    class="shadow appearance-none border rounded-xl w-full pt-2 pb-[5.55rem] px-3 text-gray-700 leading-tight focus:outline-secondary focus:shadow-outline">
+                            </div>
+
+                            <div class="flex justify-center">
+                                <button type="submit"
+                                    class="mt-8 md:mt-0 uppercase text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm sm:w-auto px-7 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                    id="send">enviar
+                                    formulario</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- <form action="" id="contactForm" class="grid md:grid-cols-2 md:gap-8">
+                        <div class="grid gap-3 mb-6">
+                                <div>
+                                    <input type="text" id="nombre" name="nombre" placeholder="Nombre"
+                                        class="shadow appearance-none border rounded-xl w-full py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                                </div>
+                                <div>
+                                    <input type="email" id="email" name="email" placeholder="Email"
+                                        class="shadow appearance-none border rounded-xl w-full py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                                </div>
+                                <div>
+                                    <input type="tel" id="telefono" name="telefono" placeholder="Telefono"
+                                        class="shadow appearance-none border rounded-xl w-full py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                                </div>
+                        </div>
+                        <div>
+                            <div class="grid gap-6">
+                                <div>
+                                    <input type="text" id="comentario" name="comentario" placeholder="Comentario"
+                                        class="shadow appearance-none border rounded-xl w-full pt-2 pb-[5.55rem] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                                </div>
+    
+                                <div class="flex justify-center">
+                                    <button type="submit"
+                                        class="mt-8 md:mt-0 uppercase text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm sm:w-auto px-7 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" id="send">enviar
+                                        formulario</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form> -->
+            </div>
+        </div>
+        <div class="hidden md:block md:py-1 bg-gradient-to-r from-blue-700 to-green-500 mb-[-10px]"></div>
+        <div
+            class="relative bg-secondary mt-24 pb-14 md:mt-2 flex flex-col gap-8 z-10 md:flex-row md:justify-around md:items-center md:pb-5 md:pt-5">
+            <img src="../images/EXPORTS/BORDERS/BORDER-FOOTER.png" alt=""
+                class="w-full absolute z-[-10] top-[-75px] md:hidden">
+            <div class="flex justify-center">
+                <img src="../images/ICONOS/CONTACTANOS/SUMMANT.svg" alt="" class="w-48">
+            </div>
+            <div class="flex justify-center gap-2">
+                <img src="../images/ICONOS/INFO/UBICACION.svg" alt="" class="w-6">
+                <p class="w-[14rem] text-white text-left">Cerrito 348 3 Piso Ciudad de Buenos Aires, Argentina.</p>
+            </div>
+            <div class="flex justify-center gap-2">
+                <img src="../images/ICONOS/INFO/TELEFONO.svg" alt="" class="w-5 gap-2">
+                <p class="text-white text-center">+54 11 50318009</p>
+            </div>
+            <div class="flex justify-center gap-2">
+                <img src="../images/ICONOS/INFO/CARTA.svg" alt="" class="w-6">
+                <p class="text-white text-center">info@summant.com</p>
+            </div>
+            <div>
+                <img src="../images/ICONOS/CONTACTANOS/LINKEDIN.svg" alt="" class="hidden md:block">
+            </div>
+        </div>
+
+    </section>
+    <!-- Fin Contacto -->
+
+    <!-- Comienzo Footer -->
+    <footer class="py-3 relative md:flex md:gap-2 md:justify-center">
+        <p class="text-[#777777] text-center">Copyright @2023 Summant Technologies.</p>
+        <p class="text-[#777777] text-center">Todos los derechos reservados.</p>
+    </footer>
+    <!-- Fin Footer -->
+</body>
+
+</html>
