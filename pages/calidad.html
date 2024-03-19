@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/LOGO_SUMMANT/LOGO_TITLE.svg">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/index.css">
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="../styles/output.css">
+    <!-- JavaScript -->
+    <script src="../js/main.js" defer></script>
+     <!-- AOS -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Politica de Calidad</title>
+</head>
+
+<body>
+    <!-- Inicio de Header -->
+    <header class="h-[80px] bg-white fixed top-0 w-full shadow-md z-50">
+        <nav class="flex justify-between items-center m-8" id="menuNav">
+            <a href="../index.html">
+                <img src="../images/LOGO_SUMMANT/SUMMANT LOGO.svg" width="150px" height="100px" alt="logo-summant-nav"
+                    title="Summant" id="logoSummant">
+            </a>
+            <ul id="menuItems"
+                class="w-[100%] hidden fixed flex flex-col top-[80px] text-md bg-white gap-4 left-0 z-40">
+                <li class="mx-[50px]">
+                    <a href="../index.html"
+                        class="selected font-inter hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary hover:animate-text hover:transition hover:duration-100 hover:ease-out">INICIO</a>
+                </li>
+                <li class="mx-[50px]">
+                    <a href="../index.html#summant"
+                        class="font-inter hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary hover:animate-text hover:transition hover:ease-in-out">NOSOTROS</a>
+                </li>
+                <li class="mx-[50px]">
+                    <a href="../index.html#service"
+                        class="font-inter hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary hover:animate-text hover:transition hover:ease-in-out">SERVICIOS</a>
+                </li>
+                <li class="mx-[50px]">
+                    <a href="../index.html#experience"
+                        class="font-inter hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary hover:animate-text hover:transition hover:ease-in-out">EXPERIENCIA</a>
+                </li>
+                <li class="mx-[50px]">
+                    <a href="../index.html#clientes"
+                        class="font-inter hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary hover:animate-text hover:transition hover:ease-in-out">CLIENTES</a>
+                </li>
+                <li class="mx-[50px]">
+                    <a href="../index.html#contacto"
+                        class="font-inter hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-primary to-secondary hover:animate-text hover:transition hover:ease-in-out">CONTACTO</a>
+                </li>
+                <div class="w-[100%] h-[2px] bg-gradient-to-r from-blue-700 to-green-500" id="navDivider"></div>
+                <li id="spanglish"
+                    class="w-[20%] h-[30px] flex items-center justify-center rounded-full mx-[60px] border-2 border-primary mb-[20px]">
+                    <a href="#"
+                        class="w-[50%] h-[100%] flex items-center justify-center bg-primary rounded-full rounded-tr-lg text-white">
+                        <p class="font-inter text-sm font-medium">SP</p>
+                    </a>
+                    <a href="#" class="w-[50%] h-[100%] flex items-center justify-center text-primary">
+                        <p class="font-inter text-sm font-medium">EN</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="ml-2" id="menuToggle">
+                <img src="../images/PARTNERS/SVG/Menu Nav.svg" onclick="toggleMenu()" id="menuIconOpen" name="menu"
+                    class="text-4xl cursor-pointer bg-clip-text bg-gradient-to-r from-primary to-secondary" width="30"
+                    height="30" />
+                <img src="../images/PARTNERS/SVG/Close Nav.svg" onclick="toggleMenu()" id="menuIconClose" name="close"
+                    class="text-4xl cursor-pointer hidden bg-clip-text bg-gradient-to-r from-primary to-secondary"
+                    width="20" height="20" />
+            </div>
+        </nav>
+    </header>
+    <!-- Fin de Header -->
+
+    <!-- Comienzo Politicas de Calidad -->
+    <section class="relative top-[100px]"  id="qualitySection">
+        <div class="flex flex-col justify-center items-center">
+            <img src="../images/POLITICA_CALIDAD/DETAILS/Stars.png" class="mt-8" alt="5 Stars of Quality"
+                title="5 Starts of our quality">
+            <h3 class="flex flex-col justify-center items-center text-4xl font-bold mt-10" id="titleQuality">Política
+                <span
+                    class="text-center text-4xl text-transparent bg-clip-text bg-gradient-to-r from-primary from-0% to-secondary to-100% font-bold">de
+                    calidad
+                </span>
+            </h3>
+        </div>
+        <div class="flex flex-col justify-center items-center mt-8" id="textQualityMD">
+            <p class="text-lg text-center w-[60%]">Somos una empresa orientada <span class="font-bold">a brindar
+                    servicios IT de calidad</span> cumpliendo con los requisitos acordados con
+                nuestros clientes y con los <span class="font-bold">requisitos legales aplicables a nuestra
+                    actividad.</span></p>
+        </div>
+        <div class="hidden" id="textQuality">
+            <p class="text-lg text-center w-[60%]">Summant Technologies esta en condiciones de ofrecer a sus clientes
+                toda su experiencia y conociomientos para la <span class="font-bold">solucion de necesidad especificas,
+                    utilizando para ello metodologias y herramientas de vanguardia</span></p>
+        </div>
+    </section>
+    <!-- Fin Politicas de Calidad -->
+
+    <!-- Inicio Details -->
+    <div class="details">
+        <img src="../images/POLITICA_CALIDAD/DETAILS/TICKS G.svg" width="20" class="relative left-5 top-[1px]"
+            alt="Ticks-details-politicas-de-calidad">
+        <img src="../images/EXPORTS/WAVESQ.svg" class="w-full relative top-[40px]" alt="Waves-politicas-de-calidad">
+    </div>
+    <!-- Fin Details -->
+
+    <!-- Comienzo Gestion de calidad -->
+    <section class="relative" id="gestionQuality">
+        <div class="flex flex-col justify-center items-center">
+            <h3 class="flex flex-col justify-center items-center font-bold mt-10 w-[50%] text-center"><span
+                    class="text-center text-4xl text-transparent bg-clip-text bg-gradient-to-r from-primary from-0% to-secondary to-100%">Sistema
+                    de</span>
+                <span class="text-4xl font-semibold">gestión de calidad<sup
+                        class="text-transparent bg-clip-text bg-gradient-to-tr from-primary from-35% to-secondary to-55% font-extrabold sup-plus">+</sup></span>
+            </h3>
+        </div>
+        <div class="flex flex-col justify-center items-center mt-8">
+            <p class="w-[70%] text-center text-lg">La implementacion del <span class="font-bold">Sistema de Gestion de
+                    la Calidad</span> basado en la <span class="font-bold">Norma Internacional ISO 9001:2015</span> es
+                la manera de demostrar nuestro compromiso con la mejora continua, en todos los niveles de la
+                organizacion, en busca de la eficiencia de nuestros procesos y la satisfaccion de las partes interesadas
+                pertinentes.</p>
+        </div>
+        <div class="flex flex-col justify-center items-center mt-5">
+            <p class="w-[70%] text-center text-lg">Alineados con la <span class="font-bold">Politica de la
+                    Calidad,</span> en Summant nos planteamos los siguientes <span class="font-bold">Ejes
+                    Estrategicos:</span></p>
+        </div>
+        <div class="flex flex-col justify-around items-center text-center px-[100px] mb-24" id="gestion">
+            <div class="w-[320px] h-[353px] mt-[60px] flex flex-col justify-center items-center relative bg-white drop-shadow-services rounded-3xl"
+                id="cardFinance">
+                <!-- <img src="../images/POLITICA_CALIDAD/ICONS/Icon Finanzas.svg" alt="logo-equipos-dedicados"
+                    title="Finanzas" class="absolute mt-[-350px] logoQuality" /> -->
+                <svg class="absolute mt-[-350px] logoQuality" xmlns="http://www.w3.org/2000/svg" width="91" height="91" fill="none">
+                    <circle cx="45.411" cy="45.411" r="45.411" fill="#fff" />
+                    <path fill="url(#a)"
+                        d="M57.857 40.893c-1.387 1.384-2.658 2.657-3.932 3.927-2.396 2.39-4.794 4.781-7.192 7.17-.714.712-1.085.7-1.765-.054l-6.483-7.178c-.117-.13-.241-.254-.383-.402-2.143 2.14-4.261 4.254-6.38 6.367-1.267 1.264-1.3 1.264-2.576-.007-.58-.578-1.163-1.153-1.74-1.737-.543-.55-.543-.954.011-1.508 3.316-3.31 6.635-6.619 9.956-9.925.587-.585 1.024-.57 1.58.046 2.187 2.417 4.37 4.838 6.554 7.258.12.131.242.256.335.355l8.103-8.079c-.605 0-1.217.003-1.828 0-.831-.004-1.112-.288-1.114-1.13-.003-.997-.006-1.992.002-2.989.005-.695.317-1.004 1.022-1.004 3.32-.004 6.638-.004 9.957 0 .697.002 1.011.316 1.013 1.015.004 3.31.004 6.618 0 9.927-.002.696-.317 1.008-1.016 1.012-1.035.008-2.069.008-3.105 0-.7-.004-1.008-.314-1.016-1.012-.009-.633-.003-1.269-.003-2.052Zm3.4-7.146h-8.516v1.67c1.074 0 2.122.008 3.17-.002.445-.005.819.087 1.012.532.195.453-.02.78-.33 1.09-3.32 3.307-6.638 6.617-9.96 9.925-.587.585-1.017.565-1.58-.056-1.028-1.136-2.053-2.275-3.08-3.411l-3.76-4.163-8.958 8.927 1.23 1.257c.118-.113.261-.244.398-.379l6.4-6.379c.71-.706 1.084-.689 1.765.066 2.16 2.395 4.323 4.785 6.482 7.182.116.13.209.279.366.495.218-.26.344-.437.494-.588 3.822-3.814 7.646-7.626 11.468-11.441.326-.327.652-.634 1.164-.423.504.206.562.633.55 1.105-.014.569-.003 1.138-.003 1.708v1.364h1.688v-8.479Z" />
+                    <path fill="url(#b)"
+                        d="M41.537 67h-1.662V52.543h-1.721V65.29h-1.697c-.008-.168-.023-.338-.023-.51-.001-4.27-.001-8.54 0-12.812 0-.91.266-1.173 1.177-1.175 1-.001 2-.008 3 .003.634.007.96.326.962.957.004 5.018.001 10.036 0 15.054-.002.051-.019.102-.036.192Z" />
+                    <path fill="url(#c)"
+                        d="M60.446 47.403h-1.72v11.896h-1.702c-.008-.173-.024-.345-.024-.516-.002-3.968-.002-7.936-.002-11.904 0-.953.255-1.209 1.196-1.209 1-.001 2-.008 2.999.003.604.007.941.326.943.921.007 4.182.002 8.364.001 12.545 0 .05-.023.098-.041.171h-1.65V47.403Z" />
+                    <path fill="url(#d)"
+                        d="M48.381 67H46.73V55.959h-1.72v11.04h-1.722V55.386c0-.911.266-1.175 1.176-1.176 1-.001 1.999-.007 2.999.003.612.006.96.316.96.903.008 3.914.002 7.829 0 11.743 0 .034-.02.067-.042.141Z" />
+                    <path fill="url(#e)"
+                        d="M34.685 63.584h-1.662v-8.478h-1.721v8.474h-1.723v-9.045c0-.913.264-1.178 1.173-1.18 1 0 2-.006 2.999.004.636.007.964.324.965.952.008 3.026.003 6.05 0 9.075 0 .053-.015.103-.031.198Z" />
+                    <path fill="url(#f)"
+                        d="M53.59 52.529h-1.72v8.478h-1.698c-.009-.154-.026-.309-.026-.462V51.95c0-.878.273-1.153 1.143-1.154 1.017-.002 2.035-.009 3.052.003.604.007.94.326.94.92.01 2.759.004 5.517.002 8.274 0 .05-.023.099-.041.171h-1.65l-.001-7.635Z" />
+                    <path class="pepito" stroke="url(#g)" stroke-miterlimit="10" stroke-width="2"
+                        d="M66.95 19.901A5.95 5.95 0 1 0 66.95 8a5.95 5.95 0 0 0 0 11.901Z" />
+                    <path stroke="url(#h)" stroke-miterlimit="10" stroke-width="2"
+                        d="M72.588 17.058c7.778 7.397 12.627 17.846 12.627 29.429 0 22.427-18.181 40.607-40.608 40.607C22.181 87.094 4 68.915 4 46.487 4 32.588 10.982 20.321 21.633 13" />
+                    <defs>
+                        <linearGradient id="a" x1="27" x2="63" y1="67.001" y2="67.001" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#1723FF" />
+                            <stop offset="1" stop-color="#30E35E" />
+                        </linearGradient>
+                        <linearGradient id="b" x1="27" x2="63" y1="67.001" y2="67.001" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#1723FF" />
+                            <stop offset="1" stop-color="#30E35E" />
+                        </linearGradient>
+                        <linearGradient id="c" x1="27" x2="63" y1="67.001" y2="67.001" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#1723FF" />
+                            <stop offset="1" stop-color="#30E35E" />
+                        </linearGradient>
+                        <linearGradient id="d" x1="27" x2="63" y1="67.001" y2="67.001" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#1723FF" />
+                            <stop offset="1" stop-color="#30E35E" />
+                        </linearGradient>
+                        <linearGradient id="e" x1="27" x2="63" y1="67.001" y2="67.001" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#1723FF" />
+                            <stop offset="1" stop-color="#30E35E" />
+                        </linearGradient>
+                        <linearGradient id="f" x1="27" x2="63" y1="67.001" y2="67.001" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#1723FF" />
+                            <stop offset="1" stop-color="#30E35E" />
+                        </linearGradient>
+                        <linearGradient id="g" x1="61" x2="72.901" y1="19.902" y2="19.902"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#1723FF" />
+                            <stop offset="1" stop-color="#30E35E" />
+                        </linearGradient>
+                        <linearGradient id="h" x1="4" x2="85.215" y1="87.096" y2="87.096"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#1723FF" />
+                            <stop offset="1" stop-color="#30E35E" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="flex flex-col justify-center items-center gap-5 cardGestion">
+                    <h5 class="flex flex-col text-2xl text-center font-semibold" id="titleFinance">Finanzas</h5>
+                    <div class="w-[25%] h-[2px] bg-gradient-to-r from-primary to-secondary"></div>
+                    <p class="w-[74%] text-xl text-center font-light">Lograr sustentabilidad financiera y crecimiento
+                        continuo en el desarrollo de nuestra actividad empresarial.</p>
+                </div>
+            </div>
+            <div class="w-[320px] h-[350px] mt-[60px] flex flex-col justify-center items-center relative bg-white drop-shadow-services rounded-3xl"
+                id="cardClients">
+                <!-- <img src="../images/POLITICA_CALIDAD/ICONS/Icon Clientes.svg" alt="logo-equipos-dedicados"
+                    title="Equipos Dedicados" class="absolute mt-[-350px] logoQuality" /> -->
+                <svg class="absolute mt-[-350px] logoQuality" xmlns="http://www.w3.org/2000/svg" width="91" height="91" fill="none"><circle cx="45.411" cy="45.411" r="45.411" fill="#fff"/><path stroke="url(#a)" stroke-miterlimit="10" stroke-width="2" d="M73.172 15.39C80.951 22.789 85.8 33.238 85.8 44.82c0 22.427-18.18 40.607-40.607 40.607S4.584 67.248 4.584 44.82c0-13.899 6.982-26.166 17.633-33.487"/><path class="pepito" stroke="url(#b)" stroke-miterlimit="10" stroke-width="2" d="M68.81 17.297a5.95 5.95 0 1 0 0-11.902 5.95 5.95 0 0 0 0 11.902Z"/><path fill="url(#c)" d="M23 37.82C23 30.173 29.215 24 36.915 24c7.657 0 13.914 6.194 13.914 13.789 0 7.657-6.246 13.85-13.956 13.85C29.215 51.63 23 45.446 23 37.82Zm1.556-.031c-.01 6.78 5.48 12.284 12.286 12.305 6.838.02 12.42-5.473 12.43-12.233 0-6.791-5.52-12.295-12.357-12.315-6.797-.01-12.348 5.472-12.359 12.243Z"/><path fill="url(#d)" d="M53.423 66.995c-6.89.195-13.136-5.009-14.06-11.759a18.762 18.762 0 0 1-.155-1.535c-.042-.588.26-.97.747-.99.488-.02.778.33.799.938.187 5.71 3.912 10.378 9.38 11.738 7.15 1.783 14.309-3.071 15.232-10.337.851-6.677-3.766-12.727-10.49-13.726-.53-.083-1.069-.093-1.598-.124-.57-.031-.923-.31-.934-.763-.01-.474.363-.783.965-.783 6.205.01 11.86 4.565 13.323 10.594 1.816 7.461-3.279 15.19-11.216 16.53-.675.114-1.339.144-1.993.217Z"/><path fill="url(#e)" d="M52.977 43.333c5.832.031 10.366 4.772 10.117 10.563-.249 5.73-5.51 10.151-11.248 9.46-5.437-.659-9.297-5.265-8.975-10.717.03-.484.352-.814.788-.804.436.01.768.34.758.835-.021 1.195.083 2.37.487 3.514 1.266 3.638 5.022 6.07 8.779 5.668 4.14-.433 7.294-3.431 7.782-7.4.622-5.07-3.248-9.49-8.384-9.573-.311 0-.612.01-.924-.01a.761.761 0 0 1-.726-.763c0-.402.29-.732.716-.773.28-.02.55 0 .83 0Z"/><path fill="url(#f)" d="M52.624 49.836c.716-.794 1.536-1.288 2.542-1.381 2.138-.196 3.84 1.608 3.59 3.803-.248 2.154-1.41 3.823-3.04 5.152-.715.578-1.598.959-2.407 1.433-.58.33-1.13.237-1.712-.052-1.722-.845-3.02-2.143-4.036-3.73-.498-.783-.893-1.597-1.028-2.525-.238-1.608.416-3.05 1.723-3.73 1.297-.68 2.957-.382 4.109.741.083.073.156.155.26.289Zm4.649 2.278c-.042-.959-.29-1.567-.944-1.938-.644-.36-1.328-.288-1.878.124-.436.33-.716.845-1.1 1.236-.197.206-.447.413-.716.485-.343.082-.602-.155-.758-.485a3.804 3.804 0 0 0-.363-.628c-.591-.804-1.65-1.154-2.438-.825-.8.34-1.235 1.237-.976 2.288.592 2.36 2.127 3.957 4.275 5.009.135.072.384.01.54-.062 1.795-.783 3.113-2.061 3.922-3.834.239-.495.342-1.061.436-1.37Z"/><path fill="url(#g)" d="M26.279 37.789c.114-6.04 4.898-10.646 10.916-10.522 5.842.123 10.449 4.957 10.335 10.841-.115 5.782-5.002 10.357-10.937 10.244-5.686-.103-10.418-4.947-10.314-10.563Zm1.556.041c.063 5.09 4.11 9.048 9.215 8.997 5-.052 8.996-4.153 8.934-9.172-.063-4.895-4.182-8.873-9.132-8.832-5.011.041-9.079 4.102-9.017 9.007Z"/><path fill="url(#h)" d="M32.235 41.282c.052-.32.114-.793.218-1.267.083-.402 0-.711-.322-.99a9.053 9.053 0 0 1-.903-.875c-.55-.598-.695-1.31-.435-2.062.27-.783.85-1.319 1.67-1.34 1.266-.03 2.055-.535 2.47-1.762.28-.814 1.006-1.216 1.878-1.205.871.01 1.587.412 1.868 1.226.404 1.216 1.193 1.69 2.428 1.731.85.031 1.442.567 1.712 1.371.28.804.135 1.608-.54 2.113-1.058.793-1.338 1.7-.955 2.957.229.742-.134 1.433-.757 1.907-.654.495-1.39.587-2.158.268a11.191 11.191 0 0 1-1.162-.598c-.312-.185-.602-.175-.913.01-.405.227-.82.464-1.256.64-1.38.576-2.874-.454-2.843-2.124Zm1.857-1.587c-.083.495-.197 1.062-.27 1.639-.062.536.312.783.8.556.394-.185.778-.401 1.162-.608.684-.36 1.359-.36 2.044-.01.384.206.768.433 1.162.587.187.073.477.083.612-.02.135-.103.208-.392.197-.588-.02-.401-.124-.793-.197-1.185-.145-.773.042-1.432.602-1.989.3-.298.623-.566.892-.886.135-.165.29-.464.229-.608-.084-.185-.364-.34-.582-.392-.404-.103-.83-.134-1.245-.195-.747-.114-1.266-.526-1.598-1.186-.197-.391-.373-.783-.58-1.164-.27-.495-.727-.484-.997.01-.228.413-.415.835-.633 1.247-.322.608-.82.98-1.504 1.093-.467.072-.934.123-1.39.216-.561.103-.696.536-.312.948.311.33.643.629.965.948.415.413.623.928.643 1.587Z"/><defs><linearGradient id="a" x1="4.584" x2="85.799" y1="85.429" y2="85.429" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="b" x1="62.859" x2="74.761" y1="17.297" y2="17.297" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="c" x1="23" x2="67" y1="67.001" y2="67.001" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="d" x1="23" x2="67" y1="67.001" y2="67.001" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="e" x1="23" x2="67" y1="67.001" y2="67.001" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="f" x1="23" x2="67" y1="67.001" y2="67.001" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="g" x1="23" x2="67" y1="67.001" y2="67.001" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="h" x1="23" x2="67" y1="67.001" y2="67.001" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient></defs></svg>
+
+                <div class="flex flex-col justify-center items-center gap-4 cardGestion mt-2">
+                    <h5 class="flex flex-col text-2xl text-center font-semibold" id="titleClients">Clientes</h5>
+                    <div class="w-[25%] h-[2px] bg-gradient-to-r from-primary to-secondary"></div>
+                    <p class="w-[90%] text-xl text-center font-light px-4">Establecer vinculos de confianza con nuestros
+                        clientes, persistentes en el tiempo, sustentados en nuestra suma de valor a traves de productos
+                        y servicios innovadores y de calidad.</p>
+                </div>
+            </div>
+            <div class="w-[320px] h-[350px] mt-[60px] flex flex-col justify-center items-center relative bg-white drop-shadow-services rounded-3xl"
+                id="cardColaborators">
+                <!-- <img src="../images/POLITICA_CALIDAD/ICONS/Icon Colaboradores.svg" alt="logo-equipos-dedicados"
+                    title="Equipos Dedicados" class="absolute mt-[-350px] logoQuality" /> -->
+                    <svg class="absolute mt-[-350px] logoQuality" xmlns="http://www.w3.org/2000/svg" width="91" height="91" fill="none"><circle cx="45.411" cy="45.411" r="45.411" fill="#fff"/><path stroke="url(#a)" stroke-miterlimit="10" stroke-width="2" d="M73.172 15.39C80.951 22.789 85.8 33.238 85.8 44.82c0 22.427-18.18 40.607-40.607 40.607S4.584 67.248 4.584 44.82c0-13.899 6.982-26.166 17.633-33.487"/><path class="pepito" stroke="url(#b)" stroke-miterlimit="10" stroke-width="2" d="M68.81 17.297a5.95 5.95 0 1 0 0-11.902 5.95 5.95 0 0 0 0 11.902Z"/><path fill="url(#c)" d="M25 55.842c.222-.25.43-.513.666-.748 2.298-2.285 4.6-4.563 6.903-6.843.1-.1.215-.186.374-.322-.526-.511-1.022-.978-1.501-1.46-.857-.859-1.17-1.875-.803-3.044.28-.89.883-1.5 1.76-1.84.107-.042.215-.08.322-.12-.7-1.88.302-3.661 2.175-4.131-.453-2.038.75-3.39 2.306-3.772-.26-1.133-.086-2.181.804-3.006.874-.81 1.913-.985 3.11-.612-.04-.21-.088-.378-.1-.546a23.329 23.329 0 0 1-.064-1.428c-.003-.67.294-.961.982-.965 1.445-.008 2.89-.005 4.335-.001.638.002 1.276-.003 1.913.027 1.288.061 2.392.56 3.315 1.448.16.154.275.236.53.133 1.095-.438 2.13-.285 3.029.472.887.748 1.196 1.718.967 2.853-.016.076-.025.152-.042.26.84.204 1.528.626 1.986 1.371.461.75.508 1.554.3 2.418.928.218 1.644.703 2.088 1.545.438.831.407 1.68.121 2.44.51.353 1.043.605 1.421 1.002 1.113 1.169 1.09 2.865-.078 4.038-2.654 2.661-5.311 5.32-8.034 7.91-1.929 1.836-4.31 2.802-6.97 3.055-.405.038-.629.245-.941.608.644.2 1.228.438 1.835.556.517.1 1.061.081 1.592.08.336-.002.603.093.838.328 1.35 1.344 2.708 2.682 4.057 4.027.413.41.446.859.108 1.195-.33.327-.804.294-1.208-.105-1.238-1.22-2.465-2.447-3.71-3.659a.776.776 0 0 0-.499-.208c-1.387.022-2.683-.296-3.873-1.002-.23-.136-.34-.053-.491.097-1.56 1.556-3.123 3.109-4.688 4.659-.128.127-.262.26-.417.343-.317.17-.639.134-.897-.118-.255-.25-.324-.563-.145-.885.086-.155.217-.29.345-.416 2.184-2.177 4.376-4.348 6.555-6.532.304-.305.64-.456 1.063-.482 2.732-.171 5.034-1.277 6.96-3.18 2.424-2.397 4.85-4.791 7.254-7.207.258-.258.463-.63.547-.983.133-.558-.188-1.083-.69-1.349a1.345 1.345 0 0 0-1.53.162c-.343.298-.65.634-.98.943-.336.316-.666.377-.993.202-.494-.265-.548-.849-.101-1.306.608-.619 1.231-1.224 1.849-1.834.341-.338.533-.735.459-1.22-.083-.541-.391-.924-.914-1.108-.545-.192-1.034-.054-1.44.334-.607.583-1.197 1.185-1.799 1.774-.12.117-.245.235-.389.32a.742.742 0 0 1-.925-.145c-.239-.269-.289-.578-.102-.892.084-.142.205-.265.323-.384.845-.842 1.695-1.678 2.538-2.521.404-.402.519-.89.344-1.425-.166-.51-.544-.811-1.071-.907-.502-.091-.918.095-1.27.444l-2.516 2.489c-.1.1-.206.2-.324.277a.769.769 0 0 1-.965-.09.751.751 0 0 1-.093-.957c.086-.127.198-.24.308-.349 1.067-1.06 2.133-2.119 3.203-3.175.418-.41.63-.881.452-1.467a1.367 1.367 0 0 0-2.199-.659c-.15.123-.284.266-.422.402-1.51 1.496-3.018 2.992-4.531 4.486-.1.1-.226.175-.353.271.74 1.036.924 2.088.376 3.185-.547 1.095-1.495 1.6-2.701 1.644-.121 1.835-1.34 2.966-2.993 3.041-.171.522-.271 1.063-.518 1.527-.458.862-1.225 1.345-2.214 1.448-.252.026-.453.025-.477.392-.13 1.968-2.204 3.219-4.038 2.438-.272-.115-.404-.065-.59.12-2.425 2.413-4.858 4.82-7.288 7.228-.244.242-.512.51-.876.378-.245-.09-.434-.33-.648-.501-.002-.156-.002-.311-.002-.466Zm19.641-17.08.055-.094c.557.007 1.049-.3 1.276-.794.243-.53.144-1.104-.314-1.561a711.716 711.716 0 0 0-4.636-4.59c-.58-.568-1.41-.566-1.96-.034-.551.535-.558 1.388.024 1.972a356.57 356.57 0 0 0 4.612 4.56c.252.244.626.364.943.542Zm1.253-4.538 4.604-4.562c-.74-.737-1.677-1.11-2.77-1.11-1.615-.002-3.23-.002-4.844 0-.114 0-.23.014-.339.02-.129 1.183.75 2.157 1.963 2.186.716.016 1.433-.01 2.148.004.43.009.728.296.767.683.038.387-.18.703-.57.809a1.515 1.515 0 0 1-.386.049c-.866.004-1.732.002-2.507.002l1.934 1.919Zm-7.947.855c-.788.03-1.222.287-1.47.819-.25.533-.142 1.098.32 1.56a506.106 506.106 0 0 0 3.839 3.803c.59.578 1.447.586 1.994.046.557-.549.554-1.379-.038-1.973a244.103 244.103 0 0 0-3.846-3.796c-.255-.242-.628-.363-.799-.459Zm-3.883 5.022c-.01.556.18.894.477 1.188 1.003.993 1.997 1.994 3.014 2.973.196.19.46.35.722.424.612.173 1.221-.114 1.525-.654.306-.546.218-1.174-.27-1.664-1.013-1.02-2.039-2.026-3.06-3.036a1.64 1.64 0 0 0-.271-.22c-.453-.288-.927-.321-1.404-.072-.477.248-.712.658-.733 1.061Zm2.854 6.132c-.063-.138-.126-.47-.324-.679a46.397 46.397 0 0 0-2.313-2.296c-.51-.47-1.312-.402-1.81.073-.5.476-.607 1.27-.135 1.786a39.16 39.16 0 0 0 2.396 2.375c.404.37.933.378 1.427.126.491-.25.74-.668.759-1.385Z"/><path fill="url(#d)" d="M62.26 50.546c.274.153.492.225.642.366a64.372 64.372 0 0 1 1.803 1.764c.374.38.387.809.071 1.135-.327.339-.774.331-1.174-.05-.6-.57-1.184-1.156-1.773-1.737-.261-.259-.397-.587-.205-.907.134-.226.406-.372.635-.57Z"/><path fill="url(#e)" d="M59.603 49.477a.778.778 0 0 1 .781-.753c.412.009.768.377.76.783-.01.406-.386.765-.79.756a.78.78 0 0 1-.751-.786Z"/><defs><linearGradient id="a" x1="4.584" x2="85.799" y1="85.429" y2="85.429" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="b" x1="62.859" x2="74.761" y1="17.297" y2="17.297" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="c" x1="25" x2="65" y1="63.001" y2="63.001" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="d" x1="25" x2="65" y1="63.001" y2="63.001" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="e" x1="25" x2="65" y1="63.001" y2="63.001" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient></defs></svg>
+
+                <div class="flex flex-col justify-center items-center gap-4 cardGestion">
+                    <h5 class="flex flex-col text-2xl text-center font-semibold" id="titleColaborators">Colaboradores
+                    </h5>
+                    <div class="w-[25%] h-[2px] bg-gradient-to-r from-primary to-secondary"></div>
+                    <p class="w-[75%] text-xl text-center font-light">Dar un lugar central a nuestros colaboradores,
+                        brindando un entorno laboral que favorezca su desarrollo humano y profesional.</p>
+                </div>
+            </div>
+            <div class="w-[320px] h-[350px] mt-[60px] flex flex-col justify-center items-center relative bg-white drop-shadow-services rounded-3xl"
+                id="cardProcess">
+                <!-- <img src="../images/POLITICA_CALIDAD/ICONS/Icon Procesos.svg" alt="logo-equipos-dedicados"
+                    title="Equipos Dedicados" class="absolute mt-[-350px] logoQuality" /> -->
+                    <svg class="absolute mt-[-350px] logoQuality" xmlns="http://www.w3.org/2000/svg" width="91" height="91" fill="none"><circle cx="45.411" cy="45.411" r="45.411" fill="#fff"/><path stroke="url(#a)" stroke-miterlimit="10" stroke-width="2" d="M73.172 15.39C80.951 22.789 85.8 33.238 85.8 44.82c0 22.427-18.18 40.607-40.607 40.607S4.584 67.248 4.584 44.82c0-13.899 6.982-26.166 17.633-33.487"/><path class="pepito" stroke="url(#b)" stroke-miterlimit="10" stroke-width="2" d="M68.81 17.297a5.95 5.95 0 1 0 0-11.902 5.95 5.95 0 0 0 0 11.902Z"/><path fill="url(#c)" d="M32.31 49.12V29.214c0-1.002.212-1.214 1.212-1.214H54.82c1.002 0 1.228.221 1.228 1.208v12.604c.346 0 .658-.004.97.001.738.012.965.212 1.072.926.024.165.061.33.084.496.099.707.26.895.971 1.04.123.026.291-.04.405-.114.296-.192.572-.416.86-.62.399-.282.797-.274 1.147.07.891.87 1.776 1.749 2.652 2.635.328.331.353.71.077 1.094-.166.232-.318.479-.512.687-.275.293-.294.557-.134.937.162.386.351.603.784.613.268.007.536.072.8.124.56.11.77.357.772.935.005 1.175.005 2.35 0 3.523-.003.596-.22.844-.814.96-.232.044-.468.107-.7.102-.486-.012-.69.233-.86.663-.138.349-.099.564.118.85.995 1.313.987 1.32-.17 2.467-.61.605-1.218 1.212-1.83 1.815-.562.556-.864.58-1.494.126-.123-.089-.272-.157-.365-.269-.46-.553-.955-.3-1.435-.063-.106.053-.183.226-.211.356-.072.326-.106.662-.16.992-.092.572-.362.826-.955.832-1.183.014-2.367.012-3.549 0-.615-.005-.879-.257-.975-.865-.028-.183-.065-.364-.09-.547-.102-.742-.224-.891-.957-1.055-.123-.027-.292.035-.407.107-.27.171-.517.378-.78.562-.539.378-.874.357-1.34-.1-.651-.636-1.305-1.268-1.934-1.925-.253-.264-.512-.369-.883-.367-5.476.012-10.953-.003-16.43.014-1.614.006-2.939-.533-3.914-1.827a4.146 4.146 0 0 1-.856-2.53 648.958 648.958 0 0 1-.003-4.278c.002-.761.27-1.035 1.035-1.037 1.944-.004 3.887 0 5.83-.002.124 0 .242-.011.443-.02Zm1.623-19.478v.625c0 7.565-.005 15.129.004 22.692.002 1.463.068 2.928-.998 4.184.15.028.211.05.273.05 4.36.001 8.72.002 13.08-.004a.63.63 0 0 0 .399-.145c.52-.496.531-.67.281-1.345-.107-.289-.245-.44-.57-.454-.336-.016-.669-.09-1-.152-.462-.086-.715-.362-.716-.835-.004-1.241-.005-2.482.002-3.724.002-.468.247-.748.716-.83.333-.057.664-.137 1-.157.318-.02.435-.174.576-.444.24-.465.226-.83-.158-1.197-.156-.149-.27-.343-.392-.523-.314-.456-.306-.784.075-1.172.863-.874 1.74-1.737 2.618-2.598.353-.346.746-.355 1.147-.079.29.201.564.428.86.62.115.075.28.145.404.122.693-.126.882-.342.977-1.035.027-.198.063-.397.094-.596.094-.584.343-.806.95-.832.279-.012.559-.001.847-.001V29.64c-6.812.002-13.598.002-20.469.002Zm14.178 17.29c.2.27.377.534.582.777.347.412.382.825.106 1.294-.16.272-.326.568-.38.872-.158.892-.725 1.223-1.566 1.243-.101.003-.218-.009-.299.037-.097.056-.231.163-.234.252-.019.732-.01 1.463-.01 2.195.402.06.735.115 1.068.157.466.059.75.292.897.757.15.477.36.937.58 1.388.19.39.173.736-.092 1.078-.225.29-.436.59-.637.864.592.586 1.15 1.139 1.727 1.708.277-.199.586-.404.877-.632.346-.273.685-.282 1.08-.09.453.22.924.408 1.4.574.423.148.693.382.741.849.038.362.12.72.186 1.086h2.413c.06-.356.136-.684.166-1.015.046-.528.34-.79.83-.944.448-.14.89-.322 1.304-.538.414-.214.766-.19 1.126.091.288.224.592.43.818.592l1.74-1.717c-.171-.23-.36-.509-.571-.766-.317-.386-.333-.768-.105-1.21.216-.415.409-.85.54-1.295.152-.513.473-.739.98-.79.33-.033.655-.095.957-.14v-2.423c-.367-.057-.697-.12-1.03-.156-.45-.05-.734-.262-.883-.702-.166-.49-.373-.97-.596-1.437-.187-.39-.177-.734.092-1.078.226-.288.435-.588.626-.848-.592-.59-1.15-1.145-1.728-1.724-.264.193-.569.405-.86.63-.347.267-.692.28-1.085.09a13.207 13.207 0 0 0-1.399-.576c-.425-.146-.693-.38-.744-.846-.04-.363-.12-.723-.185-1.09H54.13c-.063.37-.142.715-.177 1.062-.049.485-.32.73-.77.88-.477.16-.941.367-1.397.58-.374.174-.71.167-1.041-.085-.305-.231-.617-.453-.91-.666-.58.58-1.129 1.124-1.725 1.713ZM26.678 50.77c-.022.096-.043.143-.043.191-.003 1.124-.011 2.247-.003 3.37.012 1.63 1.238 2.859 2.834 2.859 1.593 0 2.821-1.229 2.841-2.86.013-1.056.005-2.112.002-3.169 0-.126-.029-.252-.045-.39h-5.586Z"/><path fill="url(#d)" d="M37.472 35.939c0-1.173-.005-2.347 0-3.52.004-.723.278-.992 1.02-.996 1.165-.005 2.331-.007 3.496 0 .734.004 1.009.274 1.011 1.007.006 2.346.006 4.693 0 7.04 0 .74-.265 1.007-.996 1.011-1.182.007-2.365.008-3.547 0-.711-.004-.98-.272-.983-.971-.005-1.192-.001-2.382-.001-3.571Zm3.87 2.907V33.06h-2.215v5.787h2.216Z"/><path fill="url(#e)" d="M50.884 36.993c0 .839.004 1.676-.002 2.515-.004.677-.274.965-.938.97-1.218.011-2.434.01-3.651 0-.664-.005-.95-.29-.955-.962-.01-1.676-.01-3.354 0-5.031.004-.695.298-.97.997-.973a524.84 524.84 0 0 1 3.55 0c.723.002.995.279.997 1.015.004.821.002 1.643.002 2.466Zm-3.892-1.852v3.695h2.239v-3.694h-2.239Z"/><path fill="url(#f)" d="M39.445 50.035c-1.012 0-2.023.004-3.037-.001-.615-.003-.955-.288-.961-.784-.007-.5.337-.819.937-.822a849.78 849.78 0 0 1 6.122 0c.6.002.96.313.967.799.008.51-.349.806-.993.808-1.012.003-2.023 0-3.035 0Z"/><path fill="url(#g)" d="M39.417 45.266c1.027 0 2.057-.004 3.085.001.612.003.963.29.972.777.01.488-.345.825-.94.827-2.057.01-4.114.01-6.172-.001-.597-.004-.933-.34-.915-.843.017-.48.346-.756.933-.76 1.013-.007 2.025-.001 3.037-.001Z"/><path fill="url(#h)" d="M39.417 51.592c1.064 0 2.13-.001 3.194.002.397 0 .74.167.804.551.043.258-.061.594-.215.813-.108.151-.414.229-.632.23-2.079.017-4.16.017-6.238.006-.568-.003-.893-.335-.882-.822.01-.468.322-.766.875-.774 1.03-.018 2.063-.006 3.094-.006Z"/><path fill="url(#i)" d="M49.75 52.42c-.01-3.076 2.489-5.577 5.584-5.59 3.082-.01 5.605 2.495 5.602 5.57-.001 3.05-2.487 5.54-5.558 5.562-3.08.024-5.617-2.474-5.628-5.543Zm9.563-.005a3.972 3.972 0 0 0-3.977-3.973c-2.18.006-3.955 1.77-3.963 3.937a3.97 3.97 0 0 0 3.978 3.973c2.177-.004 3.955-1.772 3.962-3.937Z"/><defs><linearGradient id="a" x1="4.584" x2="85.799" y1="85.429" y2="85.429" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="b" x1="62.859" x2="74.761" y1="17.297" y2="17.297" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="c" x1="25" x2="66" y1="63.001" y2="63.001" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="d" x1="25" x2="66" y1="63.001" y2="63.001" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="e" x1="25" x2="66" y1="63.001" y2="63.001" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="f" x1="25" x2="66" y1="63.001" y2="63.001" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="g" x1="25" x2="66" y1="63.001" y2="63.001" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="h" x1="25" x2="66" y1="63.001" y2="63.001" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient><linearGradient id="i" x1="25" x2="66" y1="63.001" y2="63.001" gradientUnits="userSpaceOnUse"><stop stop-color="#1723FF"/><stop offset="1" stop-color="#30E35E"/></linearGradient></defs></svg>
+
+                <div class="flex flex-col justify-center items-center gap-4 cardGestion">
+                    <h5 class="flex flex-col text-2xl text-center font-semibold mt-4" id="titleProcess">Procesos</h5>
+                    <div class="w-[25%] h-[2px] bg-gradient-to-r from-primary to-secondary"></div>
+                    <p class="w-[73%] text-xl text-center font-light">Tener un funcionamiento de empresa basado en
+                        procesos documentados, utilizando metodologias y estandares de mercado orientados a la mejora
+                        continua.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fin Gestion de calidad -->
+
+    <!-- Comienzo Contacto -->
+    <section class="bg-[#F4F4F4]" id="contacto">
+
+        <div class="flex flex-col md:flex-row md:justify-end md:relative">
+            <div class="flex justify-center relative md:absolute left-0 bg-white md:bg-transparent">
+                <img src="../images/EXPORTS/SUMMANT img footer.png" alt="" class="w-[21rem] h-[27rem]"
+                    id="contactanos-img">
+                <img src="../images/EXPORTS/BORDERS/BORDER-VERDE-CONTACTANOS.png" alt=""
+                    class="absolute w-full h-[300px] top-[170px] md:hidden">
+                <img src="../images/EXPORTS/BORDERS/BORDER-CONTACTANOS.png" alt=""
+                    class="absolute w-full h-[300px] top-[150px] md:hidden">
+            </div>
+            <div class="m-8 md:z-10 md:mr-[3rem] xl:mr-[8.5rem] md:w-[65%] ">
+                <h2 class="text-primary text-center text-2xl font-bold font-inter mb-10 md:text-start">
+                    Contactanos
+                </h2>
+                <form action="" id="contactForm" class="grid md:grid-cols-2 md:gap-8">
+                    <div class="grid gap-4 mb-6">
+                      <div>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre"
+                            class="shadow appearance-none border rounded-xl w-full py-4 px-4 text-gray-700 leading-tight focus:outline-secondary focus:shadow-outline">
+                      </div>
+                      <div>
+                        <input type="email" id="email" name="email" placeholder="Email"
+                            class="shadow appearance-none border rounded-xl w-full py-4 px-4 text-gray-700 leading-tight focus:outline-secondary focus:shadow-outline">
+                        <span class="error-message relative top-1 text-sm text-red-600 ml-2">El correo electrónico ingresado no es válido</span>
+                      </div>
+                      <div>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Telefono"
+                            class="shadow appearance-none border rounded-xl w-full py-4 px-4 text-gray-700 leading-tight focus:outline-secondary focus:shadow-outline">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="grid gap-6">
+                        <div>
+                          <input type="text" id="comentario" name="comentario" placeholder="Comentario"
+                              class="shadow appearance-none border rounded-xl w-full pt-2 pb-[5.55rem] px-3 text-gray-700 leading-tight focus:outline-secondary focus:shadow-outline">
+                        </div>
+                  
+                        <div class="flex justify-center">
+                          <button type="submit"
+                              class="mt-8 md:mt-0 uppercase text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm sm:w-auto px-7 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" id="send">enviar
+                              formulario</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                <!-- <form action="" id="contactForm" class="grid md:grid-cols-2 md:gap-8">
+                    <div class="grid gap-3 mb-6">
+                            <div>
+                                <input type="text" id="nombre" name="nombre" placeholder="Nombre"
+                                    class="shadow appearance-none border rounded-xl w-full py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                            </div>
+                            <div>
+                                <input type="email" id="email" name="email" placeholder="Email"
+                                    class="shadow appearance-none border rounded-xl w-full py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                            </div>
+                            <div>
+                                <input type="tel" id="telefono" name="telefono" placeholder="Telefono"
+                                    class="shadow appearance-none border rounded-xl w-full py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                            </div>
+                    </div>
+                    <div>
+                        <div class="grid gap-6">
+                            <div>
+                                <input type="text" id="comentario" name="comentario" placeholder="Comentario"
+                                    class="shadow appearance-none border rounded-xl w-full pt-2 pb-[5.55rem] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                            </div>
+
+                            <div class="flex justify-center">
+                                <button type="submit"
+                                    class="mt-8 md:mt-0 uppercase text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm sm:w-auto px-7 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" id="send">enviar
+                                    formulario</button>
+                            </div>
+                        </div>
+                    </div>
+                </form> -->
+            </div>
+        </div>
+        <div class="hidden md:block md:py-1 bg-gradient-to-r from-blue-700 to-green-500 mb-[-10px]"></div>
+        <div
+            class="relative bg-secondary mt-24 pb-14 md:mt-2 flex flex-col gap-8 z-10 md:flex-row md:justify-around md:items-center md:pb-5 md:pt-5">
+            <img src="../images/EXPORTS/BORDERS/BORDER-FOOTER.png" alt=""
+                class="w-full absolute z-[-10] top-[-75px] md:hidden">
+            <div class="flex justify-center">
+                <img src="../images/ICONOS/CONTACTANOS/SUMMANT.svg" alt="" class="w-48">
+            </div>
+            <div class="flex justify-center gap-2">
+                <img src="../images/ICONOS/INFO/UBICACION.svg" alt="" class="w-6">
+                <p class="w-[14rem] text-white text-left">Cerrito 348 3 Piso Ciudad de Buenos Aires, Argentina.</p>
+            </div>
+            <div class="flex justify-center gap-2">
+                <img src="../images/ICONOS/INFO/TELEFONO.svg" alt="" class="w-5 gap-2">
+                <p class="text-white text-center">+54 11 50318009</p>
+            </div>
+            <div class="flex justify-center gap-2">
+                <img src="../images/ICONOS/INFO/CARTA.svg" alt="" class="w-6">
+                <p class="text-white text-center">info@summant.com</p>
+            </div>
+            <div>
+                <img src="../images/ICONOS/CONTACTANOS/LINKEDIN.svg" alt="" class="hidden md:block">
+            </div>
+        </div>
+
+    </section>
+    <!-- Fin Contacto -->
+
+
+    <!-- Comienzo Footer -->
+    <footer class="py-3 md:flex md:gap-2 md:justify-center">
+        <p class="text-[#777777] text-center">Copyright @2023 Summant Technologies.</p>
+        <p class="text-[#777777] text-center">All Rights Reserved</p>
+    </footer>
+    <!-- Fin Footer -->
+</body>
+
+</html>

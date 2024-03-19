@@ -22,6 +22,9 @@
     <link href="./styles/output.css" rel="stylesheet">
     <!-- JavaScript -->
     <script src="./js/main.js" defer></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Summant Technologies</title>
 </head>
 
@@ -86,7 +89,7 @@
     <!--////// -->
 
     <!-- COMIENZO DE HOME (Lauti) -->
-    <section class="home-section relative top-[100px]" id="home">
+    <section class="home-section relative top-[100px]" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" id="home">
         <div class="home-container flex flex-col justify-center items-center">
             <div class="overlay"></div>
             <div class="home-card">
@@ -98,11 +101,10 @@
                 </h2>
                 <div class="flex flex-col justify-start items-center gap-4 sm:flex-row sm:items-center">
                     <button class="uppercase font-bold text-sm rounded-3xl bg-primary px-6 py-3 text-white">
-                        contactanos
+                        <a href="#contacto">contactanos</a>
                     </button>
                     <button
-                        class="uppercase font-bold flex justify-center gap-2 items-center text-sm rounded-3xl border-solid border-2 border-primary px-5 py-[0.2rem] md:py-2">
-                        seguinos
+                        class="uppercase font-bold flex justify-center gap-2 items-center text-sm rounded-3xl border-solid border-2 border-primary px-5 py-[0.2rem] md:py-2"><a href="https://ar.linkedin.com/company/summant-technologies" target="_blank">seguinos</a>
                         <img src="images/ICONOS/PORQUE/LINKEDIN.svg" alt="" class="w-6">
                     </button>
                 </div>
@@ -116,7 +118,7 @@
     <!-- ////// -->
 
     <!-- COMIENZO POR QUE SUMMANT (Lauti) -->
-    <section class="bg-dark-grey relative top-[100px]" id="summant">
+    <section class="bg-dark-grey relative top-[100px]" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" id="summant">
         <h3 class="flex flex-col justify-center items-center text-xl font-bold"><span
                 class="text-center text-2xl text-transparent bg-clip-text bg-gradient-to-r from-primary from-0% to-secondary to-100%">Por
                 qué
@@ -142,9 +144,12 @@
                     la mejora continua de nuestros procesos y lograr la plena satisfacción de nuestros clientes.
                 </p>
             </div>
-            <div class="flex justify-center mt-8 mb-2">
-                <button class="uppercase font-bold text-white rounded-3xl px-4 py-1 bg-primary">
-                    <a href="./politica-calidad.html">Politica de calidad</a>
+            <div class="flex flex-col gap-5 justify-center ml-[15%] mr-[15%] mt-5" id="buttonContain">
+                <button class="uppercase font-bold text-white rounded-3xl px-8 py-1 bg-primary">
+                    <a href="./pages/calidad.html">Politica de calidad</a>
+                </button>
+                <button class="uppercase font-bold text-white rounded-3xl px-4 py-1 bg-secondary">
+                    <a href="./pages/seguridad.html">Politica de seguridad</a>
                 </button>
             </div>
             <div class="flex flex-col justify-center items-center gap-12 my-12 md:flex-row">
@@ -159,21 +164,22 @@
                 </div>
                 <div class="card-porque card--mision">
                     <div class="flex flex-col gap-10 items-center">
-                        <img src="images/ICONOS/PORQUE/FLECHA.svg" alt="" class="w-24 h-24 fill-black">
+                        <img src="images/ICONOS/PORQUE/FLECHA.svg" alt="" class="fill-black">
                         <button class="uppercase font-bold px-8 py-2 bg-secondary text-white rounded-3xl"
                             id="btn-mision">
                             misión
                         </button>
                     </div>
                 </div>
-                <div class="card-porque card--valores">
+                <div class="card-porque card--valores" id="cardValores">
                     <div class="flex flex-col gap-10 items-center">
-                        <img src="images/ICONOS/PORQUE/TICK.svg" alt="" class="w-24 h-24 fill-black">
+                        <img src="images/ICONOS/PORQUE/TICK.svg" alt="" class="fill-black">
                         <button class="uppercase font-bold px-8 py-2 bg-secondary text-white rounded-3xl"
                             id="btn-valores">
                             Valores
                         </button>
                     </div>
+                    <ul id="listaValores"></ul>
                 </div>
             </div>
             <div class="flex flex-col justify-center items-center gap-12 mb-4 md:mb-[10rem] md:flex-row">
@@ -223,7 +229,7 @@
 
     <!-- COMIENZO NUESTROS SERVICIOS (Agus) -->
     <img src="./images/ICONOS/DETALLES/TICKS2.svg" alt="" class="relative left-[-1%] bottom-[-40%]">
-    <section class="servicios relative top-[100px]" id="service">
+    <section class="servicios relative top-[100px]" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" id="service">
         <div class="flex flex-col justify-center items-center text-center mt-10 px-10">
             <h3 class="mb-6 flex flex-col justify-center items-center text-xl font-bold"><span
                     class="text-center text-2xl text-transparent bg-clip-text bg-gradient-to-r from-primary from-0% to-secondary to-100% tracking-[2px]">Nuestros</span>
@@ -304,7 +310,7 @@
     <img src="images/EXPORTS/BORDERS/Vector.png" alt=""
     class="w-full">
     <img src="./images/ICONOS/DETALLES/CIRCULO.svg" alt="" class="absolute left-[-20%]">
-    <section class="bg-[#F8F8F8] pt-[50px]" id="cegid">
+    <section class="bg-[#F8F8F8] pt-[50px]" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" id="cegid">
         <div class="text-center m-[30px]">
             <h3 class="mb-6 flex flex-col justify-center items-center text-xl font-bold titleCegid"><span
                     class="w-[60%] text-center text-2xl text-transparent bg-clip-text bg-gradient-to-r from-primary from-15% to-secondary to-85%">
@@ -374,9 +380,9 @@
     <!-- ////// -->
 
     <!-- COMIENZO DOMINIO TECH (Lauti) -->
-    <section id="dominio">
+    <section data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" id="dominio">
         <div>
-            <h3 class="mb-16 flex flex-col justify-center items-center text-xl font-bold"><span
+            <h3 class="mb-6 flex flex-col justify-center items-center text-xl font-bold"><span
                     class="text-center text-2xl text-transparent bg-clip-text bg-gradient-to-r from-primary from-0% to-secondary to-100%">Dominio</span>
                 <div>
                     <span class="text-3xl font-semibold leading-[0]">tecnológico<sup
@@ -384,8 +390,45 @@
                 </div>
             </h3>
         </div>
-        <div class="container-tech">
-            <div class="glide" id="glide-tech">
+        <div>
+            <div class="flex justify-center">
+                <div class="scroller" data-direction="right" data-speed="slow">
+                    <div class="scroller__inner">
+                        <img src="images/LOGOS_TECNOLOGÍAS/AMAZON.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/ANDROID.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/ANGULAR.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/ASP.NET.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/AZURE DEVOPS.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/AZURE.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/BOOTSTRAP.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/C#.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/DOCKER.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/GOOGLE CLOUD.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/REACT.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/SPRING.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/SWIFT.svg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="scroller" data-direction="left" data-speed="fast">
+                    <div class="scroller__inner">
+                        <img src="images/LOGOS_TECNOLOGÍAS/ICONIC.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/IOS.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/JAVA.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/JAVASCRPIT.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/JENKINS.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/KOTLIN.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/KUBERNETES.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/NODE.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/PHP.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/PHTON.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/VUE.JS.svg" alt="" />
+                        <img src="images/LOGOS_TECNOLOGÍAS/XAMARIN.svg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="glide" id="glide-tech">
                 <div class="glide__track" id="glide__track--tech" data-glide-el="track">
                     <ul class="glide__slides">
                         <li class="glide__slide glide__slide-tech">
@@ -437,7 +480,7 @@
                         <img src="images/ICONOS/SLIDERS/FLECHA-DERECHA-TECH.svg" alt="">
                     </button>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <img src="images/EXPORTS/BORDERS/Vector.png" class="w-full" alt="">
@@ -447,7 +490,7 @@
     <!-- ////// -->
 
     <!-- COMIENZO NUESTRA EXP -->
-    <section class="mb-10 bg-[#F8F8F8]" id="experience">
+    <section class="mb-10 bg-[#F8F8F8]" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" id="experience">
         <div class="flex flex-col justify-center items-center p-10">
             <h3 class="mb-6 flex flex-col justify-center items-center text-xl font-bold"><span
                     class="text-center text-2xl text-transparent bg-clip-text bg-gradient-to-r from-primary from-0% to-secondary to-100%">Nuestra</span>
@@ -728,7 +771,7 @@
     <!-- ////// -->
 
     <!-- COMIENZO CLIENTES (Lauti) -->
-    <section id="clientes">
+    <section data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" id="clientes">
         <div>
             <h3 class="mb-12 flex flex-col justify-center items-center text-xl font-bold"><span
                     class="text-center text-2xl text-transparent bg-clip-text bg-gradient-to-r from-primary from-0% to-secondary to-100%">Confían
@@ -795,7 +838,7 @@
     <!-- ////// -->
 
     <!-- COMIENZO RESEÑAS -->
-    <section class="mb-28 md:mb-0">
+    <section data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="mb-28 md:mb-0">
         <img src="images/ICONOS/DETALLES/CIRCULO.svg" alt=""
             class="relative w-16 left-[-40px] top-[570px] md:top-[120px] md:left-[-80px] md:w-36">
         <h3 class="mb-12 flex flex-col justify-center items-center text-xl font-bold"><span
@@ -896,11 +939,10 @@
     <!-- ////// -->
 
     <!-- COMIENZO CONTACTO (Lauti) -->
-    <section class="bg-[#F4F4F4]" id="contacto">
+    <section class="bg-[#F4F4F4]" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" id="contacto">
 
         <div class="flex flex-col md:flex-row md:justify-end md:relative">
             <div class="flex justify-center relative md:absolute left-0 bg-white md:bg-transparent">
-                <!-- <img src="images/ICONOS/CONTACTANOS/PLUS.svg" alt="" class="absolute top-[20px] left-[450px] md:top-[-80px] md:left-[250px] w-12"> -->
                 <img src="images/EXPORTS/SUMMANT img footer.png" alt="" class="w-[21rem] h-[27rem]"
                     id="contactanos-img">
                 <img src="images/EXPORTS/BORDERS/BORDER-VERDE-CONTACTANOS.png" alt=""
@@ -912,26 +954,51 @@
                 <h2 class="text-primary text-center text-2xl font-bold font-inter mb-10 md:text-start">
                     Contactanos
                 </h2>
-                <form action="" class="grid md:grid-cols-2 md:gap-8">
-                    <div class="grid gap-3 mb-6">
+                <form action="" id="contactForm" class="grid md:grid-cols-2 md:gap-8">
+                    <div class="grid gap-4 mb-6">
+                      <div>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre"
+                            class="shadow appearance-none border rounded-xl w-full py-4 px-4 text-gray-700 leading-tight focus:outline-secondary focus:shadow-outline">
+                      </div>
+                      <div>
+                        <input type="email" id="email" name="email" placeholder="Email"
+                            class="shadow appearance-none border rounded-xl w-full py-4 px-4 text-gray-700 leading-tight focus:outline-secondary focus:shadow-outline">
+                        <span class="error-message relative top-1 text-sm text-red-600 ml-2">El correo electrónico ingresado no es válido</span>
+                      </div>
+                      <div>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Telefono"
+                            class="shadow appearance-none border rounded-xl w-full py-4 px-4 text-gray-700 leading-tight focus:outline-secondary focus:shadow-outline">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="grid gap-6">
                         <div>
+                          <input type="text" id="comentario" name="comentario" placeholder="Comentario"
+                              class="shadow appearance-none border rounded-xl w-full pt-2 pb-[5.55rem] px-3 text-gray-700 leading-tight focus:outline-secondary focus:shadow-outline">
+                        </div>
+                  
+                        <div class="flex justify-center">
+                          <button type="submit"
+                              class="mt-8 md:mt-0 uppercase text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm sm:w-auto px-7 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" id="send">enviar
+                              formulario</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                <!-- <form action="" id="contactForm" class="grid md:grid-cols-2 md:gap-8">
+                    <div class="grid gap-3 mb-6">
                             <div>
                                 <input type="text" id="nombre" name="nombre" placeholder="Nombre"
                                     class="shadow appearance-none border rounded-xl w-full py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                             </div>
-                        </div>
-                        <div>
                             <div>
                                 <input type="email" id="email" name="email" placeholder="Email"
                                     class="shadow appearance-none border rounded-xl w-full py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                             </div>
-                        </div>
-                        <div>
                             <div>
                                 <input type="tel" id="telefono" name="telefono" placeholder="Telefono"
                                     class="shadow appearance-none border rounded-xl w-full py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                             </div>
-                        </div>
                     </div>
                     <div>
                         <div class="grid gap-6">
@@ -942,12 +1009,12 @@
 
                             <div class="flex justify-center">
                                 <button type="submit"
-                                    class="mt-8 md:mt-0 uppercase text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm sm:w-auto px-7 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">enviar
+                                    class="mt-8 md:mt-0 uppercase text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm sm:w-auto px-7 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" id="send">enviar
                                     formulario</button>
                             </div>
                         </div>
                     </div>
-                </form>
+                </form> -->
             </div>
         </div>
         <div class="hidden md:block md:py-1 bg-gradient-to-r from-blue-700 to-green-500 mb-[-10px]"></div>
@@ -981,12 +1048,12 @@
     <!-- ////// -->
 
     <!-- COMIENZO FOOTER -->
-    <footer class="py-3 md:flex md:gap-2 md:justify-center">
+    <footer data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="py-3 md:flex md:gap-2 md:justify-center">
         <p class="text-[#777777] text-center">Copyright @2023 Summant Technologies.</p>
         <p class="text-[#777777] text-center">Todos los derechos reservados.</p>
     </footer>
-
     <!-- FIN DE FOOTER -->
 
 
 </body>
+</html>
