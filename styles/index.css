@@ -590,7 +590,7 @@ se sabe una mejor implementarla */
 
 @media (min-width: 1024px) {
   #menuNav {
-    padding: 35px;
+    padding: 30px 40px;
   }
 
   #menuItems {
@@ -1411,6 +1411,30 @@ se sabe una mejor implementarla */
 }
 
 #cardSupport:hover svg>.pepito {
+  fill: white;
+  transform-origin: center;
+  animation: girar2 4s alternate-reverse infinite, girar 4s alternate;
+}
+
+#cardFinance:hover svg>.pepito {
+  fill: white;
+  transform-origin: center;
+  animation: girar2 4s alternate-reverse infinite, girar 4s alternate;
+}
+
+#cardColaborators:hover svg>.pepito {
+  fill: white;
+  transform-origin: center;
+  animation: girar2 4s alternate-reverse infinite, girar 4s alternate;
+}
+
+#cardProcess:hover svg>.pepito {
+  fill: white;
+  transform-origin: center;
+  animation: girar2 4s alternate-reverse infinite, girar 4s alternate;
+}
+
+#cardClients:hover svg>.pepito {
   fill: white;
   transform-origin: center;
   animation: girar2 4s alternate-reverse infinite, girar 4s alternate;

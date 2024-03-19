@@ -281,3 +281,7 @@ emailInput.addEventListener('input', () => {
 /* Toastify */
 
 /* Toastify */
+
+/* AOS Animation */
+AOS.init(); 
+/* AOS Animation */ 
