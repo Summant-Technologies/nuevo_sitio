@@ -116,8 +116,13 @@
   }
 
   @keyframes bg-animation {
-    0% {background-position: left;}
-    100% {background-position: right;}
+    0% {
+      background-position: left;
+    }
+
+    100% {
+      background-position: right;
+    }
   }
 
   .home-card {
@@ -151,6 +156,7 @@ se sabe una mejor implementarla */
     left: -95px;
   }
 }
+
 /* Fin estilos para home */
 
 /* Inicio estilos para porque summant*/
@@ -260,11 +266,11 @@ se sabe una mejor implementarla */
     width: 80px;
     right: 60px;
   }
-  
+
   .porque__div {
     top: 146px;
   }
-  
+
 }
 
 @media (max-width: 430px) {
@@ -352,6 +358,7 @@ se sabe una mejor implementarla */
     top: 216px;
   }
 }
+
 /* arreglos para las resoluciones mobile */
 
 /* Fin estilos para porque summant  */
@@ -477,6 +484,7 @@ se sabe una mejor implementarla */
     justify-content: center;
   }
 }
+
 /* Fin estilos para resenas */
 
 /* Inicio estilos para slider de clientes */
@@ -532,6 +540,7 @@ se sabe una mejor implementarla */
     transform: translate(calc(-50% - 0.5rem));
   }
 }
+
 /* Fin estilos para slider de clientes */
 
 /* Comienzo Query's Navbar */
@@ -603,6 +612,7 @@ se sabe una mejor implementarla */
     width: 80px;
   }
 }
+
 /* Fin Query's Navbar */
 
 .middleWave {
@@ -622,70 +632,90 @@ se sabe una mejor implementarla */
     align-items: center;
     margin-top: 50px;
   }
-  #cardTeam, #cardSupport, #cardProfile, #cardProject {
+
+  #cardTeam,
+  #cardSupport,
+  #cardProfile,
+  #cardProject {
     width: 35%;
     margin: 20px;
-   }
+  }
 }
+
 @media (min-width: 1025px) and (max-width: 1240px) {
- #servicios {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 0 49px;
-  padding: 0 70px;
- }
- #cardTeam, #cardSupport, #cardProfile, #cardProject {
-  width: 378px;
-  height: 160px;
-  padding: 8px;
- }
- .logoService {
-  left: -38px;
-  bottom: 50px;
-  width: 70px;
- }
- .cardServices {
-  width: 100%;
- }
- .cardServices h5 {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  width: auto;
-  font-weight: 500;
-  margin-right: 80px;
- }
- #titleTeam {
-  margin-right: 103px;
- }
- #titleSupport {
-  margin-right: 50px;
- }
- #titleProfile {
-  margin-right: 72px;
- }
- #titleProject {
-  margin-right: 62px;
- }
- .cardServices div {
-  display: none;
- }
- .cardServices p {
-  text-align: start;
-  width: 90%;
-  line-height: 23px;
-  padding: 0 20px;
- }
+  #servicios {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0 49px;
+    padding: 0 70px;
+  }
+
+  #cardTeam,
+  #cardSupport,
+  #cardProfile,
+  #cardProject {
+    width: 378px;
+    height: 160px;
+    padding: 8px;
+  }
+
+  .logoService {
+    left: -38px;
+    bottom: 50px;
+    width: 70px;
+  }
+
+  .cardServices {
+    width: 100%;
+  }
+
+  .cardServices h5 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: auto;
+    font-weight: 500;
+    margin-right: 80px;
+  }
+
+  #titleTeam {
+    margin-right: 103px;
+  }
+
+  #titleSupport {
+    margin-right: 50px;
+  }
+
+  #titleProfile {
+    margin-right: 72px;
+  }
+
+  #titleProject {
+    margin-right: 62px;
+  }
+
+  .cardServices div {
+    display: none;
+  }
+
+  .cardServices p {
+    text-align: start;
+    width: 90%;
+    line-height: 23px;
+    padding: 0 20px;
+  }
 }
+
 @media (min-width: 1241px) {
   #titleServices {
     width: 100%;
     padding: 0 200px;
   }
+
   #servicios {
     display: flex;
     flex-direction: row;
@@ -694,21 +724,35 @@ se sabe una mejor implementarla */
     margin-top: 70px;
     gap: 0;
   }
+
   .cardServices {
     gap: 7px !important;
   }
-  #cardTeam, #cardSupport, #cardProfile, #cardProject {
+
+  #cardTeam,
+  #cardSupport,
+  #cardProfile,
+  #cardProject {
     width: 248px;
     height: 284px;
-   }
-   #cardTeam p, #cardSupport p, #cardProfile p, #cardProject p {
+  }
+
+  #cardTeam p,
+  #cardSupport p,
+  #cardProfile p,
+  #cardProject p {
     width: 90%;
     font-size: 16px;
-   }
-   #titleTeam, #titleSupport, #titleProfile, #titleProject {
+  }
+
+  #titleTeam,
+  #titleSupport,
+  #titleProfile,
+  #titleProject {
     font-size: 17px;
-   }
+  }
 }
+
 /* Fin Query's Nuestros Servicios */
 
 /* Comienzo Query's Cegid - PeopleNet */
@@ -717,6 +761,7 @@ se sabe una mejor implementarla */
     display: flex;
     flex-direction: row;
   }
+
   #titleCegid {
     display: flex;
     flex-direction: row;
@@ -746,12 +791,14 @@ se sabe una mejor implementarla */
     height: auto;
   }
 }
+
 @media (min-width: 1024px) {
   .hexagon {
     min-width: 15%;
     height: auto;
   }
 }
+
 /* Fin Query's Cegid - PeopleNet */
 
 /* Comienzo Query's Nuestra Experiencia */
@@ -759,6 +806,7 @@ se sabe una mejor implementarla */
   .description {
     display: none;
   }
+
   #bulletImg {
     display: flex;
     flex-direction: row;
@@ -766,6 +814,7 @@ se sabe una mejor implementarla */
     align-items: center;
     gap: 10px;
   }
+
   .contain__toggle-Cegid {
     background-image: url(../images/FOTOS_EXPERIENCIA/CEGID.webp);
     background-position: center;
@@ -773,6 +822,7 @@ se sabe una mejor implementarla */
     background-size: cover;
     border-radius: 15px 15px 0 0;
   }
+
   .contain__toggle-Web {
     background-image: url(../images/FOTOS_EXPERIENCIA/DESARROLLO\ WEB.webp);
     background-position: center;
@@ -780,6 +830,7 @@ se sabe una mejor implementarla */
     background-size: cover;
     border-radius: 15px 15px 0 0;
   }
+
   .contain__toggle-Mobile {
     background-image: url(../images/FOTOS_EXPERIENCIA/DESARROLLO\ MOBILE.webp);
     background-position: center;
@@ -787,6 +838,7 @@ se sabe una mejor implementarla */
     background-size: cover;
     border-radius: 15px 15px 0 0;
   }
+
   .contain__toggle-Indicadores {
     background-image: url(../images/FOTOS_EXPERIENCIA/INDICADORES.webp);
     background-position: center;
@@ -794,6 +846,7 @@ se sabe una mejor implementarla */
     background-size: cover;
     border-radius: 15px 15px 0 0;
   }
+
   .contain__toggle-Gestion {
     background-image: url(../images/FOTOS_EXPERIENCIA/GESTION\ RRHH.webp);
     background-position: center;
@@ -801,6 +854,7 @@ se sabe una mejor implementarla */
     background-size: cover;
     border-radius: 15px 15px 0 0;
   }
+
   .contain__toggle-Capacitacion {
     background-image: url(../images/FOTOS_EXPERIENCIA/CAPACITACION.webp);
     background-position: center;
@@ -809,10 +863,12 @@ se sabe una mejor implementarla */
     border-radius: 15px 15px 0 0;
   }
 }
+
 @media (min-width: 768px) {
   .description {
     display: none;
   }
+
   #bulletImg {
     display: flex;
     flex-direction: row;
@@ -820,6 +876,7 @@ se sabe una mejor implementarla */
     align-items: center;
     gap: 10px;
   }
+
   .contain__toggle-Cegid {
     background-image: url(../images/FOTOS_EXPERIENCIA/CEGID.webp);
     background-position: center;
@@ -827,6 +884,7 @@ se sabe una mejor implementarla */
     background-size: cover;
     border-radius: 15px 15px 0 0;
   }
+
   .contain__toggle-Web {
     background-image: url(../images/FOTOS_EXPERIENCIA/DESARROLLO\ WEB.webp);
     background-position: center;
@@ -834,6 +892,7 @@ se sabe una mejor implementarla */
     background-size: cover;
     border-radius: 15px 15px 0 0;
   }
+
   .contain__toggle-Mobile {
     background-image: url(../images/FOTOS_EXPERIENCIA/DESARROLLO\ MOBILE.webp);
     background-position: center;
@@ -841,6 +900,7 @@ se sabe una mejor implementarla */
     background-size: cover;
     border-radius: 15px 15px 0 0;
   }
+
   .contain__toggle-Indicadores {
     background-image: url(../images/FOTOS_EXPERIENCIA/INDICADORES.webp);
     background-position: center;
@@ -848,6 +908,7 @@ se sabe una mejor implementarla */
     background-size: cover;
     border-radius: 15px 15px 0 0;
   }
+
   .contain__toggle-Gestion {
     background-image: url(../images/FOTOS_EXPERIENCIA/GESTION\ RRHH.webp);
     background-position: center;
@@ -855,6 +916,7 @@ se sabe una mejor implementarla */
     background-size: cover;
     border-radius: 15px 15px 0 0;
   }
+
   .contain__toggle-Capacitacion {
     background-image: url(../images/FOTOS_EXPERIENCIA/CAPACITACION.webp);
     background-position: center;
@@ -863,6 +925,7 @@ se sabe una mejor implementarla */
     border-radius: 15px 15px 0 0;
   }
 }
+
 @media (min-width: 1024px) {
   #experienceCards {
     display: grid;
@@ -871,6 +934,7 @@ se sabe una mejor implementarla */
     gap: 10px;
     margin: 0 60px;
   }
+
   #bulletImg {
     display: flex;
     flex-direction: row;
@@ -879,42 +943,49 @@ se sabe una mejor implementarla */
     gap: 10px;
     width: 88%;
   }
+
   #bulletCegid {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 1rem;
   }
+
   #bulletWeb {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 1rem;
   }
+
   #bulletMobile {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 1rem;
   }
+
   #bulletIndicador {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 1rem;
   }
+
   #bulletGestion {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 1rem;
   }
+
   #bulletCapacitacion {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 1rem;
   }
+
   #bulletC {
     display: flex;
     flex-direction: column;
@@ -923,36 +994,42 @@ se sabe una mejor implementarla */
     min-width: 90%;
     height: 200px;
   }
+
   #bulletW {
     justify-content: space-around;
     align-items: center;
     min-width: 90%;
     height: 200px;
   }
+
   #bulletM {
     justify-content: space-around;
     align-items: center;
     min-width: 90%;
     height: 200px;
   }
+
   #bulletI {
     justify-content: space-around;
     align-items: center;
     min-width: 90%;
     height: 200px;
   }
+
   #bulletG {
     justify-content: space-around;
     align-items: center;
     min-width: 90%;
     height: 200px;
   }
+
   #bulletCap {
     justify-content: space-around;
     align-items: center;
     min-width: 90%;
     height: 200px;
   }
+
   #bulletC:hover {
     background-image: url(../images/FOTOS_EXPERIENCIA/CEGID.webp);
     background-position: center;
@@ -961,6 +1038,7 @@ se sabe una mejor implementarla */
     color: #ffffff;
     transition: all .5s ease-in-out;
   }
+
   #bulletW:hover {
     background-image: url(../images/FOTOS_EXPERIENCIA/DESARROLLO\ WEB.webp);
     background-position: center;
@@ -969,6 +1047,7 @@ se sabe una mejor implementarla */
     color: #ffffff;
     transition: all .5s ease-in-out;
   }
+
   #bulletM:hover {
     background-image: url(../images/FOTOS_EXPERIENCIA/DESARROLLO\ MOBILE.webp);
     background-position: center;
@@ -977,6 +1056,7 @@ se sabe una mejor implementarla */
     color: #ffffff;
     transition: all .5s ease-in-out;
   }
+
   #bulletI:hover {
     background-image: url(../images/FOTOS_EXPERIENCIA/INDICADORES.webp);
     background-position: center;
@@ -985,6 +1065,7 @@ se sabe una mejor implementarla */
     color: #ffffff;
     transition: all .5s ease;
   }
+
   #bulletG:hover {
     background-image: url(../images/FOTOS_EXPERIENCIA/GESTION\ RRHH.webp);
     background-position: center;
@@ -993,6 +1074,7 @@ se sabe una mejor implementarla */
     color: #ffffff;
     transition: all .5s ease-in-out;
   }
+
   #bulletCap:hover {
     background-image: url(../images/FOTOS_EXPERIENCIA/CAPACITACION.webp);
     background-position: center;
@@ -1001,41 +1083,53 @@ se sabe una mejor implementarla */
     color: #ffffff;
     transition: all .5s ease-in-out;
   }
+
   #bulletC:hover #svgCegid-White {
     width: 35px;
   }
+
   #bulletW:hover #svgWeb-White {
     width: 51px;
   }
+
   #bulletM:hover #svgMobile-White {
     width: 43px;
   }
+
   #bulletG:hover #svgGestion-White {
     width: 43px;
   }
+
   #bulletCap:hover #svgCap-White {
     width: 43px;
   }
+
   #bulletI:hover #svgIndicador-White {
     width: 45px;
   }
+
   #bulletImg h4 {
     width: 50%;
     text-align: start;
   }
+
   .bullet:hover .svgColors {
     display: none;
   }
+
   .bullet:hover .svgWhite {
     display: flex;
   }
+
   .description {
     display: flex;
   }
+
   .arrow {
     display: none;
   }
 }
+
 /* Fin Query's Nuestra Experiencia */
 
 
@@ -1107,14 +1201,17 @@ se sabe una mejor implementarla */
     flex-direction: row;
     gap: 10px;
   }
+
   #titleQuality {
     display: flex;
     flex-direction: row;
     gap: 10px;
   }
+
   #textQualityMD {
     display: none;
   }
+
   #textQuality {
     display: flex;
     flex-direction: column;
@@ -1124,9 +1221,11 @@ se sabe una mejor implementarla */
     text-align: center;
     font-size: 18px;
   }
+
   #textQuality span {
     font-weight: 700;
   }
+
   #gestion {
     display: flex;
     flex-direction: row;
@@ -1137,27 +1236,32 @@ se sabe una mejor implementarla */
     padding-left: 0;
     padding-right: 0;
   }
+
   #cardFinance {
     width: 40%;
     margin: 20px;
     margin-top: 60px;
   }
+
   #cardClients {
     width: 40%;
     margin: 20px;
     margin-top: 60px;
   }
+
   #cardColaborators {
     width: 40%;
     margin: 20px;
     margin-top: 60px;
   }
+
   #cardProcess {
     width: 40%;
     margin: 20px;
     margin-top: 60px;
   }
 }
+
 @media (min-width: 1025px) and (max-width: 1240px) {
   #gestion {
     width: 100%;
@@ -1170,15 +1274,18 @@ se sabe una mejor implementarla */
     padding: 0 70px;
     margin-top: 50px;
   }
+
   #titleQuality {
     display: flex;
     flex-direction: row;
     gap: 10px;
     font-size: 30px;
   }
+
   #textQualityMD {
     display: none;
   }
+
   #textQuality {
     display: flex;
     flex-direction: column;
@@ -1187,46 +1294,60 @@ se sabe una mejor implementarla */
     margin-top: 40px;
     text-align: center;
   }
+
   #textQuality span {
     font-weight: 700;
   }
-   #cardFinance,#cardClients,#cardColaborators,#cardProcess {
+
+  #cardFinance,
+  #cardClients,
+  #cardColaborators,
+  #cardProcess {
     width: 378px;
     height: 240px;
     padding: 8px;
     margin-top: 0;
-   }
-   #titleFinance {
+  }
+
+  #titleFinance {
     margin-right: 195px;
-   }
-   #titleClients {
+  }
+
+  #titleClients {
     margin-right: 200px;
-   }
-   #titleColaborators {
+  }
+
+  #titleColaborators {
     margin-right: 130px;
-   }
-   #titleProcess {
+  }
+
+  #titleProcess {
     margin-right: 190px;
-   }
-   .logoQuality {
+  }
+
+  .logoQuality {
     left: -38px;
     top: 378px;
     width: 70px;
-   }
-   #titleTeam {
+  }
+
+  #titleTeam {
     margin-left: 0;
-   }
-   .cardGestion div {
+  }
+
+  .cardGestion div {
     display: none;
-   }
-   .cardGestion p {
+  }
+
+  .cardGestion p {
     text-align: start;
     width: 90%;
     line-height: 23px;
     padding: 0 20px;
-   }
+  }
 
 }
+
 @media (min-width: 1241px) {
   #qualitySection {
     display: flex;
@@ -1234,23 +1355,27 @@ se sabe una mejor implementarla */
     justify-content: center;
     margin-top: 100px;
   }
+
   #titleQuality {
     display: flex;
     flex-direction: row;
     gap: 10px;
     font-size: 60px;
   }
+
   #titleQuality span {
     font-size: 60px;
     height: 50px;
     margin-top: 10px;
   }
+
   #textQualityMD p {
     width: 50%;
     font-size: 26px;
     font-weight: 300;
     line-height: 40px;
   }
+
   #gestion {
     display: flex;
     flex-direction: row;
@@ -1259,91 +1384,226 @@ se sabe una mejor implementarla */
     margin-top: 30px;
     gap: 0;
   }
-  #cardFinance,#cardClients,#cardColaborators,#cardProcess {
+
+  #cardFinance,
+  #cardClients,
+  #cardColaborators,
+  #cardProcess {
     width: 285px;
-   }
+  }
 }
+
 /* Fin Politicas de Calidad */
 
 /* FIN HOME POLITICAS DE CALIDAD */
 
 /* Comienzo Animacion Cards */
 
-#cardTeam:hover svg > .pepito {
+#cardTeam:hover svg>.pepito {
   fill: white;
   transform-origin: center;
   animation: girar2 4s alternate-reverse infinite, girar 4s alternate;
-  }
+}
+
 #cardTeam:hover {
   box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.1);
   transition: all ease-in-out 2s;
 }
-#cardSupport:hover svg > .pepito {
+
+#cardSupport:hover svg>.pepito {
   fill: white;
   transform-origin: center;
   animation: girar2 4s alternate-reverse infinite, girar 4s alternate;
-  }
+}
+
 #cardSupport:hover {
   box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.1);
   transition: all ease-in-out 2s;
 }
-#cardProfile:hover svg > .pepito {
+
+#cardProfile:hover svg>.pepito {
   fill: white;
   transform-origin: center;
   animation: girar2 4s alternate-reverse infinite, girar 4s alternate;
-  }
+}
+
 #cardProfile:hover {
   box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.1);
   transition: all ease-in-out 2s;
 }
-#cardProject:hover svg > .pepito {
+
+#cardProject:hover svg>.pepito {
   fill: white;
   transform-origin: center;
   animation: girar2 4s alternate-reverse infinite, girar 4s alternate;
-  }
+}
+
 #cardProject:hover {
   box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.1);
   transition: all ease-in-out 2s;
 }
 
-  @keyframes girar {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(290deg);
-    }
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
   }
 
-  @keyframes girar2 {
-    from {
-      transform: rotate(290deg);
-    }
-    to {
-      transform: rotate(0deg);
-    }
+  to {
+    transform: rotate(290deg);
+  }
+}
+
+@keyframes girar2 {
+  from {
+    transform: rotate(290deg);
   }
 
-  /* Fin Animacion Cards */
+  to {
+    transform: rotate(0deg);
+  }
+}
 
-  /* Inicio Politica de Seguridad */
+/* Fin Animacion Cards */
 
-  .titleSeguridad {
-    padding-right: 60px;
+/* Inicio Politica de Seguridad */
+
+.titleSeguridad {
+  padding-right: 50px;
+}
+
+.compromiso {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: start;
+  margin-top: 30px;
+  gap: 15px;
+}
+
+.compromiso>img {
+  top: 5px;
+  position: relative;
+}
+
+@media (min-width:768px) {
+  #sectionTitle {
+    width: 100%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin: 0;
+    padding: 0 300px 0 80px;
+  }
+
+  #bg-home__Security {
+    width: 50%;
+    position: relative;
+    right: -370px;
+    top: 0;
+  }
+
+  #cardSecurity {
+    position: relative;
+    top: -170px;
+    margin: 80px;
+  }
+
+  #waveSeparator {
+    position: relative;
+    top: -150px;
+  }
+}
+
+@media (min-width:840px) and (max-width: 1024px) {
+  #sectionTitle {
+    width: 100%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin: 0;
+    padding: 0 500px 0 80px;
+  }
+
+  #bg-home__Security {
+    width: 50%;
+    position: relative;
+    right: -380px;
+    top: 0;
+  }
+
+  #cardSecurity {
+    position: relative;
+    top: -170px;
+  }
+
+  #waveSeparator {
+    position: relative;
+    top: -150px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #sectionTitle {
+    font-size: 50px;
+    line-height: 50px;
+    width: 100%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 0 630px 0 80px;
+  }
+
+  #bg-home__Security {
+    width: 50%;
+    position: relative;
+    right: -443px;
+    top: -120px;
+  }
+
+  #cardSecurity {
+    position: relative;
+    top: -300px;
+  }
+}
+
+@media (min-width: 1345px) {
+  #sectionTitle {
+    width: 100%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin: 0;
+    padding: 0 850px 0 100px;
+  }
+
+  #bg-home__Security {
+    width: 50%;
+    position: relative;
+    right: -600px;
+    top: -58px;
+  }
+
+  #cardSecurity {
+    position: relative;
+    top: -470px;
+    margin: 150px;
+  }
+
+  .titleSeguridad>h4 {
+    width: 75%;
   }
 
   .compromiso {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    margin-top: 30px;
-    gap: 15px;
+    width: 80%;
   }
+}
 
-  .compromiso > img {
-    top: 5px;
-    position: relative;
-  }
-
-  /* Fin Politica de Seguridad */
+/* Fin Politica de Seguridad */
